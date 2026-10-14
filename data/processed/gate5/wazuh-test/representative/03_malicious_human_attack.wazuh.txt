@@ -1,0 +1,56 @@
+Starting wazuh-logtest v4.14.8
+Type one log per line
+
+
+**Phase 1: Completed pre-decoding.
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	alert.action: 'allowed'
+	alert.category: 'Potentially Bad Traffic'
+	alert.gid: '1'
+	alert.metadata.affected_product: '['Windows_XP_Vista_7_8_10_Server_32_64_Bit']'
+	alert.metadata.attack_target: '['SMB_Client']'
+	alert.metadata.confidence: '['High']'
+	alert.metadata.created_at: '['2018_07_16']'
+	alert.metadata.deployment: '['Internal']'
+	alert.metadata.signature_severity: '['Minor']'
+	alert.metadata.tag: '['Description_Generated_By_Proofpoint_Nexus']'
+	alert.metadata.updated_at: '['2021_01_27']'
+	alert.rev: '3'
+	alert.severity: '2'
+	alert.signature: 'ET INFO SMB2 Remote AT Scheduled Job Create Request'
+	alert.signature_id: '2025713'
+	app_proto: 'smb'
+	community_id: '1:nFJJ1yJVLyPZvY7hTwBQ5RVAo5E='
+	dest_ip: '192.168.1.108'
+	dest_port: '445'
+	direction: 'to_server'
+	event_type: 'alert'
+	flow.bytes_toclient: '2253'
+	flow.bytes_toserver: '2665'
+	flow.dest_ip: '192.168.1.108'
+	flow.dest_port: '445'
+	flow.pkts_toclient: '10'
+	flow.pkts_toserver: '18'
+	flow.src_ip: '192.168.1.109'
+	flow.src_port: '40511'
+	flow.start: '2023-02-21T13:39:08.966695+0000'
+	flow_id: '1337177273763899.000000'
+	ip_v: '4'
+	pcap_cnt: '216064'
+	pkt_src: 'wire/pcap'
+	proto: 'TCP'
+	src_ip: '192.168.1.109'
+	src_port: '40511'
+	timestamp: '2023-02-21T13:39:09.346587+0000'
+
+**Phase 3: Completed filtering (rules).
+	id: '86601'
+	level: '3'
+	description: 'Suricata: Alert - ET INFO SMB2 Remote AT Scheduled Job Create Request'
+	groups: '['ids', 'suricata']'
+	firedtimes: '1'
+	mail: 'False'
+**Alert to be generated.
+

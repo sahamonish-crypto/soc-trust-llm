@@ -1,0 +1,134 @@
+ground_truth_label,signature_id,signature,deduplicated_count_60m
+Benign,2221010,SURICATA HTTP unable to match response to request,231
+Benign,2221045,SURICATA HTTP Unexpected Request body,230
+Benign,2028675,ET DYN_DNS DNS Query to DynDNS Domain *.ddns .net,59
+Benign,2035465,ET INFO Observed Discord Domain in DNS Lookup (discord .com),56
+Benign,2060503,ET INFO Discord Chat Service Domain in DNS Lookup (discord .com),55
+Benign,2210044,SURICATA STREAM Packet with invalid timestamp,53
+Benign,2260002,SURICATA Applayer Detect protocol only one direction,24
+Benign,2210054,SURICATA STREAM excessive retransmissions,19
+Benign,2210038,SURICATA STREAM FIN out of window,16
+Benign,2035466,ET INFO Observed Discord Domain in DNS Lookup (discordapp .com),15
+Benign,2210016,SURICATA STREAM CLOSEWAIT FIN out of window,11
+Benign,2060502,ET INFO Discord Chat Service Domain in DNS Lookup (gateway .discord .gg),9
+Benign,2027757,ET DNS Query for .to TLD,8
+Benign,2071343,ET INFO Server Hello with Downgrade Request to TLS 1.1 or Lower,8
+Benign,2260001,SURICATA Applayer Wrong direction first Data,7
+Benign,2013743,ET DYN_DNS DYNAMIC_DNS Query to a Suspicious no-ip Domain,6
+Benign,2050132,ET INFO URL Shortening Service Domain in DNS Lookup (shorturl .at),5
+Benign,2210056,SURICATA STREAM bad window update,5
+Benign,2210020,SURICATA STREAM ESTABLISHED packet out of window,4
+Benign,2210045,SURICATA STREAM Packet with invalid ack,4
+Benign,2035464,ET INFO Observed Discord Domain (discordapp .com in TLS SNI),3
+Benign,2039594,ET INFO External IP Address Lookup Domain (get .geojs .io) in DNS Lookup,3
+Benign,2210029,SURICATA STREAM ESTABLISHED invalid ack,3
+Benign,2033078,ET INFO Session Traversal Utilities for NAT (STUN Binding Request On Non-Standard High Port),2
+Benign,2053893,ET INFO Suspicious Domain (polyfill .io) in TLS SNI,2
+Benign,2067085,ET INFO NTLM Session Setup Request - Negotiate,2
+Benign,2067086,ET INFO NTLMv1 Session Setup Response - Challenge,2
+Benign,2101616,GPL DNS named version attempt,2
+Benign,2221036,SURICATA HTTP Response excessive header repetition,2
+Benign,2260000,SURICATA Applayer Mismatch protocol both directions,2
+Benign,2014939,ET INFO DNS Query for TOR Hidden Domain .onion Accessible Via TOR,1
+Benign,2026718,ET INFO External IP Lookup Domain (ifconfig .me),1
+Benign,2027237,ET RPC DCERPC SVCCTL - Remote Service Control Manager Access,1
+Benign,2027695,ET INFO Observed Cloudflare DNS over HTTPS Domain (cloudflare-dns .com in TLS SNI),1
+Benign,2027758,ET DNS Query for .cc TLD,1
+Benign,2035668,ET INFO Pastebin-style service note .youdao .com  in DNS query,1
+Benign,2035948,ET INFO IP Check Domain (iplogger .org in DNS Lookup),1
+Benign,2043026,ET HUNTING Suspicious Empty Accept-Encoding Header,1
+Benign,2050883,ET INFO Observed DNS Query to vk .com API (api .vk .com),1
+Benign,2053892,ET INFO Suspicious Domain (polyfill .io) in DNS Lookup,1
+Benign,2054141,ET INFO External IP Lookup Domain in DNS Lookup (ip-api .com),1
+Benign,2054168,ET INFO External IP Lookup Domain in DNS Lookup (ipinfo .io),1
+Benign,2054224,ET TA_ABUSED_SERVICES Browser Automation Toolkit in DNS Lookup (bablosoft .com),1
+Benign,2067087,ET INFO NTLM Session Setup Request - Auth,1
+Benign,2071569,ET INFO Observed Telegram Domain in DNS Lookup (t .me),1
+Benign,2210030,SURICATA STREAM FIN invalid ack,1
+Benign,2210046,SURICATA STREAM SHUTDOWN RST invalid ack,1
+Benign,2210050,SURICATA STREAM reassembly overlap with different data,1
+Benign,2231000,SURICATA QUIC failed decrypt,1
+Benign,2402000,ET DROP Dshield Block Listed Source group 1,1
+Benign,2403561,ET CINS Active Threat Intelligence Poor Reputation IP group 262,1
+Malicious,2402000,ET DROP Dshield Block Listed Source group 1,212
+Malicious,2400010,ET DROP Spamhaus DROP Listed Traffic Inbound group 11,71
+Malicious,2403538,ET CINS Active Threat Intelligence Poor Reputation IP group 239,40
+Malicious,2010935,ET SCAN Suspicious inbound to MSSQL port 1433,39
+Malicious,2008578,ET SCAN Sipvicious Scan,23
+Malicious,2011716,ET SCAN Sipvicious User-Agent Detected (friendly-scanner),22
+Malicious,2400043,ET DROP Spamhaus DROP Listed Traffic Inbound group 44,17
+Malicious,2403434,ET CINS Active Threat Intelligence Poor Reputation IP group 135,15
+Malicious,2403587,ET CINS Active Threat Intelligence Poor Reputation IP group 288,15
+Malicious,2010937,ET SCAN Suspicious inbound to mySQL port 3306,13
+Malicious,2400015,ET DROP Spamhaus DROP Listed Traffic Inbound group 16,13
+Malicious,2400002,ET DROP Spamhaus DROP Listed Traffic Inbound group 3,10
+Malicious,2403425,ET CINS Active Threat Intelligence Poor Reputation IP group 126,10
+Malicious,2001219,ET SCAN Potential SSH Scan,6
+Malicious,2210044,SURICATA STREAM Packet with invalid timestamp,6
+Malicious,2400006,ET DROP Spamhaus DROP Listed Traffic Inbound group 7,6
+Malicious,2400054,ET DROP Spamhaus DROP Listed Traffic Inbound group 55,6
+Malicious,2403492,ET CINS Active Threat Intelligence Poor Reputation IP group 193,6
+Malicious,2400027,ET DROP Spamhaus DROP Listed Traffic Inbound group 28,5
+Malicious,2403561,ET CINS Active Threat Intelligence Poor Reputation IP group 262,5
+Malicious,2403577,ET CINS Active Threat Intelligence Poor Reputation IP group 278,5
+Malicious,2010936,ET SCAN Suspicious inbound to Oracle SQL port 1521,4
+Malicious,2010939,ET SCAN Suspicious inbound to PostgreSQL port 5432,4
+Malicious,2400000,ET DROP Spamhaus DROP Listed Traffic Inbound group 1,4
+Malicious,2403464,ET CINS Active Threat Intelligence Poor Reputation IP group 165,4
+Malicious,2403540,ET CINS Active Threat Intelligence Poor Reputation IP group 241,4
+Malicious,2029340,ET INFO TLS Handshake Failure,3
+Malicious,2038669,ET EXPLOIT Realtek eCos RSDK/MSDK Stack-based Buffer Overflow Attempt Inbound (CVE-2022-27255),3
+Malicious,2403442,ET CINS Active Threat Intelligence Poor Reputation IP group 143,3
+Malicious,2403557,ET CINS Active Threat Intelligence Poor Reputation IP group 258,3
+Malicious,2014819,ET INFO Packed Executable Download,2
+Malicious,2016141,ET INFO Executable Download from dotted-quad Host,2
+Malicious,2018959,ET INFO PE EXE or DLL Windows file download HTTP,2
+Malicious,2021076,ET HUNTING SUSPICIOUS Dotted Quad Host MZ Response,2
+Malicious,2043231,ET MALWARE Redline Stealer TCP CnC Activity,2
+Malicious,2043233,ET INFO Microsoft net.tcp Connection Initialization Activity,2
+Malicious,2045779,ET MALWARE Win32/BeamWinHTTP CnC Activity M2 (GET),2
+Malicious,2046045,ET MALWARE [ANY.RUN] RedLine Stealer/MetaStealer Family Related (MC-NMF Authorization),2
+Malicious,2067085,ET INFO NTLM Session Setup Request - Negotiate,2
+Malicious,2067086,ET INFO NTLMv1 Session Setup Response - Challenge,2
+Malicious,2067087,ET INFO NTLM Session Setup Request - Auth,2
+Malicious,2210063,SURICATA STREAM 3way handshake excessive different SYNs,2
+Malicious,2260000,SURICATA Applayer Mismatch protocol both directions,2
+Malicious,2403380,ET CINS Active Threat Intelligence Poor Reputation IP group 81,2
+Malicious,2403381,ET CINS Active Threat Intelligence Poor Reputation IP group 82,2
+Malicious,2003259,ET INFO SOCKSv5 DNS Inbound Request (Linux Source),1
+Malicious,2015744,ET INFO EXE IsDebuggerPresent (Used in Malware Anti-Debugging),1
+Malicious,2017918,ET DOS Possible NTP DDoS Inbound Frequent Un-Authed MON_LIST Requests IMPL 0x02,1
+Malicious,2023753,ET SCAN MS Terminal Server Traffic on Non-standard Port,1
+Malicious,2025330,ET INFO External IP Lookup SSL Cert Observed (ipinfo .io),1
+Malicious,2025331,ET INFO Possible External IP Lookup Domain Observed in SNI (ipinfo. io),1
+Malicious,2025713,ET INFO SMB2 Remote AT Scheduled Job Create Request,1
+Malicious,2029054,ET SCAN Zmap User-Agent (Inbound),1
+Malicious,2035949,ET INFO IP Check Domain (iplogger .org in TLS SNI),1
+Malicious,2036252,ET SCAN RDP Connection Attempt from Nmap,1
+Malicious,2041933,ET INFO Observed Telegram Domain (t .me in TLS SNI),1
+Malicious,2044008,ET EXPLOIT Realtek SDK - Command Execution/Backdoor Access Inbound (CVE-2021-35394),1
+Malicious,2049837,ET MALWARE Suspected PrivateLoader Activity (POST),1
+Malicious,2060252,ET INFO Go-http-client User-Agent Observed Inbound,1
+Malicious,2071570,ET INFO Observed Telegram Domain in TLS SNI (t .me),1
+Malicious,2100366,GPL ICMP PING *NIX,1
+Malicious,2100368,GPL ICMP PING BSDtype,1
+Malicious,2210010,SURICATA STREAM 3way handshake wrong seq wrong ack,1
+Malicious,2210016,SURICATA STREAM CLOSEWAIT FIN out of window,1
+Malicious,2210045,SURICATA STREAM Packet with invalid ack,1
+Malicious,2210046,SURICATA STREAM SHUTDOWN RST invalid ack,1
+Malicious,2210056,SURICATA STREAM bad window update,1
+Malicious,2221010,SURICATA HTTP unable to match response to request,1
+Malicious,2230002,SURICATA TLS invalid record type,1
+Malicious,2231001,SURICATA QUIC error on data,1
+Malicious,2260002,SURICATA Applayer Detect protocol only one direction,1
+Malicious,2400020,ET DROP Spamhaus DROP Listed Traffic Inbound group 21,1
+Malicious,2403413,ET CINS Active Threat Intelligence Poor Reputation IP group 114,1
+Malicious,2403426,ET CINS Active Threat Intelligence Poor Reputation IP group 127,1
+Malicious,2403428,ET CINS Active Threat Intelligence Poor Reputation IP group 129,1
+Malicious,2403455,ET CINS Active Threat Intelligence Poor Reputation IP group 156,1
+Malicious,2403468,ET CINS Active Threat Intelligence Poor Reputation IP group 169,1
+Malicious,2403511,ET CINS Active Threat Intelligence Poor Reputation IP group 212,1
+Malicious,2403532,ET CINS Active Threat Intelligence Poor Reputation IP group 233,1
+Malicious,2403541,ET CINS Active Threat Intelligence Poor Reputation IP group 242,1
+Malicious,2403553,ET CINS Active Threat Intelligence Poor Reputation IP group 254,1
+Malicious,2403588,ET CINS Active Threat Intelligence Poor Reputation IP group 289,1

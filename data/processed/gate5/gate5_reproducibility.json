@@ -1,0 +1,24 @@
+{
+  "suricata_replay_policy": "--runmode single",
+  "observed_single_thread_alert_count_run3": 1400,
+  "observed_single_thread_alert_count_run4": 1400,
+  "canonical_alert_identity_hash_run3": "d2a7f11d1c374f8aeb2453ebfe717dc867d5c3e3ad43087007706979c5857d85",
+  "canonical_alert_identity_hash_run4": "d2a7f11d1c374f8aeb2453ebfe717dc867d5c3e3ad43087007706979c5857d85",
+  "canonical_identity_match": true,
+  "canonical_identity_fields": [
+    "community_id",
+    "src_ip",
+    "src_port",
+    "dest_ip",
+    "dest_port",
+    "proto",
+    "app_proto",
+    "signature_id",
+    "signature",
+    "category",
+    "severity",
+    "action"
+  ],
+  "exact_alert_emission_timestamp_in_identity": false,
+  "note": "Earlier default multithreaded replay produced alert-count differences. Gate-5 replay therefore uses single-thread PCAP mode. Exact packet-level emission timestamp is not treated as the canonical alert identity."
+}

@@ -1,0 +1,42 @@
+Gate 5 Representative Wazuh Validation
+
+Image: wazuh/wazuh-manager:4.14.8
+Image ID: sha256:412f665c77af5497780d29d0d9f069d7a169c5eca45e9a3a47a587d9cfc99b55
+
+{
+  "case": "01_benign_amazon.wazuh.txt",
+  "json_decoded": true,
+  "phase3_rules": true,
+  "suricata_group": true,
+  "alert_generated": true,
+  "pass": true
+}
+
+{
+  "case": "02_malicious_discovery.wazuh.txt",
+  "json_decoded": true,
+  "phase3_rules": true,
+  "suricata_group": true,
+  "alert_generated": true,
+  "pass": true
+}
+
+{
+  "case": "03_malicious_human_attack.wazuh.txt",
+  "json_decoded": true,
+  "phase3_rules": true,
+  "suricata_group": true,
+  "alert_generated": true,
+  "pass": true
+}
+
+{
+  "case": "04_malicious_trickbot.wazuh.txt",
+  "json_decoded": true,
+  "phase3_rules": true,
+  "suricata_group": true,
+  "alert_generated": true,
+  "pass": true
+}
+
+OVERALL: PASS

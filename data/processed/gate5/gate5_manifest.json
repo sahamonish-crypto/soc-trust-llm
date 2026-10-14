@@ -1,0 +1,157 @@
+{
+  "generated_utc": "2026-10-14T20:10:54.032293+00:00",
+  "gate": "GATE 5",
+  "status": "TECHNICAL EXECUTION VALIDATION PASS - USER FREEZE APPROVAL PENDING",
+  "primary_dataset": "CTU-SME-11",
+  "validated_captures": [
+    "AmazonEcho-2023-02-21",
+    "Windows7AD-2023-02-21",
+    "Windows7AD-2023-02-22"
+  ],
+  "suricata": {
+    "version": "This is Suricata version 8.0.7 RELEASE",
+    "rules_sha256": "23001ce41f828d6b01370a10fe81442d6beddb7f350e07f5fa7f458e223ed2e1",
+    "frozen_config_sha256": "54bf775ff6fbc5af2ab360a22511bf8a0c13c27555198ec01dbe82e4e00b2d0c",
+    "replay_mode": "single"
+  },
+  "wazuh": {
+    "version": "4.14.8",
+    "image": "wazuh/wazuh-manager:4.14.8",
+    "image_id": "sha256:412f665c77af5497780d29d0d9f069d7a169c5eca45e9a3a47a587d9cfc99b55",
+    "representative_validation_pass": true
+  },
+  "eligible_mapped_alerted_flows": {
+    "Malicious": 803,
+    "Benign": 1660
+  },
+  "deduplicated_candidates_60m": {
+    "Malicious": 644,
+    "Benign": 869
+  },
+  "unique_signatures": {
+    "Benign": 51,
+    "Malicious": 82
+  },
+  "ground_truth_contexts": {
+    "Benign": [
+      "From_benign",
+      "From_benign-To_benign",
+      "From_benign-To_benign-1e100",
+      "From_benign-To_benign-AWSGlobalAccelerator",
+      "From_benign-To_benign-Akamai",
+      "From_benign-To_benign-Amazon",
+      "From_benign-To_benign-Application_instagram",
+      "From_benign-To_benign-Application_twitter",
+      "From_benign-To_benign-Cdn77",
+      "From_benign-To_benign-Cloudflare",
+      "From_benign-To_benign-Cloudfront",
+      "From_benign-To_benign-DNS",
+      "From_benign-To_benign-Device_chromecast_tv_assistant",
+      "From_benign-To_benign-Fastly",
+      "From_benign-To_benign-Github",
+      "From_benign-To_benign-Google",
+      "From_benign-To_benign-Hotmail",
+      "From_benign-To_benign-Microsoft"
+    ],
+    "Malicious": [
+      "From_malicious-To_benign-Discovery",
+      "From_malicious-To_benign-Human_attacks",
+      "From_malicious-To_malicious-Malware_C2-Trickbot"
+    ]
+  },
+  "context_availability": {
+    "Malicious": {
+      "total": 803,
+      "flow": 803,
+      "rich": 38
+    },
+    "Benign": {
+      "total": 1660,
+      "flow": 1660,
+      "rich": 1642
+    }
+  },
+  "strict_leakage_hits": 0,
+  "wazuh_representative_tests": [
+    {
+      "case": "01_benign_amazon.wazuh.txt",
+      "json_decoded": true,
+      "phase3_rules": true,
+      "suricata_group": true,
+      "alert_generated": true,
+      "pass": true
+    },
+    {
+      "case": "02_malicious_discovery.wazuh.txt",
+      "json_decoded": true,
+      "phase3_rules": true,
+      "suricata_group": true,
+      "alert_generated": true,
+      "pass": true
+    },
+    {
+      "case": "03_malicious_human_attack.wazuh.txt",
+      "json_decoded": true,
+      "phase3_rules": true,
+      "suricata_group": true,
+      "alert_generated": true,
+      "pass": true
+    },
+    {
+      "case": "04_malicious_trickbot.wazuh.txt",
+      "json_decoded": true,
+      "phase3_rules": true,
+      "suricata_group": true,
+      "alert_generated": true,
+      "pass": true
+    }
+  ],
+  "reproducibility": {
+    "suricata_replay_policy": "--runmode single",
+    "observed_single_thread_alert_count_run3": 1400,
+    "observed_single_thread_alert_count_run4": 1400,
+    "canonical_alert_identity_hash_run3": "d2a7f11d1c374f8aeb2453ebfe717dc867d5c3e3ad43087007706979c5857d85",
+    "canonical_alert_identity_hash_run4": "d2a7f11d1c374f8aeb2453ebfe717dc867d5c3e3ad43087007706979c5857d85",
+    "canonical_identity_match": true,
+    "canonical_identity_fields": [
+      "community_id",
+      "src_ip",
+      "src_port",
+      "dest_ip",
+      "dest_port",
+      "proto",
+      "app_proto",
+      "signature_id",
+      "signature",
+      "category",
+      "severity",
+      "action"
+    ],
+    "exact_alert_emission_timestamp_in_identity": false,
+    "note": "Earlier default multithreaded replay produced alert-count differences. Gate-5 replay therefore uses single-thread PCAP mode. Exact packet-level emission timestamp is not treated as the canonical alert identity."
+  },
+  "acceptance_criteria": {
+    "eligible_benign_at_least_30": true,
+    "eligible_malicious_at_least_30": true,
+    "dedup60_benign_at_least_30": true,
+    "dedup60_malicious_at_least_30": true,
+    "benign_unique_signatures_at_least_3": true,
+    "malicious_unique_signatures_at_least_3": true,
+    "malicious_behavioral_contexts_more_than_1": true,
+    "rich_benign_candidates_at_least_30": true,
+    "rich_malicious_candidates_at_least_30": true,
+    "strict_ground_truth_leakage_zero": true,
+    "representative_wazuh_validation": true,
+    "single_thread_canonical_reproducibility": true
+  },
+  "all_required_technical_checks_pass": true,
+  "not_yet_frozen": [
+    "Final human-study trial count",
+    "Final participant sample size",
+    "Final item episode/deduplication definition",
+    "Final confirmatory item composition",
+    "Expert operational adjudication outcomes",
+    "LLM model/configuration",
+    "Calibration procedure"
+  ]
+}

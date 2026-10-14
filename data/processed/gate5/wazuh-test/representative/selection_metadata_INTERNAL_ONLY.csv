@@ -1,0 +1,5 @@
+case,ground_truth_class_INTERNAL_ONLY,ground_truth_context_INTERNAL_ONLY,community_id,signature
+01_benign_amazon,Benign,From_benign-To_benign-Amazon,1:+VI1G7ALZVl8iVMDaE/f46ZRs8c=,SURICATA HTTP Unexpected Request body
+02_malicious_discovery,Malicious,From_malicious-To_benign-Discovery,1:PMbJDTimY92jxf4wvcf8RJ1fx1w=,ET SCAN MS Terminal Server Traffic on Non-standard Port
+03_malicious_human_attack,Malicious,From_malicious-To_benign-Human_attacks,1:nFJJ1yJVLyPZvY7hTwBQ5RVAo5E=,ET INFO SMB2 Remote AT Scheduled Job Create Request
+04_malicious_trickbot,Malicious,From_malicious-To_malicious-Malware_C2-Trickbot,1:vzQ73h1yZvpb7aAGg+mdBksEtpU=,ET INFO EXE IsDebuggerPresent (Used in Malware Anti-Debugging)

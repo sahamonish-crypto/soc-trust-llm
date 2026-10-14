@@ -1,0 +1,60 @@
+
+Starting wazuh-logtest v4.14.8
+Type one log per line
+
+**Phase 1: Completed pre-decoding.
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	alert.action: 'allowed'
+	alert.category: 'Generic Protocol Command Decode'
+	alert.gid: '1'
+	alert.rev: '1'
+	alert.severity: '3'
+	alert.signature: 'SURICATA HTTP Unexpected Request body'
+	alert.signature_id: '2221045'
+	app_proto: 'http'
+	community_id: '1:+VI1G7ALZVl8iVMDaE/f46ZRs8c='
+	dest_ip: '52.206.131.218'
+	dest_port: '80'
+	direction: 'to_server'
+	event_type: 'alert'
+	flow.bytes_toclient: '1374'
+	flow.bytes_toserver: '992'
+	flow.dest_ip: '52.206.131.218'
+	flow.dest_port: '80'
+	flow.pkts_toclient: '8'
+	flow.pkts_toserver: '7'
+	flow.src_ip: '192.168.1.50'
+	flow.src_port: '48885'
+	flow.start: '2023-02-21T01:29:07.660001+0000'
+	flow_id: '864358126519965.000000'
+	http.hostname: 'acsechocaptiveportal.com'
+	http.http_method: 'GET'
+	http.http_user_agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36'
+	http.length: '0'
+	http.protocol: 'HTTP/1.1'
+	http.status: '204'
+	http.url: '/generate_204'
+	ip_v: '4'
+	metadata.flowints.http.anomaly.count: '1'
+	metadata.flowints.tcp.retransmission.count: '1'
+	pcap_cnt: '11562'
+	pkt_src: 'wire/pcap'
+	proto: 'TCP'
+	src_ip: '192.168.1.50'
+	src_port: '48885'
+	tc_progress: 'response_complete'
+	timestamp: '2023-02-21T01:29:07.849343+0000'
+	ts_progress: 'request_complete'
+	tx_id: '0'
+
+**Phase 3: Completed filtering (rules).
+	id: '86601'
+	level: '3'
+	description: 'Suricata: Alert - SURICATA HTTP Unexpected Request body'
+	groups: '['ids', 'suricata']'
+	firedtimes: '1'
+	mail: 'False'
+**Alert to be generated.
+

@@ -1,0 +1,55 @@
+
+Starting wazuh-logtest v4.14.8
+Type one log per line
+
+**Phase 1: Completed pre-decoding.
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	alert.action: 'allowed'
+	alert.category: 'Attempted Information Leak'
+	alert.gid: '1'
+	alert.metadata.affected_product: '['Microsoft_Terminal_Server_RDP']'
+	alert.metadata.attack_target: '['Server']'
+	alert.metadata.confidence: '['Medium']'
+	alert.metadata.created_at: '['2017_01_23']'
+	alert.metadata.deployment: '['Perimeter']'
+	alert.metadata.performance_impact: '['Low']'
+	alert.metadata.signature_severity: '['Major']'
+	alert.metadata.updated_at: '['2024_03_07']'
+	alert.rev: '4'
+	alert.severity: '2'
+	alert.signature: 'ET SCAN MS Terminal Server Traffic on Non-standard Port'
+	alert.signature_id: '2023753'
+	community_id: '1:PMbJDTimY92jxf4wvcf8RJ1fx1w='
+	dest_ip: '192.168.1.50'
+	dest_port: '55443'
+	direction: 'to_server'
+	event_type: 'alert'
+	flow.bytes_toclient: '132'
+	flow.bytes_toserver: '348'
+	flow.dest_ip: '192.168.1.50'
+	flow.dest_port: '55443'
+	flow.pkts_toclient: '2'
+	flow.pkts_toserver: '5'
+	flow.src_ip: '45.227.254.55'
+	flow.src_port: '31810'
+	flow.start: '2023-02-21T12:41:24.037730+0000'
+	flow_id: '1287951851262230.000000'
+	ip_v: '4'
+
+	pcap_cnt: '149699'
+	pkt_src: 'wire/pcap'
+	proto: 'TCP'
+	src_ip: '45.227.254.55'
+	src_port: '31810'
+	timestamp: '2023-02-21T12:41:24.070792+0000'
+
+**Phase 3: Completed filtering (rules).
+	id: '86601'
+	level: '3'
+	description: 'Suricata: Alert - ET SCAN MS Terminal Server Traffic on Non-standard Port'
+	groups: '['ids', 'suricata']'
+	firedtimes: '1'
+	mail: 'False'
+**Alert to be generated.

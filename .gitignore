@@ -1,0 +1,24 @@
+# Large research data
+data/raw/
+data/tmp/
+tmp/
+
+# Network captures
+*.pcap
+*.pcapng
+
+# Archives
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+
+# Large generated security logs
+eve.json
+*.log
+
+# Temporary files
+__pycache__/
+*.pyc
+.DS_Store
