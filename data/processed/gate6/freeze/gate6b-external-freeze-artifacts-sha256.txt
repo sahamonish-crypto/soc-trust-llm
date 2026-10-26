@@ -1,0 +1,2 @@
+b2d6b5f92f97be41829c06c44cc67525ea9fface1577a791c08427d3af82da18  data/processed/gate6/iot23-corrected-final-audit.txt
+852deefa3669fde18c754547827f82d9eb1e2556ce35610887850e89086a06a0  docs/decisions/GATE6B_EXTERNAL_CORPUS_FREEZE_2026-10-26.md

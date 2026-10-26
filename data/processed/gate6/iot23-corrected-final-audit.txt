@@ -1,0 +1,231 @@
+
+========================================================================================
+SCENARIO: trojan42
+========================================================================================
+Parsed Zeek rows: 4426
+Zeek GT:
+  Benign 4420
+  Malicious 6
+Malicious GT details:
+  FileDownload 3
+  C&C-FileDownload 3
+
+Suricata alert emissions: 2035
+Unique alerted CIDs: 1087
+Mapped: 1087 / 1087 (100.0%)
+Mapping failures: NONE
+Ambiguous <=10ms: 0
+Max accepted delta: 0.0
+Mapped GT:
+  Benign 1082
+  Malicious 5
+
+Malicious alerted CIDs: 5
+Overt/leaky malicious CIDs: 0
+Non-overt malicious CIDs: 5
+Usable with evidence: 5
+Evidence-pattern distribution:
+  2 patterns: 1
+  4 patterns: 4
+
+Top malicious signatures:
+       5  ET INFO Executable and linking format (ELF) file download Over HTTP
+       1  SURICATA STREAM excessive retransmissions
+
+========================================================================================
+SCENARIO: torii20
+========================================================================================
+Parsed Zeek rows: 3209
+Zeek GT:
+  Benign 3193
+  Malicious 16
+Malicious GT details:
+  C&C-Torii 16
+
+Suricata alert emissions: 4
+Unique alerted CIDs: 3
+Mapped: 3 / 3 (100.0%)
+Mapping failures: NONE
+Ambiguous <=10ms: 0
+Max accepted delta: 0.0
+Mapped GT:
+  Malicious 3
+
+Malicious alerted CIDs: 3
+Overt/leaky malicious CIDs: 0
+Non-overt malicious CIDs: 3
+Usable with evidence: 0
+Evidence-pattern distribution:
+  0 patterns: 3
+
+Top malicious signatures:
+       3  SURICATA TCPv4 invalid checksum
+
+========================================================================================
+SCENARIO: muhstik3
+========================================================================================
+Parsed Zeek rows: 156103
+Zeek GT:
+  Malicious 151567
+  Benign 4536
+Malicious GT details:
+  PartOfAHorizontalPortScan 145597
+  Attack 5962
+  C&C 8
+
+Suricata alert emissions: 155323
+Unique alerted CIDs: 49333
+Mapped: 49333 / 49333 (100.0%)
+Mapping failures: NONE
+Ambiguous <=10ms: 0
+Max accepted delta: 0.0
+Mapped GT:
+  Malicious 46935
+  Benign 2398
+
+Malicious alerted CIDs: 46935
+Overt/leaky malicious CIDs: 41782
+Non-overt malicious CIDs: 5153
+Usable with evidence: 4683
+Evidence-pattern distribution:
+  0 patterns: 470
+  1 patterns: 4683
+
+Top malicious signatures:
+   41776  ET SCAN Potential SSH Scan OUTBOUND [OVERT]
+    6728  SURICATA IPv4 invalid checksum
+       8  SURICATA STREAM excessive retransmissions
+       6  ET MALWARE ELF/Muhstik Botnet CnC Activity [OVERT]
+       6  ET MALWARE ELF/Muhstik - IRC CnC Checkin [OVERT]
+       5  ET INFO IRC Channel JOIN on non-standard port
+       1  SURICATA STREAM Packet with invalid timestamp
+
+========================================================================================
+SCENARIO: mirai34
+========================================================================================
+Parsed Zeek rows: 23145
+Zeek GT:
+  Malicious 21222
+  Benign 1923
+Malicious GT details:
+  DDoS 14394
+  C&C 6706
+  PartOfAHorizontalPortScan 122
+
+Suricata alert emissions: 36430
+Unique alerted CIDs: 1756
+Mapped: 1756 / 1756 (100.0%)
+Mapping failures: NONE
+Ambiguous <=10ms: 1
+Max accepted delta: 0.0
+Mapped GT:
+  Malicious 1740
+  Benign 16
+
+Malicious alerted CIDs: 1740
+Overt/leaky malicious CIDs: 0
+Non-overt malicious CIDs: 1740
+Usable with evidence: 10
+Evidence-pattern distribution:
+  0 patterns: 1730
+  2 patterns: 7
+  4 patterns: 1
+  6 patterns: 2
+
+Top malicious signatures:
+    1641  ET CHAT IRC NICK command
+    1641  ET CHAT IRC USER command
+    1590  ET CHAT IRC authorization message
+     977  ET CHAT IRC PONG response
+     977  ET CHAT IRC PING command
+      95  SURICATA TCPv4 invalid checksum
+       6  ET CHAT IRC JOIN command
+       4  SURICATA STREAM 3way handshake excessive different SYNs
+
+========================================================================================
+SCENARIO: hakai8
+========================================================================================
+Parsed Zeek rows: 10403
+Zeek GT:
+  Malicious 8222
+  Benign 2181
+Malicious GT details:
+  C&C 8222
+
+Suricata alert emissions: 0
+Unique alerted CIDs: 0
+Mapped: 0 / 0 (0.0%)
+Mapping failures: NONE
+Ambiguous <=10ms: 0
+Mapped GT:
+
+Malicious alerted CIDs: 0
+Overt/leaky malicious CIDs: 0
+Non-overt malicious CIDs: 0
+Usable with evidence: 0
+Evidence-pattern distribution:
+
+Top malicious signatures:
+
+========================================================================================
+SCENARIO: hideandseek1
+========================================================================================
+Parsed Zeek rows: 1008748
+Zeek GT:
+  Malicious 539473
+  Benign 469275
+Malicious GT details:
+  PartOfAHorizontalPortScan 539465
+  C&C 8
+
+Suricata alert emissions: 3470
+Unique alerted CIDs: 3365
+Mapped: 3365 / 3365 (100.0%)
+Mapping failures: NONE
+Ambiguous <=10ms: 0
+Max accepted delta: 0.0
+Mapped GT:
+  Malicious 3358
+  Benign 7
+
+Malicious alerted CIDs: 3358
+Overt/leaky malicious CIDs: 0
+Non-overt malicious CIDs: 3358
+Usable with evidence: 2557
+Evidence-pattern distribution:
+  0 patterns: 801
+  1 patterns: 2116
+  2 patterns: 441
+
+Top malicious signatures:
+    3314  SURICATA HTTP missing Host header
+      75  SURICATA Applayer Detect protocol only one direction
+      22  SURICATA STREAM Packet with invalid ack
+      22  SURICATA STREAM SHUTDOWN RST invalid ack
+       7  SURICATA STREAM Packet with invalid timestamp
+       7  SURICATA TCPv4 invalid checksum
+       6  ET DROP Spamhaus DROP Listed Traffic Inbound group 45
+       2  SURICATA STREAM ESTABLISHED SYNACK resend with different seq
+       2  SURICATA STREAM FIN out of window
+       1  ET DROP Spamhaus DROP Listed Traffic Inbound group 38
+
+========================================================================================
+CORRECTED FINAL EXTERNAL-VALIDATION SUMMARY
+========================================================================================
+trojan42 | mapping=100.0% | malicious=5 | non_overt=5 | usable=5
+torii20 | mapping=100.0% | malicious=3 | non_overt=3 | usable=0
+muhstik3 | mapping=100.0% | malicious=46935 | non_overt=5153 | usable=4683
+mirai34 | mapping=100.0% | malicious=1740 | non_overt=1740 | usable=10
+hakai8 | mapping=0.0% | malicious=0 | non_overt=0 | usable=0
+hideandseek1 | mapping=100.0% | malicious=3358 | non_overt=3358 | usable=2557
+
+Scenarios with usable malicious cases: 4 / 6
+Total usable non-overt malicious cases: 7255
+
+ORIGINAL PREDECLARED TARGET
+>=3 scenarios: True
+>=30 usable malicious cases: True
+
+OVERALL TARGET PASS: True
+
+CORPUS EXPANSION STATUS: STOP — NO MORE DATASET HUNTING
