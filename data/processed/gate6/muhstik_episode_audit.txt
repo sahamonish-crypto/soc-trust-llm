@@ -1,0 +1,117 @@
+Expected frozen usable count: 4683
+Reconstructed usable count: 4683
+COUNT CHECK: PASS
+
+==============================================================================
+MUHSTIK EXTERNAL-DEV STRUCTURE
+==============================================================================
+Usable cases: 4683
+First anchor: 2018-05-19T19:19:44.624445+00:00
+Last anchor:  2018-05-21T06:18:27.770763+00:00
+Total time span (hours): 34.979
+
+GT detailed-label composition:
+  Attack: 4675
+  PartOfAHorizontalPortScan: 8
+
+Unique source IPs: 1
+Unique destination IPs: 170
+Top source IPs:
+  192.168.2.5: 4683
+Top destination IPs:
+  148.251.35.54: 69
+  196.192.15.94: 67
+  191.190.223.130: 66
+  31.3.184.139: 65
+  182.54.195.83: 65
+  204.188.220.234: 65
+  161.246.34.147: 64
+  219.235.3.132: 64
+
+Consecutive usable-case time gaps:
+  q50: 3.611 sec
+  q75: 5.219 sec
+  q90: 8.093 sec
+  q95: 12.085 sec
+  q99: 284.069 sec
+  max: 11508.661 sec
+
+==============================================================================
+CANDIDATE EPISODE THRESHOLD AUDIT
+==============================================================================
+
+30s | GLOBAL
+  episodes: 112
+  singleton episodes: 33
+  largest episode: 457
+  median episode size: 11
+  top-5 episode sizes: [457, 236, 226, 192, 182]
+
+30s | DETAIL-AWARE
+  episodes: 122
+  singleton episodes: 42
+  largest episode: 457
+  median episode size: 7
+  top-5 episode sizes: [457, 236, 226, 192, 182]
+
+2m | GLOBAL
+  episodes: 80
+  singleton episodes: 18
+  largest episode: 472
+  median episode size: 55
+  top-5 episode sizes: [472, 236, 226, 192, 189]
+
+2m | DETAIL-AWARE
+  episodes: 90
+  singleton episodes: 27
+  largest episode: 472
+  median episode size: 29
+  top-5 episode sizes: [472, 236, 226, 192, 189]
+
+5m | GLOBAL
+  episodes: 46
+  singleton episodes: 4
+  largest episode: 550
+  median episode size: 70
+  top-5 episode sizes: [550, 349, 313, 246, 237]
+
+5m | DETAIL-AWARE
+  episodes: 56
+  singleton episodes: 13
+  largest episode: 550
+  median episode size: 62
+  top-5 episode sizes: [550, 349, 313, 246, 237]
+
+15m | GLOBAL
+  episodes: 22
+  singleton episodes: 1
+  largest episode: 676
+  median episode size: 226
+  top-5 episode sizes: [676, 485, 412, 407, 381]
+
+15m | DETAIL-AWARE
+  episodes: 37
+  singleton episodes: 11
+  largest episode: 676
+  median episode size: 61
+  top-5 episode sizes: [676, 485, 412, 407, 381]
+
+60m | GLOBAL
+  episodes: 14
+  singleton episodes: 0
+  largest episode: 694
+  median episode size: 317
+  top-5 episode sizes: [694, 676, 617, 485, 412]
+
+60m | DETAIL-AWARE
+  episodes: 30
+  singleton episodes: 9
+  largest episode: 694
+  median episode size: 64
+  top-5 episode sizes: [694, 676, 576, 485, 412]
+
+==============================================================================
+FILES WRITTEN
+==============================================================================
+data/processed/gate6/muhstik_external_dev_usable_inventory.csv
+data/processed/gate6/muhstik_episode_audit_detailaware_5m.csv
