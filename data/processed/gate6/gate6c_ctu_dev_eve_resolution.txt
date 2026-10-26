@@ -1,0 +1,121 @@
+==================================================================================
+GATE 6C — CTU DEV EVE SOURCE RESOLUTION
+==================================================================================
+Frozen CTU DEV rows: 87
+Unique CTU DEV Community IDs: 87
+DEV INVENTORY CHECK: PASS
+
+Candidate non-IoT EVE files found: 13
+  data/processed/gate5/run1-amazon-echo-2023-02-21/eve.json | 17350545 bytes
+  data/processed/gate5/run2-amazon-echo-2023-02-21/eve.json | 17336295 bytes
+  data/processed/gate5/run3-single/eve.json | 17685656 bytes
+  data/processed/gate5/run4-single/eve.json | 17700395 bytes
+  data/processed/gate5/windows7ad-2023-02-21-run1/eve.json | 103592794 bytes
+  data/processed/gate5/windows7ad-2023-02-22-run1/eve.json | 87670405 bytes
+  data/processed/gate6/environment-check-amazon/eve.json | 17698373 bytes
+  data/processed/gate6/environment-check-amazon-root/eve.json | 17672940 bytes
+  data/processed/gate6/iphone-2023-02-21-verified-suricata-root/eve.json | 7341542 bytes
+  data/processed/gate6/windows7full2-2023-02-21-suricata-root/eve.json | 11946847 bytes
+  data/processed/gate6/windows7full3-2023-02-22-suricata/eve.json | 11781285 bytes
+  data/processed/gate6/windows7full3-2023-02-22-suricata-root/eve.json | 11793465 bytes
+  data/processed/gate6/windows7full3-2023-02-22-verified-suricata-root/eve.json | 11794547 bytes
+
+==================================================================================
+EVE FILES CONTAINING CTU DEV CASES
+==================================================================================
+
+FILE: data/processed/gate6/windows7full2-2023-02-21-suricata-root/eve.json
+Matching DEV CIDs: 68
+Matched EVE events: 365
+Campaign composition:
+  Redline: 68
+Matched event types:
+  smb: 143
+  alert: 122
+  flow: 71
+  tls: 8
+  http: 8
+  fileinfo: 6
+  quic: 5
+  anomaly: 2
+
+FILE: data/processed/gate6/windows7full3-2023-02-22-suricata-root/eve.json
+Matching DEV CIDs: 19
+Matched EVE events: 69
+Campaign composition:
+  Remcos: 19
+Matched event types:
+  alert: 28
+  flow: 19
+  tls: 18
+  smb: 4
+
+FILE: data/processed/gate6/windows7full3-2023-02-22-suricata/eve.json
+Matching DEV CIDs: 19
+Matched EVE events: 69
+Campaign composition:
+  Remcos: 19
+Matched event types:
+  alert: 28
+  flow: 19
+  tls: 18
+  smb: 4
+
+FILE: data/processed/gate6/windows7full3-2023-02-22-verified-suricata-root/eve.json
+Matching DEV CIDs: 19
+Matched EVE events: 69
+Campaign composition:
+  Remcos: 19
+Matched event types:
+  alert: 28
+  flow: 19
+  tls: 18
+  smb: 4
+
+==================================================================================
+CTU DEV SOURCE COVERAGE
+==================================================================================
+Covered DEV CIDs: 87 / 87
+Missing DEV CIDs: 0
+
+Covered by campaign:
+  Redline: 68
+  Remcos: 19
+
+Missing by campaign:
+  NONE
+
+==================================================================================
+MULTIPLE EVE SOURCE CHECK
+==================================================================================
+DEV CIDs appearing in >1 candidate EVE: 19
+Duplicate source patterns:
+
+Cases: 19
+  data/processed/gate6/windows7full3-2023-02-22-suricata/eve.json
+  data/processed/gate6/windows7full3-2023-02-22-suricata-root/eve.json
+  data/processed/gate6/windows7full3-2023-02-22-verified-suricata-root/eve.json
+
+==================================================================================
+DIRECT EXACT-CID TELEMETRY CHECK
+==================================================================================
+DEV CIDs with >=1 exact-CID whitelisted telemetry event: 80 / 87
+
+NOTE:
+Cases without exact-CID telemetry are not automatically invalid;
+the frozen Gate 6B method may retrieve endpoint-pair evidence.
+
+==================================================================================
+EXTERNAL-TEST PROTECTION
+==================================================================================
+External-TEST files opened by this script: 0
+Protected scenarios:
+  hideandseek1
+  mirai34
+  trojan42
+
+==================================================================================
+SOURCE RESOLUTION STATUS
+==================================================================================
+CTU DEV EVE COVERAGE: PASS
+All 87 frozen CTU DEV cases have an EVE source.

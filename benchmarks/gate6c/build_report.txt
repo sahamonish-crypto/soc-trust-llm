@@ -1,0 +1,12 @@
+Gate 6C canonical benchmark build
+===============================
+
+Total items: 133
+CTU DEV: 87
+Muhstik External-DEV: 46
+CTU evidence-covered: 73
+Muhstik evidence-covered: 46
+External-TEST accessed: NO
+Authoritative Remcos EVE: windows7full3-2023-02-22-verified-suricata-root/eve.json
+Frozen retrieval: ±30 s, exact CID first, endpoint pair second, max 6 pattern-level factual evidence items
+Package verification: PASS
