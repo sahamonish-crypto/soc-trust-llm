@@ -1,0 +1,13 @@
+Gate 6C zero-budget candidate access verification
+Verification date UTC: 2026-10-27T17:47:59.053515+00:00
+
+openai/gpt-oss-120b: AVAILABLE via Groq
+qwen/qwen3.8-27b: AVAILABLE via Groq
+gemini-3.8-flash: AVAILABLE via Gemini API
+
+Inference requests made during verification: 0
+Benchmark items exposed during verification: 0
+OpenAI paid API used: NO
+Anthropic paid API used: NO
+DeepSeek paid API used: NO
+

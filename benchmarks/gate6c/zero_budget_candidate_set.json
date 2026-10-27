@@ -1,0 +1,42 @@
+{
+  "status": "FROZEN",
+  "freeze_date": "2026-10-27",
+  "rationale": "Gate 6C-2 was formally reopened before any benchmark inference because the study has a zero-budget constraint.",
+  "candidates": [
+    {
+      "candidate_id": "ZB1",
+      "provider": "Google Gemini API",
+      "model": "gemini-3.8-flash"
+    },
+    {
+      "candidate_id": "ZB2",
+      "provider": "Groq",
+      "model": "openai/gpt-oss-120b",
+      "note": "Open-weight GPT-OSS model hosted through Groq; not the paid OpenAI API."
+    },
+    {
+      "candidate_id": "ZB3",
+      "provider": "Groq",
+      "model": "qwen/qwen3.8-27b"
+    }
+  ],
+  "constraints": {
+    "budget": "$0",
+    "external_tools": "disabled",
+    "web_search": "disabled",
+    "benchmark_items": 133,
+    "runs_per_item": 3,
+    "held_out_external_test_access": false
+  },
+  "supersedes_only": "Original Gate 6C-2 commercial candidate-model list",
+  "unchanged": [
+    "Gate 6B retrieval configuration",
+    "canonical 133-item benchmark membership",
+    "canonical prompt",
+    "model-visible evidence",
+    "hidden ground truth",
+    "scoring logic and winner rule",
+    "Muhstik episode sampling",
+    "held-out External-TEST protection"
+  ]
+}
