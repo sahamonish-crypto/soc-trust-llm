@@ -1,0 +1,64 @@
+==============================================================================
+GATE 6C FULL RUNNER AUDIT
+==============================================================================
+
+FROZEN ARTIFACT CHECK
+  canonical inputs SHA256: a4cb01041ed16de2eae6fce2abb8036317fc068653b8abdd0812d6424b3a4915
+  canonical inputs: PASS
+  benchmarks/gate6c/canonical_model_inputs.jsonl : PASS
+  benchmarks/gate6c/zero_budget_candidate_set_v2.json : PASS
+  benchmarks/gate6c/full_benchmark_execution_policy_v1.json : PASS
+
+CANDIDATE CONFIG AUDIT
+  ZB1: gemini-3.6-flash | PASS
+  ZB2: openai/gpt-oss-120b | PASS
+  ZB3: qwen/qwen3.8-27b | PASS
+
+DETERMINISTIC ORDER AUDIT
+  run 1: 133 unique items=PASS
+    SHA256: 8e6df4aee59586ed43803418dd75595ab917a88985c84b6ab908b6eec5f7c7bc
+    first 3: DEV-CTU-087, DEV-CTU-012, DEV-MUH-020
+    last 3: DEV-CTU-060, DEV-MUH-013, DEV-CTU-041
+  run 2: 133 unique items=PASS
+    SHA256: c9e81cbd881f76c3635b2ae6b8fcdefe72a9f26a648436d7ea3ada2e093df624
+    first 3: DEV-CTU-072, DEV-CTU-065, DEV-CTU-073
+    last 3: DEV-CTU-024, DEV-MUH-024, DEV-CTU-028
+  run 3: 133 unique items=PASS
+    SHA256: 5f2464951c934398717681bf26115bc1fc9fd8f5b3c74cddfe51a277bfde0142
+    first 3: DEV-CTU-012, DEV-MUH-042, DEV-CTU-041
+    last 3: DEV-CTU-060, DEV-MUH-027, DEV-CTU-086
+  three orders distinct: PASS
+
+GROUND-TRUTH ISOLATION AUDIT
+  hidden-GT filename referenced by runner: PASS
+  model-visible inputs loaded: YES
+  item metadata required during execution: NO
+  External-TEST source paths referenced: NO
+
+EXECUTION SAFETY AUDIT
+  default mode makes API calls: NO
+  explicit --execute required: YES
+  explicit confirmation token required: YES
+  one candidate/run session per invocation: YES
+  initial attempts per logical request: max 3
+  HTTP-200 invalid output retried: NO
+  transient recovery queue supported: YES
+  successful/resolved items skipped on resume: YES
+  ZB1 concurrency: 1
+  ZB2 success spacing: 10 sec
+  ZB3 success spacing: 65 sec
+  interim scoring implemented: NO
+  paid OpenAI API implemented: NO
+
+AUDIT ARTIFACT
+  benchmarks/gate6c/full/audit/runner_audit.json 80bfe2b250d0d84d208143e5ce3125d90de0fe5f04896c55b53c6c6e3addb499
+
+==============================================================================
+AUDIT STATUS
+==============================================================================
+Full benchmark runner audit: PASS
+API inference requests made: 0
+Ground truth loaded: NO
+External-TEST accessed: NO
+Full benchmark executed: NO
+Gate 6C winner: OPEN

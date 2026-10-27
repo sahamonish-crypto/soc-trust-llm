@@ -1,0 +1,23 @@
+{
+  "api_calls_made": 0,
+  "audit_pass": true,
+  "audited_utc": "2026-10-27T18:34:49.563645+00:00",
+  "candidate_set_sha256": "cf6b163e5194c2df57fc86d64877356d6e1534dc6e0c3a195b05ba210ee4bc9c",
+  "canonical_input_sha256": "a4cb01041ed16de2eae6fce2abb8036317fc068653b8abdd0812d6424b3a4915",
+  "execution_policy_sha256": "5387144c9a1447ef558269f7e5ef8a95531c9ddf1974aa250d6d9aed0d3447a2",
+  "orders": {
+    "1": {
+      "count": 133,
+      "sha256": "8e6df4aee59586ed43803418dd75595ab917a88985c84b6ab908b6eec5f7c7bc"
+    },
+    "2": {
+      "count": 133,
+      "sha256": "c9e81cbd881f76c3635b2ae6b8fcdefe72a9f26a648436d7ea3ada2e093df624"
+    },
+    "3": {
+      "count": 133,
+      "sha256": "5f2464951c934398717681bf26115bc1fc9fd8f5b3c74cddfe51a277bfde0142"
+    }
+  },
+  "runner_sha256": "9771d0e05fd37b6727a09553be58c24701401886ae3312c788f6772f049f153f"
+}
