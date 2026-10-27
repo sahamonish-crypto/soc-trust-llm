@@ -1,0 +1,31 @@
+Gate 6C zero-budget smoke test
+================================
+
+Ground truth loaded: NO
+Winner selection performed: NO
+Benchmark scoring performed: NO
+External-TEST accessed: NO
+Requests attempted: 9
+
+ZB1 | gemini-3.8-flash
+  HTTP 200: 0/3
+  exact valid labels: 0/3
+  returned model IDs: NONE
+  compatibility: FAIL
+
+ZB2 | openai/gpt-oss-120b
+  HTTP 200: 3/3
+  exact valid labels: 3/3
+  returned model IDs: openai/gpt-oss-120b
+  compatibility: PASS
+
+ZB3 | qwen/qwen3.8-27b
+  HTTP 200: 2/3
+  exact valid labels: 2/3
+  returned model IDs: qwen/qwen3.8-27b
+  compatibility: FAIL
+
+OVERALL SMOKE COMPATIBILITY: FAIL
+
+IMPORTANT: smoke outputs were not compared with ground truth.
+No model winner can be selected from this test.

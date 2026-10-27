@@ -1,0 +1,22 @@
+Gemini 3.6 replacement smoke summary
+====================================
+
+Model: gemini-3.6-flash
+thinkingLevel: low
+maxOutputTokens: 512
+
+Ground truth loaded: NO
+Benchmark scoring performed: NO
+Winner selection performed: NO
+External-TEST accessed: NO
+
+DEV-CTU-001: PASS
+DEV-CTU-012: PASS
+DEV-MUH-001: PASS
+
+Compatible smoke items: 3/3
+
+GEMINI 3.6 SMOKE COMPATIBILITY: PASS
+
+No ground truth was consulted.
+No model-performance comparison was performed.

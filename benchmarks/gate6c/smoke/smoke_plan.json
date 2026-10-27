@@ -1,0 +1,54 @@
+{
+  "candidate_set_sha256": "cde38f3e2584720559ceb27d794588273c476a5cbb123ad0a3649cffe4a7cb03",
+  "candidates": [
+    {
+      "candidate_id": "ZB1",
+      "model": "gemini-3.8-flash",
+      "provider": "gemini"
+    },
+    {
+      "candidate_id": "ZB2",
+      "model": "openai/gpt-oss-120b",
+      "provider": "groq"
+    },
+    {
+      "candidate_id": "ZB3",
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    }
+  ],
+  "canonical_input_sha256": "a4cb01041ed16de2eae6fce2abb8036317fc068653b8abdd0812d6424b3a4915",
+  "configuration": {
+    "external_tools": "disabled",
+    "gemini_sampling_parameters": "omitted",
+    "groq_temperature": 0,
+    "max_completion_tokens": 512,
+    "reasoning_level": "low",
+    "web_search": "disabled"
+  },
+  "created_utc": "2026-10-27T17:51:44.181857+00:00",
+  "expected_requests": 9,
+  "ground_truth_loaded": false,
+  "items": [
+    {
+      "item_id": "DEV-CTU-001",
+      "role": "CTU_WITH_EVIDENCE"
+    },
+    {
+      "item_id": "DEV-CTU-012",
+      "role": "CTU_WITHOUT_EVIDENCE"
+    },
+    {
+      "item_id": "DEV-MUH-001",
+      "role": "MUHSTIK_EXTERNAL_DEV"
+    }
+  ],
+  "purpose": "API/config/output compatibility smoke test only",
+  "runs_per_item": 1,
+  "selection_rule": [
+    "lexicographically first CTU_DEV item with evidence_count > 0",
+    "lexicographically first CTU_DEV item with evidence_count == 0",
+    "lexicographically first MUHSTIK_EXTERNAL_DEV item"
+  ],
+  "winner_selection_permitted": false
+}

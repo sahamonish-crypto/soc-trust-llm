@@ -1,0 +1,26 @@
+Gate 6C targeted smoke retry summary
+====================================
+
+Ground truth loaded: NO
+Winner selection performed: NO
+Benchmark scoring performed: NO
+External-TEST accessed: NO
+
+ZB1 | gemini-3.8-flash
+  compatible smoke items: 1/3
+  compatibility: FAIL
+
+ZB2 | openai/gpt-oss-120b
+  compatible smoke items: 3/3
+  compatibility: PASS
+
+ZB3 | qwen/qwen3.8-27b
+  compatible smoke items: 3/3
+  compatibility: PASS
+
+OVERALL SMOKE COMPATIBILITY AFTER TRANSIENT RETRIES: FAIL
+
+Original successful responses were not repeated.
+Only transiently failed requests were retried.
+No ground truth was used.
+No winner was selected.
