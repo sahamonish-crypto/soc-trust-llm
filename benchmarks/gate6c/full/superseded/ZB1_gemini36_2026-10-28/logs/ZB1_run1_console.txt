@@ -1,0 +1,113 @@
+Starting ZB1 logical run 1
+Already resolved: 0
+1/133 DEV-CTU-087
+  attempt 1 | HTTP 200 | valid=True | latency_ms=5694.0
+2/133 DEV-CTU-012
+  attempt 1 | HTTP 200 | valid=True | latency_ms=8285.5
+3/133 DEV-MUH-020
+  attempt 1 | HTTP 200 | valid=True | latency_ms=3878.4
+4/133 DEV-CTU-005
+  attempt 1 | HTTP 200 | valid=True | latency_ms=4294.8
+5/133 DEV-CTU-052
+  attempt 1 | HTTP 200 | valid=True | latency_ms=14414.7
+6/133 DEV-MUH-034
+  attempt 1 | HTTP 200 | valid=True | latency_ms=6693.0
+7/133 DEV-CTU-048
+  attempt 1 | HTTP 429 | valid=False | latency_ms=436.7
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=348.8
+  retry wait: 45s
+  attempt 3 | HTTP 200 | valid=True | latency_ms=2619.5
+8/133 DEV-MUH-042
+  attempt 1 | HTTP 200 | valid=True | latency_ms=6787.0
+9/133 DEV-CTU-018
+  attempt 1 | HTTP 200 | valid=True | latency_ms=8505.5
+10/133 DEV-CTU-083
+  attempt 1 | HTTP 200 | valid=True | latency_ms=9516.7
+11/133 DEV-CTU-024
+  attempt 1 | HTTP 200 | valid=True | latency_ms=5906.4
+12/133 DEV-CTU-022
+  attempt 1 | HTTP 503 | valid=False | latency_ms=3041.0
+  retry wait: 15s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=5744.4
+13/133 DEV-MUH-021
+  attempt 1 | HTTP 200 | valid=True | latency_ms=5473.6
+14/133 DEV-CTU-078
+  attempt 1 | HTTP 200 | valid=True | latency_ms=4420.9
+15/133 DEV-CTU-032
+  attempt 1 | HTTP 429 | valid=False | latency_ms=401.8
+  retry wait: 15s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=1948.6
+16/133 DEV-CTU-047
+  attempt 1 | HTTP 200 | valid=True | latency_ms=5663.4
+17/133 DEV-MUH-040
+  attempt 1 | HTTP 200 | valid=True | latency_ms=17936.6
+18/133 DEV-CTU-043
+  attempt 1 | HTTP 200 | valid=True | latency_ms=6070.6
+19/133 DEV-CTU-075
+  attempt 1 | HTTP 200 | valid=True | latency_ms=4955.7
+20/133 DEV-MUH-025
+  attempt 1 | HTTP 503 | valid=False | latency_ms=1618.9
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=347.0
+  retry wait: 45s
+  attempt 3 | HTTP 429 | valid=False | latency_ms=413.8
+21/133 DEV-MUH-045
+  attempt 1 | HTTP 429 | valid=False | latency_ms=400.4
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=380.3
+  retry wait: 45s
+  attempt 3 | HTTP 429 | valid=False | latency_ms=416.6
+22/133 DEV-CTU-045
+  attempt 1 | HTTP 429 | valid=False | latency_ms=394.2
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=394.2
+  retry wait: 45s
+  attempt 3 | HTTP 429 | valid=False | latency_ms=411.5
+23/133 DEV-CTU-066
+  attempt 1 | HTTP 429 | valid=False | latency_ms=416.1
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=391.8
+  retry wait: 45s
+  attempt 3 | HTTP 429 | valid=False | latency_ms=444.2
+24/133 DEV-CTU-023
+  attempt 1 | HTTP 429 | valid=False | latency_ms=392.5
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=359.8
+  retry wait: 45s
+  attempt 3 | HTTP 429 | valid=False | latency_ms=392.0
+25/133 DEV-CTU-050
+  attempt 1 | HTTP 429 | valid=False | latency_ms=390.3
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=374.0
+  retry wait: 45s
+  attempt 3 | HTTP 429 | valid=False | latency_ms=381.3
+26/133 DEV-CTU-038
+  attempt 1 | HTTP 429 | valid=False | latency_ms=406.8
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=398.1
+  retry wait: 45s
+  attempt 3 | HTTP 429 | valid=False | latency_ms=395.7
+27/133 DEV-MUH-028
+  attempt 1 | HTTP 429 | valid=False | latency_ms=413.5
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=346.1
+  retry wait: 45s
+  attempt 3 | HTTP 429 | valid=False | latency_ms=449.3
+28/133 DEV-MUH-008
+  attempt 1 | HTTP 429 | valid=False | latency_ms=388.0
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=383.6
+  retry wait: 45s
+  attempt 3 | HTTP 429 | valid=False | latency_ms=386.9
+29/133 DEV-CTU-084
+  attempt 1 | HTTP 429 | valid=False | latency_ms=410.1
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=350.6
+  retry wait: 45s
+  attempt 3 | HTTP 429 | valid=False | latency_ms=364.0
+30/133 DEV-CTU-067
+  attempt 1 | HTTP 429 | valid=False | latency_ms=399.1
+  retry wait: 15s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=390.7
+  retry wait: 45s

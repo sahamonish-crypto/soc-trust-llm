@@ -1,0 +1,19 @@
+{
+  "api_attempts": 55,
+  "external_test_accessed": false,
+  "ground_truth_loaded": false,
+  "http_status_counts": {
+    "200": 19,
+    "429": 34,
+    "503": 2
+  },
+  "logical_records_before_stop": 29,
+  "model": "gemini-3.6-flash",
+  "quota_id": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+  "reason": "verified zero-budget operational infeasibility",
+  "replacement_candidate_selected": false,
+  "scoring_performed": false,
+  "superseded_candidate_id": "ZB1",
+  "unique_items_attempted": 30,
+  "verified_free_requests_per_day": "20"
+}
