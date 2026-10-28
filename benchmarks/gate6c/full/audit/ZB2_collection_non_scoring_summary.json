@@ -1,0 +1,52 @@
+{
+  "candidate_id": "ZB2",
+  "external_test_accessed": false,
+  "ground_truth_loaded": false,
+  "model": "openai/gpt-oss-120b",
+  "runs": {
+    "1": {
+      "api_attempts": 133,
+      "final_status_counts": {
+        "VALID_HTTP200": 133
+      },
+      "http_status_counts": {
+        "200": 133
+      },
+      "unique_logical_items": 133,
+      "valid_http200_final": 133
+    },
+    "2": {
+      "api_attempts": 133,
+      "final_status_counts": {
+        "VALID_HTTP200": 133
+      },
+      "http_status_counts": {
+        "200": 133
+      },
+      "unique_logical_items": 133,
+      "valid_http200_final": 133
+    },
+    "3": {
+      "api_attempts": 222,
+      "final_status_counts": {
+        "VALID_HTTP200": 133
+      },
+      "http_status_counts": {
+        "200": 133,
+        "429": 89
+      },
+      "unique_logical_items": 133,
+      "valid_http200_final": 133
+    }
+  },
+  "scoring_performed": false,
+  "totals": {
+    "api_attempts": 488,
+    "http_200_attempts": 399,
+    "http_429_attempts": 89,
+    "operational_missing": 0,
+    "planned_logical_responses": 399,
+    "recovery_queue_items": 5,
+    "valid_final_logical_responses": 399
+  }
+}

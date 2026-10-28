@@ -1,0 +1,5 @@
+{"candidate_id":"ZB2","item_id":"DEV-MUH-028","logical_run":3,"order_position":63,"queued_utc":"2026-10-27T20:21:09.754918+00:00","requested_model":"openai/gpt-oss-120b"}
+{"candidate_id":"ZB2","item_id":"DEV-CTU-004","logical_run":3,"order_position":76,"queued_utc":"2026-10-27T21:29:14.677526+00:00","requested_model":"openai/gpt-oss-120b"}
+{"candidate_id":"ZB2","item_id":"DEV-CTU-019","logical_run":3,"order_position":91,"queued_utc":"2026-10-27T22:22:45.791471+00:00","requested_model":"openai/gpt-oss-120b"}
+{"candidate_id":"ZB2","item_id":"DEV-CTU-053","logical_run":3,"order_position":97,"queued_utc":"2026-10-27T22:41:53.379235+00:00","requested_model":"openai/gpt-oss-120b"}
+{"candidate_id":"ZB2","item_id":"DEV-CTU-030","logical_run":3,"order_position":98,"queued_utc":"2026-10-27T22:51:59.686634+00:00","requested_model":"openai/gpt-oss-120b"}

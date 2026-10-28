@@ -1,0 +1,21 @@
+ZB2 complete non-scoring collection summary
+===========================================
+
+Candidate: ZB2
+Model: openai/gpt-oss-120b
+
+Run 1 valid logical responses: 133 / 133
+Run 2 valid logical responses: 133 / 133
+Run 3 valid logical responses: 133 / 133
+
+Total valid logical responses: 399 / 399
+Total API attempts: 488
+HTTP 200 attempts: 399
+HTTP 429 attempts: 89
+Recovery queue items: 5
+Operational missing: 0
+
+Ground truth loaded: NO
+Accuracy/scoring performed: NO
+External-TEST accessed: NO
+Gate 6C winner selected: NO

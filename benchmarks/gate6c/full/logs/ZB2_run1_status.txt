@@ -1,0 +1,23 @@
+Candidate: ZB2
+Logical run: 1
+Expected frozen items: 133
+Logical items recorded: 133
+Total API attempts recorded: 133
+
+Logical status counts:
+  VALID_HTTP200: 133
+
+HTTP status counts:
+  200: 133
+
+Attempts per item:
+  1 attempt(s): 133 item(s)
+
+Recovery queue items: 0
+Returned model IDs: openai/gpt-oss-120b
+
+INITIAL SESSION COMPLETE: YES
+Ground truth loaded by this summary: NO
+Accuracy/scoring calculated: NO
+Model outputs printed: NO
+External-TEST accessed: NO

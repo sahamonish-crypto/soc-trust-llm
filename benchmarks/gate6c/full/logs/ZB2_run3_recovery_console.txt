@@ -1,0 +1,11 @@
+Recovery items: 5
+recovery | DEV-MUH-028
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1519.8
+recovery | DEV-CTU-004
+  attempt 1 | HTTP 200 | valid=True | latency_ms=697.7
+recovery | DEV-CTU-019
+  attempt 1 | HTTP 200 | valid=True | latency_ms=911.7
+recovery | DEV-CTU-053
+  attempt 1 | HTTP 200 | valid=True | latency_ms=838.5
+recovery | DEV-CTU-030
+  attempt 1 | HTTP 200 | valid=True | latency_ms=916.9
