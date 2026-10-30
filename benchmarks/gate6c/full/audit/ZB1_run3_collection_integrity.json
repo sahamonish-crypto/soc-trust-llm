@@ -1,0 +1,29 @@
+{
+  "attempt_http_status_counts": {
+    "200": 133
+  },
+  "attempt_records": 133,
+  "candidate_id": "ZB1",
+  "classification": "RUN3_COLLECTION_COMPLETE_NO_RECOVERY",
+  "ground_truth_loaded": false,
+  "logical_records": 133,
+  "logical_run": 3,
+  "logical_status_counts": {
+    "VALID_HTTP200": 133
+  },
+  "model_id_mismatch_attempts": 0,
+  "operational_usage_totals": {
+    "completion_tokens": 6198,
+    "neurons": 4642.187999999999,
+    "prompt_tokens": 84428,
+    "total_tokens": 90626
+  },
+  "quota_pause_events": 0,
+  "recovery_queue_records": 0,
+  "requested_model": "@cf/nvidia/nemotron-3-120b-a12b",
+  "scoring_performed": false,
+  "unique_logical_items": 133,
+  "valid_exact_label_counts": {
+    "True": 133
+  }
+}
