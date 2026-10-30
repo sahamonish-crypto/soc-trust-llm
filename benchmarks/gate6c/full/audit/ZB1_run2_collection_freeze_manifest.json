@@ -1,0 +1,28 @@
+{
+  "artifact_sha256": {
+    "attempts": "9410e7a12abc59576cdf900eba7a3916678d81a92f53ef294be6b4d5c73bd9bf",
+    "console": "120a38101b37223300213a006b3308bd9a67b60276fd30cbfd8e46dc26dd539d",
+    "exit_status": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "integrity_audit": "90f0e30fc5c67c29d8e1b5a8451e7402d3e20b11f0303df7a4b20f9e7d507c00",
+    "logical": "83f3b3542a208c891292a523042e93edeae81e553980a29fd50572abc77a3226"
+  },
+  "attempt_records": 133,
+  "candidate_id": "ZB1",
+  "frozen_utc": "2026-10-30T18:48:44.545409+00:00",
+  "ground_truth_loaded": false,
+  "interim_winner_analysis": false,
+  "logical_records": 133,
+  "logical_run": 2,
+  "model": "@cf/nvidia/nemotron-3-120b-a12b",
+  "operational_usage": {
+    "completion_tokens": 6042,
+    "neurons": 4620.972000000001,
+    "prompt_tokens": 84428,
+    "total_tokens": 90470
+  },
+  "quota_pause_events": 0,
+  "recovery_queue_records": 0,
+  "scoring_performed": false,
+  "status": "FROZEN_NON_SCORING_COLLECTION",
+  "valid_http200": 133
+}
