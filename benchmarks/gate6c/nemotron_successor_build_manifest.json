@@ -1,0 +1,17 @@
+{
+  "status": "DRAFT_SUCCESSOR_BUILT_NOT_FROZEN",
+  "zB1_reopening_scope": "ZB1_ONLY",
+  "benchmark_items_exposed_to_nemotron": 0,
+  "ground_truth_loaded": false,
+  "external_test_accessed": false,
+  "historical_source_sha256": {
+    "benchmarks/gate6c/zero_budget_candidate_set_v2.json": "cf6b163e5194c2df57fc86d64877356d6e1534dc6e0c3a195b05ba210ee4bc9c",
+    "benchmarks/gate6c/full_benchmark_execution_policy_v1.json": "5387144c9a1447ef558269f7e5ef8a95531c9ddf1974aa250d6d9aed0d3447a2",
+    "scripts/gate6/run_gate6c_full_benchmark.py": "9771d0e05fd37b6727a09553be58c24701401886ae3312c788f6772f049f153f"
+  },
+  "draft_successor_sha256": {
+    "benchmarks/gate6c/zero_budget_candidate_set_v3.json": "7925c28f45402630dccf65ff3dbe2665eb60886bd8c7b11fd466a4378d59bf3a",
+    "benchmarks/gate6c/full_benchmark_execution_policy_v2.json": "b02dd877918f075c399ca1a661c19fc287722151112881cd55559138c2d95d85",
+    "scripts/gate6/run_gate6c_full_benchmark_v2.py": "49077b9bc42db27b57bfdb2082ce3643a69051aff9dd3f5f3cffbdcc2bc64404"
+  }
+}

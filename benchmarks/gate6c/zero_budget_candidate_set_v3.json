@@ -1,0 +1,35 @@
+{
+  "status": "FROZEN",
+  "freeze_date": "2026-10-30",
+  "revision": "v3",
+  "reason": "ZB1-only successor after the frozen Gemini 3.6 Flash candidate was reopened for verified free-tier operational infeasibility. NVIDIA Nemotron 3 Super 120B A12B via Cloudflare Workers AI passed pre-benchmark synthetic authentication, repeated sequential stability, benchmark-size compatibility, low-reasoning/512-token configuration compatibility, and conservative max-density capacity-envelope testing. No benchmark item or hidden ground truth was used for replacement selection.",
+  "candidates": [
+    {
+      "candidate_id": "ZB1",
+      "provider": "Cloudflare Workers AI",
+      "model": "@cf/nvidia/nemotron-3-120b-a12b"
+    },
+    {
+      "candidate_id": "ZB2",
+      "provider": "Groq",
+      "model": "openai/gpt-oss-120b"
+    },
+    {
+      "candidate_id": "ZB3",
+      "provider": "Groq",
+      "model": "qwen/qwen3.8-27b"
+    }
+  ],
+  "unchanged": [
+    "canonical 133-item benchmark",
+    "canonical prompt",
+    "Gate 6B evidence bundles",
+    "hidden ground truth",
+    "scoring specification",
+    "winner rule",
+    "Muhstik episode sampling",
+    "held-out External-TEST protection"
+  ],
+  "benchmark_inference_seen_by_gemini_3_6_before_freeze": 0,
+  "benchmark_inference_seen_by_nemotron_before_freeze": 0
+}

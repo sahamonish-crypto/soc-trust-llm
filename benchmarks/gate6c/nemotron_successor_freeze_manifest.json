@@ -1,0 +1,47 @@
+{
+  "status": "FROZEN",
+  "freeze_date": "2026-10-30",
+  "scope": "GATE6C_ZB1_ONLY",
+  "candidate": {
+    "candidate_id": "ZB1",
+    "provider": "Cloudflare Workers AI",
+    "model": "@cf/nvidia/nemotron-3-120b-a12b"
+  },
+  "zB1_logical_requests": 399,
+  "derivation": {
+    "benchmark_items": 133,
+    "logical_runs_per_item": 3
+  },
+  "benchmark_items_exposed_to_nemotron_before_freeze": 0,
+  "ground_truth_loaded_before_freeze": false,
+  "external_test_accessed_before_freeze": false,
+  "historical_frozen_artifacts_sha256": {
+    "benchmarks/gate6c/zero_budget_candidate_set_v2.json": "cf6b163e5194c2df57fc86d64877356d6e1534dc6e0c3a195b05ba210ee4bc9c",
+    "benchmarks/gate6c/full_benchmark_execution_policy_v1.json": "5387144c9a1447ef558269f7e5ef8a95531c9ddf1974aa250d6d9aed0d3447a2",
+    "scripts/gate6/run_gate6c_full_benchmark.py": "9771d0e05fd37b6727a09553be58c24701401886ae3312c788f6772f049f153f"
+  },
+  "final_successor_artifacts_sha256": {
+    "candidate_set_v3_sha256": "b76e05e3a2109bce1a88354ec77aef5ca8b76f76f9f55d9685e3e02723b1ee60",
+    "execution_policy_v2_sha256": "50b1808425d8e2600934a5a5ba10522e901087e5a5f6cbaaacd0a1ab00b86331",
+    "runner_v2_sha256": "49077b9bc42db27b57bfdb2082ce3643a69051aff9dd3f5f3cffbdcc2bc64404",
+    "canonical_model_inputs_sha256": "a4cb01041ed16de2eae6fce2abb8036317fc068653b8abdd0812d6424b3a4915"
+  },
+  "decision_records_sha256": {
+    "docs/decisions/GATE6C_ZB1_NEMOTRON_REPLACEMENT_FREEZE_2026-10-30.md": "2c4aaf1d0b1802a7b23fa970851fb9fbd9a23a53102380e84bdf3310fb4c558c",
+    "docs/decisions/GATE6C_FULL_RUNNER_V2_FREEZE_2026-10-30.md": "51724832523dd84c6c62a62be0f0306404a7f7c6893984ea1b8584d95fdc8229"
+  },
+  "capacity_envelope": {
+    "dense_max_prompt_tokens": 3533,
+    "configured_max_completion_tokens": 512,
+    "input_neurons_per_million_tokens": 45455,
+    "output_neurons_per_million_tokens": 136364,
+    "calculated_neurons_per_request": 230.410883,
+    "calculated_neurons_for_399": 91933.94231700001,
+    "daily_free_neurons": 10000,
+    "daily_allocation_equivalents": 9.193394231700001,
+    "whole_quota_days_under_extreme_envelope": 10,
+    "interpretation": "Conservative theoretical envelope only; not expected usage and not a runtime guarantee."
+  },
+  "benchmark_execution_started": false,
+  "gate6c_winner": "OPEN"
+}

@@ -1,0 +1,133 @@
+{
+  "status": "FROZEN",
+  "freeze_date": "2026-10-30",
+  "policy_version": "v2",
+  "benchmark": {
+    "items": 133,
+    "candidates": 3,
+    "logical_runs_per_item": 3,
+    "total_logical_requests": 1197,
+    "ground_truth_during_execution": "PROHIBITED",
+    "external_test_access": "PROHIBITED"
+  },
+  "candidates": {
+    "ZB1": {
+      "provider": "Cloudflare Workers AI",
+      "model": "@cf/nvidia/nemotron-3-120b-a12b",
+      "sampling_parameters": "omitted",
+      "concurrency": 1,
+      "minimum_success_delay_seconds": 0,
+      "reasoning_mode": "low",
+      "chat_template_kwargs": {
+        "enable_thinking": true,
+        "low_effort": true
+      },
+      "max_completion_tokens": 512,
+      "stream": false
+    },
+    "ZB2": {
+      "provider": "Groq",
+      "model": "openai/gpt-oss-120b",
+      "reasoning_effort": "low",
+      "temperature": 0,
+      "max_completion_tokens": 512,
+      "include_reasoning": false,
+      "concurrency": 1,
+      "minimum_success_delay_seconds": 10
+    },
+    "ZB3": {
+      "provider": "Groq",
+      "model": "qwen/qwen3.8-27b",
+      "reasoning_effort": "low",
+      "temperature": 0,
+      "max_completion_tokens": 512,
+      "include_reasoning": false,
+      "concurrency": 1,
+      "minimum_success_delay_seconds": 65
+    }
+  },
+  "item_order": {
+    "runs": 3,
+    "method": "deterministic SHA256-derived order from frozen item_id and logical run number",
+    "same_order_for_all_candidates_within_each_logical_run": true,
+    "ground_truth_used": false,
+    "model_result_used": false
+  },
+  "retry_policy": {
+    "transient_statuses": [
+      0,
+      408,
+      429,
+      498,
+      500,
+      502,
+      503,
+      504
+    ],
+    "initial_session_max_attempts_per_logical_request": 3,
+    "retry_after_header": "honor when present",
+    "backoff": "bounded increasing delay with deterministic implementation recorded by execution script",
+    "http_200_wrong_answer_retry": false,
+    "http_200_invalid_label_retry": false,
+    "non_transient_provider_errors_stop_session": [
+      400,
+      401,
+      403,
+      404
+    ],
+    "recovery_queue": true,
+    "recovery_sessions_allowed": 1,
+    "recovery_session_timing": "next quota day/session",
+    "after_recovery_exhaustion": "OPERATIONAL_MISSING"
+  },
+  "valid_output_labels": [
+    "ESCALATE",
+    "DO_NOT_ESCALATE"
+  ],
+  "canonical_recommendation": {
+    "runs_required": 3,
+    "method": "majority of valid logical runs",
+    "minimum_valid_runs_for_majority": 2,
+    "insufficient_or_no_majority": "INVALID_FOR_CANDIDATE"
+  },
+  "execution_prohibitions": [
+    "no correctness feedback between runs",
+    "no manual label flipping",
+    "no injected model errors",
+    "no prompt modification after execution starts",
+    "no evidence modification after execution starts",
+    "no candidate substitution without reopening Gate 6C-2",
+    "no paid OpenAI API calls",
+    "no tools or web search",
+    "no held-out External-TEST access",
+    "no interim accuracy tables",
+    "no hidden ground truth loading before raw result freeze"
+  ],
+  "required_request_logging": [
+    "candidate_id",
+    "requested_model",
+    "provider_returned_model_or_version",
+    "item_id",
+    "logical_run",
+    "deterministic_order_position",
+    "attempt_number",
+    "UTC timestamp",
+    "HTTP status",
+    "finish reason",
+    "latency",
+    "usage metadata",
+    "output",
+    "output SHA256",
+    "raw response SHA256",
+    "provider error",
+    "transport error"
+  ],
+  "completion_sequence": [
+    "finish all logical requests and permitted recovery attempts",
+    "hash raw result artifacts",
+    "commit raw results before scoring",
+    "only then load hidden_ground_truth.csv",
+    "calculate frozen scoring metrics",
+    "apply frozen competence floor and winner rule"
+  ]
+}
