@@ -1,0 +1,51 @@
+{
+  "audit_output": {
+    "builtin_path": "benchmarks/gate6c/full/audit/runner_v3_audit.json",
+    "overwrite_existing": false
+  },
+  "freeze_date": "2026-10-30",
+  "freeze_decision": {
+    "path": "docs/decisions/GATE6C_FULL_RUNNER_V3_FREEZE_2026-10-30.md",
+    "sha256": "31fe26166766599f3f4aa1182af5f54e759fd8e2e6bccfd3b4c2605dac377cbf"
+  },
+  "frozen_dependencies": {
+    "candidate_set_v3_sha256": "b76e05e3a2109bce1a88354ec77aef5ca8b76f76f9f55d9685e3e02723b1ee60",
+    "canonical_model_inputs_sha256": "a4cb01041ed16de2eae6fce2abb8036317fc068653b8abdd0812d6424b3a4915",
+    "execution_policy_v2_sha256": "50b1808425d8e2600934a5a5ba10522e901087e5a5f6cbaaacd0a1ab00b86331"
+  },
+  "gate6c_winner": "OPEN",
+  "pre_freeze_state": {
+    "active_zb1_execution_artifacts": 0,
+    "api_calls_made": 0,
+    "benchmark_inference_executed": false,
+    "external_test_accessed": false,
+    "ground_truth_loaded": false
+  },
+  "quota_behavior": {
+    "cloudflare_daily_quota_code": 3036,
+    "cloudflare_temporary_capacity_code": 3040,
+    "quota_pause_consumes_logical_attempt": false,
+    "quota_pause_modifies_recovery_queue": false,
+    "quota_pause_resolves_item": false,
+    "temporary_capacity_uses_frozen_transient_policy": true
+  },
+  "reopen_decision": {
+    "path": "docs/decisions/GATE6C_FULL_RUNNER_V3_REOPEN_QUOTA_SAFE_2026-10-30.md",
+    "sha256": "72e027548dc829a682291c94227ed96a538451bc4553aefd35e64147901277cb"
+  },
+  "runner_v3": {
+    "path": "scripts/gate6/run_gate6c_full_benchmark_v3.py",
+    "sha256": "f3a77c1774f2dff285490900b3fc4906dad5330f7074a774ca6214b6de15fb6d"
+  },
+  "scope": "GATE6C_FULL_RUNNER_IMPLEMENTATION_ONLY",
+  "source_runner_v2": {
+    "path": "scripts/gate6/run_gate6c_full_benchmark_v2.py",
+    "sha256": "49077b9bc42db27b57bfdb2082ce3643a69051aff9dd3f5f3cffbdcc2bc64404"
+  },
+  "static_readiness_audit": {
+    "path": "benchmarks/gate6c/full/audit/runner_v3_static_readiness_audit.json",
+    "sha256": "3d3a93f5b5cfce5a79b233e33fd2a8205d09f94a2d6475be6954ab574d3c67ef",
+    "status": "PASS"
+  },
+  "status": "FROZEN"
+}

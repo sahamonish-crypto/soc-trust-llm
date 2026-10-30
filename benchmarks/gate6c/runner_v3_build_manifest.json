@@ -1,0 +1,17 @@
+{
+  "api_calls_made": 0,
+  "benchmark_inference_executed": false,
+  "canonical_model_inputs_sha256": "a4cb01041ed16de2eae6fce2abb8036317fc068653b8abdd0812d6424b3a4915",
+  "date": "2026-10-30",
+  "draft_runner": "scripts/gate6/run_gate6c_full_benchmark_v3.py",
+  "draft_runner_sha256": "f3a77c1774f2dff285490900b3fc4906dad5330f7074a774ca6214b6de15fb6d",
+  "external_test_accessed": false,
+  "frozen_candidate_set_sha256": "b76e05e3a2109bce1a88354ec77aef5ca8b76f76f9f55d9685e3e02723b1ee60",
+  "frozen_execution_policy_sha256": "50b1808425d8e2600934a5a5ba10522e901087e5a5f6cbaaacd0a1ab00b86331",
+  "ground_truth_loaded": false,
+  "reopen_decision_sha256": "72e027548dc829a682291c94227ed96a538451bc4553aefd35e64147901277cb",
+  "scope": "GATE6C_FULL_RUNNER_ONLY",
+  "source_runner": "scripts/gate6/run_gate6c_full_benchmark_v2.py",
+  "source_runner_sha256": "49077b9bc42db27b57bfdb2082ce3643a69051aff9dd3f5f3cffbdcc2bc64404",
+  "status": "DRAFT_PENDING_AUDIT"
+}
