@@ -1,0 +1,25 @@
+{
+  "attempt_http_status_counts": {
+    "200": 133
+  },
+  "attempt_records": 133,
+  "candidate_id": "ZB3",
+  "classification": "RUN1_COMPLETE_WITH_4_INVALID_HTTP200",
+  "final_status_counts": {
+    "INVALID_HTTP200": 4,
+    "VALID_HTTP200": 129
+  },
+  "final_valid_exact_label_counts": {
+    "False": 4,
+    "True": 129
+  },
+  "ground_truth_loaded": false,
+  "invalid_outputs_retried": false,
+  "logical_history_records": 133,
+  "logical_run": 1,
+  "provider_model_id_mismatches": 0,
+  "recovery_queue_records": 0,
+  "requested_model": "qwen/qwen3.8-27b",
+  "scoring_performed": false,
+  "unique_logical_items": 133
+}
