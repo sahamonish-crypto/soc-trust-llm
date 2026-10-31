@@ -1,0 +1,31 @@
+{
+  "candidate_id": "ZB2",
+  "final_logical_results": 399,
+  "frozen_utc": "2026-10-31T10:17:35.395762+00:00",
+  "gate6c_winner": "OPEN",
+  "ground_truth_loaded": false,
+  "interim_candidate_comparison": false,
+  "model": "openai/gpt-oss-120b",
+  "run3_forensic_audit_sha256": "0c2d6fdc8a83277fa7ead2ae2a171b9e8ac4d8899a26857355b6337b3e317887",
+  "run3_historical_recoveries": 5,
+  "run3_recovery_queue_sha256": "dbd7db2a42d58c2ae1e02b60d2fe88d84478240d0ab938ebaf06e9aacd26a336",
+  "runs": {
+    "1": {
+      "final_valid_items": 133,
+      "logical_history_records": 133,
+      "logical_sha256": "e36653be207cdbca607bc663dd4c7c772eb452b611b991f377317be8d6752e39"
+    },
+    "2": {
+      "final_valid_items": 133,
+      "logical_history_records": 133,
+      "logical_sha256": "24f756407635a7be660035ea829be80f3fbdec49646b0c5b74a49deb995d5ad9"
+    },
+    "3": {
+      "final_valid_items": 133,
+      "logical_history_records": 138,
+      "logical_sha256": "a9f3f696fbee0f1211c826febbee5854cf071f87dcc06cfcf86a4aa633278bf5"
+    }
+  },
+  "scoring_performed": false,
+  "status": "FROZEN_NON_SCORING_COLLECTION"
+}

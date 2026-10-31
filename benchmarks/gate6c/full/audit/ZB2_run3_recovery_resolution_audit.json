@@ -1,0 +1,35 @@
+{
+  "attempt_http_status_counts": {
+    "200": 133,
+    "429": 89
+  },
+  "attempt_phase_counts": {
+    "initial": 217,
+    "recovery": 5
+  },
+  "attempt_records": 222,
+  "attempts_sha256": "6ff2dee43debc5b6807a2544382ef9d7c4ee3e758dd80cd822c483e37e6e3e8d",
+  "candidate_id": "ZB2",
+  "collection_classification": "RUN3_COMPLETE_AFTER_HISTORICAL_RECOVERY",
+  "duplicate_logical_history_items": 5,
+  "final_logical_status_counts": {
+    "VALID_HTTP200": 133
+  },
+  "final_unresolved_items": 0,
+  "final_valid_http200_items": 133,
+  "ground_truth_loaded": false,
+  "historical_recovery_queue_records": 5,
+  "historical_recovery_queue_unique_items": 5,
+  "interim_candidate_comparison": false,
+  "interpretation": "APPEND_ONLY_RECOVERY_HISTORY_FULLY_RESOLVED",
+  "logical_history_records": 138,
+  "logical_history_sha256": "a9f3f696fbee0f1211c826febbee5854cf071f87dcc06cfcf86a4aa633278bf5",
+  "logical_run": 3,
+  "provider_model_id_mismatches": 0,
+  "queued_items_later_resolved_valid": 5,
+  "queued_items_still_unresolved": 0,
+  "recovery_queue_sha256": "dbd7db2a42d58c2ae1e02b60d2fe88d84478240d0ab938ebaf06e9aacd26a336",
+  "requested_model": "openai/gpt-oss-120b",
+  "scoring_performed": false,
+  "unique_items": 133
+}
