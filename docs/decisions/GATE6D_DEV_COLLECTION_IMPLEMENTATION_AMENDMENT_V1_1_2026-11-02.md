@@ -1,6 +1,6 @@
 # Gate 6D DEV Collection Implementation Amendment v1.1
 
-**Date:** 2026-11-02  
+**Date:** 2026-11-02
 **Status:** FROZEN — IMPLEMENTATION-ONLY AMENDMENT
 
 ## Trigger
