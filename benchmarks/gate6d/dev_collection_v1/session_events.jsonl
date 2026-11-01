@@ -1,0 +1,3 @@
+{"detected_utc":"2026-11-01T20:06:56.161754+00:00","event_type":"INFRASTRUCTURE_RETRY_LIMIT_PAUSE","item_id":"G6D-D-0148","logical_item_resolved":false,"stage":"SC5_MAJORITY"}
+{"detected_utc":"2026-11-01T20:12:26.135641+00:00","event_type":"INFRASTRUCTURE_RETRY_LIMIT_PAUSE","item_id":"G6D-D-0148","logical_item_resolved":false,"stage":"SC5_MAJORITY"}
+{"detected_utc":"2026-11-01T20:19:07.345823+00:00","event_type":"CLOUDFLARE_DAILY_QUOTA_PAUSE","item_id":"G6D-D-0148","logical_attempt_consumed":false,"logical_item_resolved":false,"stage":"SC5_MAJORITY"}
