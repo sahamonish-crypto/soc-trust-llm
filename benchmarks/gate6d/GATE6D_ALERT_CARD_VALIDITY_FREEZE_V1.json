@@ -1,0 +1,72 @@
+{
+  "artifact": "GATE6D_ALERT_CARD_VALIDITY_FREEZE_V1",
+  "collection_state": {
+    "calibration_dev_model_calls": 0,
+    "calibration_eval_model_calls": 0,
+    "external_test_accessed": false
+  },
+  "current_selected_source_review": {
+    "by_capture": {
+      "AmazonEcho-2023-02-21": {
+        "cue_items": 2,
+        "eligible": 299
+      },
+      "Windows7AD-2023-02-21": {
+        "cue_items": 1,
+        "eligible": 923
+      },
+      "Windows7AD-2023-02-22": {
+        "cue_items": 3,
+        "eligible": 458
+      }
+    },
+    "high_specificity_lexical_cue_union": 6,
+    "reviewed_concepts": [
+      "malware",
+      "trojan",
+      "command and control",
+      "CnC",
+      "PrivateLoader",
+      "BeamWinHTTP",
+      "poor reputation",
+      "block listed",
+      "Nmap",
+      "network scan"
+    ]
+  },
+  "decision": {
+    "change_gate6c_alert_card_schema": false,
+    "mask_category": false,
+    "mask_signature": false,
+    "reason": "No eligible item was established as direct ground-truth leakage. Rare high-specificity NIDS cues are retained as realistic SOC telemetry. Post-hoc item deletion or field masking would modify frozen data/input decisions without outcome-independent evidence that direct leakage exists.",
+    "remove_flagged_items": false,
+    "retain_all_1680_items": true,
+    "validity_gate": "PASS_WITH_CAVEAT"
+  },
+  "eligible_pool": {
+    "calibration_dev": 1222,
+    "calibration_eval": 458,
+    "total": 1680
+  },
+  "freeze_date": "2026-11-02",
+  "historical_preexisting_audit": {
+    "any_tier_a_or_b_flag": 21,
+    "direct_gt_leakage_flag": 0,
+    "tier_a_overt_flag": 4,
+    "tier_b_strong_cue_flag": 18
+  },
+  "methodological_constraints": {
+    "calibration_performance_used": false,
+    "ground_truth_used_for_current_lexical_review": false,
+    "model_correctness_used": false,
+    "model_outputs_used": false
+  },
+  "next_step": "Freeze canonical model inputs, opaque item IDs, deterministic SC5 seeds, grouped five-fold DEV assignments, and sealed EVAL manifest before any Calibration-DEV inference.",
+  "prior_artifacts": {
+    "benchmarks/gate6d/GATE6D_CALIBRATION_DATA_BOUNDARY_V1.json": "8b5ed36ad1561f3afe78b0d44f29f27ace5f0748ff0074ad64d678840866a3b8",
+    "benchmarks/gate6d/GATE6D_CANONICAL_SOURCE_BINDING_V1.json": "0e513924eb6a93cabc5444d98280609f3da283f8e924866acda43f5c358ae994",
+    "benchmarks/gate6d/GATE6D_UNCERTAINTY_ESTIMATOR_PROTOCOL_V1.json": "e80093b719f63647d102d5d95d8990cc1e9f08eb872a2bf2d7e90379560b573d"
+  },
+  "reporting_caveat": "A small fraction of cases contain high-specificity NIDS lexical security cues; no frozen eligible case was identified as direct ground-truth leakage by the pre-existing audit.",
+  "status": "FROZEN_PASS_WITH_CAVEAT"
+}
