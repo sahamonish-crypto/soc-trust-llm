@@ -1,0 +1,29 @@
+{
+  "automated_scoring_had_been_performed_before_exposure": false,
+  "commands_reported": [
+    "cat benchmarks/gate6c/hidden_ground_truth.csv",
+    "head benchmarks/gate6c/hidden_ground_truth.csv"
+  ],
+  "documented_utc": "2026-11-01T18:00:23.486209+00:00",
+  "event": "ACCIDENTAL_MANUAL_HIDDEN_GROUND_TRUTH_EXPOSURE",
+  "external_test_accessed": false,
+  "ground_truth_sha256": "a54dda3cea2414cfddd6a49f19afc885e008d6c5edbe4cb85186e11fcd3b39af",
+  "model_collection_may_be_changed_after_exposure": false,
+  "raw_collection_lock_sha256": "ca1b350e6933a8d65e1c871f4cea33164ef42355692566802835e7f1577e3e5c",
+  "raw_collection_was_already_frozen": true,
+  "required_mitigation": [
+    "No model reruns based on ground-truth exposure",
+    "No benchmark-item changes",
+    "No scoring-rule changes",
+    "No competence-floor changes",
+    "No winner-rule changes",
+    "No manual label corrections based on model outcomes",
+    "Freeze deterministic scoring implementation before first automated scoring run",
+    "Report this deviation transparently in internal provenance"
+  ],
+  "scoring_contract_may_be_changed_after_exposure": false,
+  "scoring_spec_sha256": "56d07ed3bfc7cc715ebe883a41cdc0209b2e4ba638ab477bfb39446527372009",
+  "scoring_spec_was_already_frozen": true,
+  "status": "DOCUMENTED_PROTOCOL_DEVIATION",
+  "timing_relative_to_collection": "AFTER_ALL_CANDIDATE_RAW_COLLECTION_LOCK"
+}
