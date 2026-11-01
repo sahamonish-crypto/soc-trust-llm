@@ -1,6 +1,6 @@
 # Gate 6D Canonical Source Binding Freeze
 
-**Date:** 2026-11-02  
+**Date:** 2026-11-02
 **Status:** FROZEN
 
 ## Purpose
