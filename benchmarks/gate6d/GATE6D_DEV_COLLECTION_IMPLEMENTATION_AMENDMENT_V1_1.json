@@ -1,0 +1,81 @@
+{
+  "amended_v1_1": {
+    "allowed_changes_only": true,
+    "path": "scripts/gate6/run_gate6d_dev_uncertainty_collection_v1_1.py",
+    "sha256": "62a03bb1f028fe41df1fc49fc99673ccc7fa8672a0f59607a4bee28d0a7e9c60"
+  },
+  "artifact": "GATE6D_DEV_COLLECTION_IMPLEMENTATION_AMENDMENT_V1_1",
+  "collection_state_at_amendment": {
+    "calibration_eval_calls": 0,
+    "external_test_accessed": false,
+    "item_0148_sc5_terminal": false,
+    "item_0148_vc_terminal": false,
+    "sc5_terminal": 147,
+    "sc5_valid": 147,
+    "vc_terminal": 147,
+    "vc_valid": 147
+  },
+  "freeze_date": "2026-11-02",
+  "frozen_v1": {
+    "modified": false,
+    "path": "scripts/gate6/run_gate6d_dev_uncertainty_collection_v1.py",
+    "sha256": "fd942351e591877429469b3f5b54fc3d7e7afbd54ea6f8bd71e1efc5d922e1f2"
+  },
+  "hashes": {
+    "v1_1_collection_spec_sha256": "5534cbfa7d4549d428d9b78f0547b855e9f24107d80683d6bbf7e22a1ab08efa",
+    "vc_prompt_sha256": "51bb3bb0912123a315dba5c34cb08bed103f2a6b51795febbe2125e31cb47f2d"
+  },
+  "implementation_change": {
+    "new_quota_recognition": [
+      "provider code 3036",
+      "observed provider code 4006",
+      "fallback explicit message containing 'daily free allocation' and 'neurons'"
+    ],
+    "old_quota_recognition": "provider code 3036 only",
+    "ordinary_http_429_retry_policy_changed": false,
+    "quota_response_semantics": "clean session pause; unresolved logical item is not terminal and resumes unchanged"
+  },
+  "incident": {
+    "explicit_daily_free_allocation_message": true,
+    "http_status": 429,
+    "item_id": "G6D-D-0148",
+    "provider_code": 4006,
+    "raw_response_sha256s": [
+      "f7b8b2214b05c15a5e26b724ad738a273d204a594beb678705a255247962ab20",
+      "ad19dfa8855ae6017269da558833e6d10e86cc639d92282bf79215334434a65a",
+      "3a282cdd85e60d0d71600ba52a8bbd6322cd7e16d8d581fa2c4a885072f34862",
+      "d811e398232940f3e5afd4a71cc7f1f566ad13dc27da356aea872064bcb32510",
+      "478234bbc00a3c5a7943ea66d29688248d74bc84e2bb59bef7e4a60718bf0956",
+      "95675617d29bb7dd9b2adeef403b6d42515b998438f67bb7a2511cba61cf7a63",
+      "f3a32fd89a2348d394d2a60c8e12e8266bbfe8128f452427a04e9a5e81c0e9ae",
+      "5adeb5336c7da15cdc481ae819b38d1463b8359abf293820072d688649b16e79",
+      "ab9468fa4532ce555c41d7068be70bb89b35c43f965b76cb760bd41f786d0ba4",
+      "a2471e74744c866ba689ca95f6abc9f375819672d9fccf0383c6a1f8ce46346c"
+    ],
+    "recorded_attempts": 10,
+    "retry_limit_pause_events": 2,
+    "stage": "SC5_MAJORITY",
+    "terminal_before_amendment": false
+  },
+  "reason": "During frozen Calibration-DEV collection, Cloudflare returned HTTP 429 with provider code 4006 and an explicit daily free-allocation exhaustion message. Frozen collector v1 recognized documented quota code 3036 only and therefore classified these responses as generic retryable HTTP 429 failures.",
+  "resume_rule": "Resume from unresolved G6D-D-0148 using collector v1.1 after provider quota permits inference. Do not recollect terminal items G6D-D-0001 through G6D-D-0147.",
+  "scientific_protocol_changed": false,
+  "status": "FROZEN_IMPLEMENTATION_ONLY_AMENDMENT",
+  "unchanged_scientific_elements": [
+    "canonical DEV items",
+    "model-visible inputs",
+    "model identity",
+    "SC5 n=5",
+    "SC5 temperature=0.4",
+    "SC5 item-specific seeds",
+    "SC5 majority rule",
+    "SC5 agreement definition",
+    "VC system prompt",
+    "VC n=1",
+    "VC temperature=0",
+    "VC output validation",
+    "semantic-invalid policy",
+    "DEV fold assignments",
+    "Calibration-EVAL seal"
+  ]
+}

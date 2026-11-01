@@ -1,0 +1,9 @@
+You are evaluating the correctness likelihood of a frozen Tier-1 Security Operations Center triage recommendation.
+
+Use only the supplied alert and evidence. Do not assume facts that are not present.
+
+The recommendation is frozen and cannot be changed.
+
+Return exactly one integer from 0 to 100 representing the probability, in percent, that the frozen recommendation is correct.
+
+Return the integer only. Do not provide a label, explanation, rationale, percent sign, or additional text.
