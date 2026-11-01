@@ -1,0 +1,95 @@
+{
+  "artifact": "GATE6D_DEV500_RESOURCE_AMENDMENT_V1",
+  "collection_state_at_amendment": {
+    "calibration_eval_accessed": false,
+    "existing_output_files_read_for_selection": false,
+    "external_test_accessed": false,
+    "ground_truth_read_for_selection": false,
+    "new_model_calls_for_selection": 0
+  },
+  "eval_policy": {
+    "calibration_eval_n": 458,
+    "eval_accessed_for_this_amendment": false,
+    "eval_changed": false
+  },
+  "files": {
+    "benchmarks/gate6d/dev500_v1/dev500_selected_items.csv": "db1016850df42736c1851b66a296550f82e4509e90b33f08fff8a73bad2e0f87",
+    "preview_csv_sha256": "db1016850df42736c1851b66a296550f82e4509e90b33f08fff8a73bad2e0f87",
+    "preview_json_sha256": "d7e071d0483c87eaf5739e7244b817beb387879c36a89fc344c609a9df030736"
+  },
+  "freeze_date": "2026-11-02",
+  "next_step": "After this amendment is committed, compute only the membership overlap between the frozen 500-item manifest and already-terminal DEV outputs. Do not inspect correctness or calibration performance.",
+  "prior_freezes": {
+    "benchmarks/gate6d/GATE6D_CANONICAL_INPUTS_FREEZE_V1.json": "4c92b50fe1bd909d13b9b80df8624acd6982cf00f31af32363e0990a95e9c87c",
+    "benchmarks/gate6d/GATE6D_UNCERTAINTY_ESTIMATOR_PROTOCOL_V1.json": "e80093b719f63647d102d5d95d8990cc1e9f08eb872a2bf2d7e90379560b573d"
+  },
+  "reason": "The original full 1,222-item Calibration-DEV collection became operationally impractical under the zero-budget Cloudflare daily free-allocation constraint. The DEV collection target is therefore reduced before any correctness/calibration analysis using an outcome-blind, deterministic, group-preserving selection.",
+  "reuse_policy": {
+    "condition": "Only outputs whose item IDs belong to this frozen 500-item manifest may be reused.",
+    "existing_terminal_outputs_may_be_reused": true,
+    "nonselected_existing_outputs": "Excluded from estimator/calibrator selection and treated only as operational provenance.",
+    "selection_depended_on_existing_outputs": false
+  },
+  "scientific_elements_unchanged": [
+    "winner model",
+    "canonical model-visible input construction",
+    "SC5 n=5",
+    "SC5 temperature=0.4",
+    "item-specific deterministic seeds",
+    "SC5 majority rule",
+    "SC5 agreement definition",
+    "VC_SELF_EVAL prompt and settings",
+    "grouped five-fold CV",
+    "Brier score as primary selection metric",
+    "secondary AUROC/AUPRC/ECE/reliability metrics",
+    "identity/Platt/isotonic candidate policy",
+    "isotonic eligibility rule",
+    "untouched 458-item Calibration-EVAL",
+    "External-TEST seal"
+  ],
+  "selection": {
+    "capture_counts": {
+      "AmazonEcho-2023-02-21": 122,
+      "Windows7AD-2023-02-21": 378
+    },
+    "fold_counts": {
+      "1": 97,
+      "2": 101,
+      "3": 102,
+      "4": 98,
+      "5": 102
+    },
+    "groups_represented": 48,
+    "groups_total": 48,
+    "information_not_used": [
+      "ground truth",
+      "model outputs",
+      "model correctness",
+      "SC5 agreement",
+      "VC confidence",
+      "calibration results",
+      "existing collection availability"
+    ],
+    "information_used": [
+      "opaque item_id",
+      "capture",
+      "episode_start_utc",
+      "existing frozen cv_fold",
+      "group size"
+    ],
+    "method": "Proportional allocation across all frozen capture+episode groups using largest remainders; within each group deterministic SHA256 ranking of opaque item_id.",
+    "namespace": "GATE6D_DEV500_V1",
+    "source_n": 1222,
+    "target_n": 500
+  },
+  "status": "FROZEN_RESOURCE_DRIVEN_AMENDMENT",
+  "supersedes_for_calibration_dev_collection": {
+    "new_target": 500,
+    "previous_target": 1222,
+    "user_approved_reconsideration": true
+  },
+  "unresolved_protocol_item": {
+    "must_be_frozen_before_correctness_based_method_comparison": true,
+    "numeric_effective_tie_threshold": "STILL_UNRESOLVED"
+  }
+}
