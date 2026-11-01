@@ -1,0 +1,91 @@
+{
+  "amazon_source_resolution": {
+    "excluded_candidates": [
+      {
+        "path": "data/processed/gate5/run1-amazon-echo-2023-02-21/eve.json",
+        "qualified": false,
+        "reason": "Did not reproduce pre-existing Amazon audit event_types/core fields for 47 of 885 rows.",
+        "sha256": "47671aad70e5487892a35a11354aba7c1641dfdf6c1df63c312060d7b1839014"
+      },
+      {
+        "path": "data/processed/gate5/run2-amazon-echo-2023-02-21/eve.json",
+        "qualified": false,
+        "reason": "Did not reproduce pre-existing Amazon audit event_types/core fields for 47 of 885 rows.",
+        "sha256": "63c73e63ef378b6c804355f889736037ddbe8239ec32d707bfba06f08ca3d3b6"
+      }
+    ],
+    "historical_shell_history_recovered_generator": false,
+    "historical_source_provenance_recoverable": false,
+    "model_relevant_projections_identical_across_candidates": false,
+    "preexisting_audit_uniquely_identified_source": false,
+    "qualified_candidate_rule": {
+      "alert_plus_flow": "885/885",
+      "cid_coverage": "885/885",
+      "malformed_json_lines": 0,
+      "preexisting_core_audit_reproduction": "885/885",
+      "rich_context_eligible_with_rich_event": "299/299"
+    },
+    "qualified_candidates": [
+      {
+        "path": "data/processed/gate5/run3-single/eve.json",
+        "qualified": true,
+        "sha256": "5cd3457fa55c55c92727379e4a8fbf840f94cbd8127a74dfdd93be414f1e06f4"
+      },
+      {
+        "path": "data/processed/gate5/run4-single/eve.json",
+        "qualified": true,
+        "sha256": "4416a83ac560ec181d510c33f87a25ab5a1747ea291b6876d64ef80ca5687d80"
+      },
+      {
+        "path": "data/processed/gate6/environment-check-amazon/eve.json",
+        "qualified": true,
+        "sha256": "e1ce3afce263efc0287904c493682caa537cb16d73f5bf8c79adcd1c79b69986"
+      },
+      {
+        "path": "data/processed/gate6/environment-check-amazon-root/eve.json",
+        "qualified": true,
+        "sha256": "abde67d711b872dd66e31f03e8eeb1150db44ef68d75af4a2fb3ed9a75072e45"
+      }
+    ],
+    "signature_sets_reproduced_historical_audit": false,
+    "source_selection_used_calibration_performance": false,
+    "source_selection_used_class_composition": false,
+    "source_selection_used_model_correctness": false,
+    "source_selection_used_model_outputs": false,
+    "tie_break_rule": "Among all operationally qualified Amazon sources, sort normalized repository-relative EVE paths lexicographically ascending and select the first.",
+    "tie_break_selected_path": "data/processed/gate5/run3-single/eve.json"
+  },
+  "artifact": "GATE6D_CANONICAL_SOURCE_BINDING_V1",
+  "collection_state_at_freeze": {
+    "calibration_dev_model_calls": 0,
+    "calibration_eval_model_calls": 0,
+    "external_test_accessed": false
+  },
+  "freeze_date": "2026-11-02",
+  "important_nonclaim": "This source-binding freeze does not certify model-visible signature/card validity or absence of answer leakage. A source-specific alert-card leakage/validity gate must pass before any Calibration-DEV inference.",
+  "prior_freeze_bindings": {
+    "calibration_data_boundary_path": "benchmarks/gate6d/GATE6D_CALIBRATION_DATA_BOUNDARY_V1.json",
+    "calibration_data_boundary_sha256": "8b5ed36ad1561f3afe78b0d44f29f27ace5f0748ff0074ad64d678840866a3b8",
+    "uncertainty_estimator_protocol_path": "benchmarks/gate6d/GATE6D_UNCERTAINTY_ESTIMATOR_PROTOCOL_V1.json",
+    "uncertainty_estimator_protocol_sha256": "e80093b719f63647d102d5d95d8990cc1e9f08eb872a2bf2d7e90379560b573d"
+  },
+  "scope": "Canonical Suricata EVE source binding for Gate 6D Calibration-DEV and Calibration-EVAL input construction.",
+  "selected_sources": {
+    "AmazonEcho-2023-02-21": {
+      "expected_sha256": "5cd3457fa55c55c92727379e4a8fbf840f94cbd8127a74dfdd93be414f1e06f4",
+      "path": "data/processed/gate5/run3-single/eve.json",
+      "selection_basis": "Outcome-blind deterministic tie-break among four operationally qualified sources: lexicographically first normalized repository path."
+    },
+    "Windows7AD-2023-02-21": {
+      "expected_sha256": "b76860bfc4bd48b0c84bd4fbb85b9b40b3850bcbd5a68ba77f69df0fa1a03736",
+      "path": "data/processed/gate5/windows7ad-2023-02-21-run1/eve.json",
+      "selection_basis": "Unique full Community-ID source for the frozen Calibration-DEV capture."
+    },
+    "Windows7AD-2023-02-22": {
+      "expected_sha256": "de33c0bcd08c9fa56fea630666f2dd32fdc14d179eed439cbbe0651849336331",
+      "path": "data/processed/gate5/windows7ad-2023-02-22-run1/eve.json",
+      "selection_basis": "Unique full Community-ID source for the frozen Calibration-EVAL capture."
+    }
+  },
+  "status": "FROZEN"
+}
