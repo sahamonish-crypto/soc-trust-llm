@@ -1,0 +1,16 @@
+{
+  "candidate_id": "ZB1",
+  "canonical_invalid_items": 0,
+  "canonical_items": 133,
+  "correctness_in_winner_artifact": false,
+  "external_test_accessed": false,
+  "frozen_utc": "2026-11-01T18:40:56.489260+00:00",
+  "gate6c_winner": "ZB1",
+  "ground_truth_in_winner_artifact": false,
+  "model": "@cf/nvidia/nemotron-3-120b-a12b",
+  "source_result_freeze_sha256": "aef01d26a9f6c4fdde82b9870b5b10124362056217af7f16f366f6229d5b8c20",
+  "source_scored_items_sha256": "ad1e626ecc109faf4c8d94bb3c2805219fe9e309403faf9e759bb8f3075be85f",
+  "source_scoring_summary_sha256": "2bbcb0080f4dc9fe0f7976c8f242292b1d94a498e368bf0c34f6ba798b2e5565",
+  "status": "FROZEN_GATE6C_WINNER_CONFIGURATION",
+  "winner_recommendations_sha256": "9cca2ce8392ac4e812dbe86da98df2ce0b37b4abfeb1ebefe0a2e6b6fce58555"
+}
