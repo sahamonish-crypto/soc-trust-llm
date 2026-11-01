@@ -1,0 +1,64 @@
+{
+  "calibration_dev": {
+    "aggregate_ground_truth_counts": {
+      "Benign": 1204,
+      "Malicious": 18
+    },
+    "captures": [
+      "AmazonEcho-2023-02-21",
+      "Windows7AD-2023-02-21"
+    ],
+    "eligible_items": 1222,
+    "purpose": [
+      "uncertainty-estimator development",
+      "candidate calibrator fitting",
+      "grouped/capture-aware development validation"
+    ]
+  },
+  "calibration_eval": {
+    "aggregate_ground_truth_counts": {
+      "Benign": 438,
+      "Malicious": 20
+    },
+    "captures": [
+      "Windows7AD-2023-02-22"
+    ],
+    "eligible_items": 458,
+    "item_level_ground_truth_use_before_method_freeze": "PROHIBITED",
+    "purpose": [
+      "untouched post-selection evaluation"
+    ]
+  },
+  "eligibility_rule": {
+    "rich_context": "1"
+  },
+  "excluded_from_calibration_selection": {
+    "items": 783,
+    "reason": "evidence availability is strongly associated with ground-truth class in these captures; inclusion could create an evidence-availability shortcut",
+    "rule": "rich_context == 0"
+  },
+  "external_test_accessed": false,
+  "frozen_utc": "2026-11-01T18:57:04.421744+00:00",
+  "gate6c_benchmark_reused_for_calibration": false,
+  "gate6c_community_id_overlap_count": 0,
+  "human_study_separation": {
+    "these_calibration_items_must_not_be_reused_as_final_human_study_items": true
+  },
+  "known_before_freeze": {
+    "aggregate_class_counts": true,
+    "eval_model_outputs": false,
+    "individual_eval_correctness": false
+  },
+  "source_inventory": "data/processed/gate6/gate6_partition_inventory_items.csv",
+  "source_inventory_sha256": "84975b00dfcd012e4f2f7ec0ad7b2cb820217753e39239fdef555208e78f1dde",
+  "status": "FROZEN_GATE6D_CALIBRATION_DATA_BOUNDARY",
+  "still_unresolved": [
+    "exact estimator subsample size",
+    "uncertainty estimator selection",
+    "sampling temperature and sample count",
+    "logprob estimator definition",
+    "verbalized-confidence estimator definition",
+    "post-hoc calibration method",
+    "participant-facing uncertainty display"
+  ]
+}
