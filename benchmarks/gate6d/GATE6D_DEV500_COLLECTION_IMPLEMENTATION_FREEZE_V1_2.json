@@ -1,0 +1,62 @@
+{
+  "artifact": "GATE6D_DEV500_COLLECTION_IMPLEMENTATION_FREEZE_V1_2",
+  "collector": {
+    "network_gate": "--collect-dev plus GATE6D_ALLOW_DEV_COLLECTION=YES",
+    "path": "scripts/gate6/run_gate6d_dev_uncertainty_collection_v1_2.py",
+    "sha256": "25da7632efd3fc49352652c08ce8deed8f09f00d6c16334e56e7d4de2568ac99"
+  },
+  "eval_seal": {
+    "eval_inference_permitted": false,
+    "eval_references_in_collector": 0,
+    "eval_scoring_permitted": false
+  },
+  "freeze_date": "2026-11-02",
+  "next_step": "Resume Cloudflare collection using v1.2. Collector must spend quota only on unresolved members of the frozen DEV500 subset.",
+  "preflight": {
+    "fold_counts": {
+      "1": 97,
+      "2": 101,
+      "3": 102,
+      "4": 98,
+      "5": 102
+    },
+    "network_calls": 0,
+    "selected_items": 500,
+    "spec_sha256": "f604cf73fb03d2623cae6e86eecd57ab34956c749ad4e51ec861831930726d61",
+    "status": "PASS",
+    "unique_selected_seeds": 500
+  },
+  "quota_handling": {
+    "explicit_quota_message_fallback": true,
+    "recognizes_3036": true,
+    "recognizes_observed_4006": true,
+    "v1_1_behavior_retained": true
+  },
+  "reuse_state": {
+    "agreement_inspected": false,
+    "confidence_inspected": false,
+    "correctness_inspected": false,
+    "ground_truth_inspected": false,
+    "membership_only_check": true,
+    "selected_items_already_complete": 58,
+    "selected_items_remaining": 442
+  },
+  "scope": "Frozen outcome-blind 500-item Calibration-DEV subset only",
+  "selected_manifest": {
+    "items": 500,
+    "path": "benchmarks/gate6d/dev500_v1/dev500_selected_items.csv",
+    "sha256": "db1016850df42736c1851b66a296550f82e4509e90b33f08fff8a73bad2e0f87"
+  },
+  "status": "FROZEN",
+  "unchanged_scientific_parameters": {
+    "SC5_n": 5,
+    "SC5_temperature": 0.4,
+    "VC_n": 1,
+    "VC_prompt_sha256": "51bb3bb0912123a315dba5c34cb08bed103f2a6b51795febbe2125e31cb47f2d",
+    "VC_temperature": 0,
+    "canonical_seeds_changed": false,
+    "majority_rule_changed": false,
+    "model": "@cf/nvidia/nemotron-3-120b-a12b",
+    "semantic_invalid_policy_changed": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "artifact": "GATE6D_DEV500_COLLECTION_SPEC_PREVIEW_V1",
+  "dev_inputs": {
+    "canonical_source_items": 1222,
+    "path": "benchmarks/gate6d/canonical_v1/canonical_dev_model_inputs.jsonl",
+    "selected_items": 500,
+    "sha256": "f861b49f8d829d05aa0c788e59bbb16e377633ddd57e6e45c346d7abc7e5b45b"
+  },
+  "dev_manifest": {
+    "path": "benchmarks/gate6d/canonical_v1/dev_collection_manifest.csv",
+    "sha256": "de9bcd31706393abc9c42c249b4bc463e9542a0a34b3705d9aec9acc9ca19626"
+  },
+  "eval_access": {
+    "eval_files_loaded": 0,
+    "eval_inference": false,
+    "permitted": false
+  },
+  "fold_counts": {
+    "1": 97,
+    "2": 101,
+    "3": 102,
+    "4": 98,
+    "5": 102
+  },
+  "model": "@cf/nvidia/nemotron-3-120b-a12b",
+  "provider": "Cloudflare Workers AI",
+  "retry_policy": {
+    "cloudflare_daily_quota": "clean session pause on documented code 3036, observed code 4006, or the explicit daily-free-allocation exhaustion message; unresolved item resumes unchanged",
+    "fallback_backoff_seconds": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "http200_malformed": "terminal semantic invalid; no regeneration",
+    "max_transport_attempts_per_session": 5,
+    "retryable": "transport/status0, HTTP429, HTTP5xx only"
+  },
+  "sc5": {
+    "agreement": "majority vote count / 5",
+    "canonical_recommendation": "strict majority of five valid labels",
+    "low_effort": true,
+    "max_completion_tokens": 512,
+    "n": 5,
+    "seed": "frozen item-specific sc5_seed",
+    "stream": false,
+    "temperature": 0.4,
+    "thinking": true,
+    "valid_output": "exact ESCALATE or DO_NOT_ESCALATE for all five choices"
+  },
+  "status": "PRE_FREEZE_NETWORK_DISABLED_PREFLIGHT",
+  "vc_self_eval": {
+    "low_effort": true,
+    "max_completion_tokens": 512,
+    "n": 1,
+    "raw_confidence": "integer / 100",
+    "recommendation_change": false,
+    "seed": "same frozen item-specific sc5_seed",
+    "stream": false,
+    "system_prompt_path": "benchmarks/gate6d/collector_v1_2/vc_self_eval_system_prompt.txt",
+    "system_prompt_sha256": "51bb3bb0912123a315dba5c34cb08bed103f2a6b51795febbe2125e31cb47f2d",
+    "temperature": 0,
+    "thinking": true,
+    "valid_output": "exact integer 0 through 100"
+  }
+}
