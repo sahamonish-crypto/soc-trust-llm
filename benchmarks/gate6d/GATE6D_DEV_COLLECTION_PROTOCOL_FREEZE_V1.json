@@ -1,0 +1,87 @@
+{
+  "artifact": "GATE6D_DEV_COLLECTION_PROTOCOL_FREEZE_V1",
+  "canonical_input_freeze": {
+    "path": "benchmarks/gate6d/GATE6D_CANONICAL_INPUTS_FREEZE_V1.json",
+    "sha256": "4c92b50fe1bd909d13b9b80df8624acd6982cf00f31af32363e0990a95e9c87c"
+  },
+  "collection_state_at_freeze": {
+    "calibration_dev_model_calls": 0,
+    "calibration_eval_model_calls": 0,
+    "external_test_accessed": false
+  },
+  "collector": {
+    "explicit_network_gate": "--collect-dev plus GATE6D_ALLOW_DEV_COLLECTION=YES",
+    "path": "scripts/gate6/run_gate6d_dev_uncertainty_collection_v1.py",
+    "sha256": "fd942351e591877429469b3f5b54fc3d7e7afbd54ea6f8bd71e1efc5d922e1f2"
+  },
+  "eval_seal": {
+    "collector_references_eval_ground_truth": false,
+    "collector_references_eval_manifest": false,
+    "collector_references_eval_model_inputs": false,
+    "eval_inference_permitted": false,
+    "eval_scoring_permitted": false
+  },
+  "freeze_date": "2026-11-02",
+  "model": "@cf/nvidia/nemotron-3-120b-a12b",
+  "preflight": {
+    "collection_spec_sha256": "848455c1ad80bb64551f9675d097147567d63dff028c9c9e0bb231c0df924b3b",
+    "dev_input_sha256": "f861b49f8d829d05aa0c788e59bbb16e377633ddd57e6e45c346d7abc7e5b45b",
+    "dev_items": 1222,
+    "dev_manifest_sha256": "de9bcd31706393abc9c42c249b4bc463e9542a0a34b3705d9aec9acc9ca19626",
+    "network_calls_made": 0,
+    "status": "PASS",
+    "unique_dev_seeds": 1222
+  },
+  "resume_policy": {
+    "terminal_SC5_records_not_recalled": true,
+    "terminal_VC_records_not_recalled": true,
+    "unresolved_infrastructure_items_resume": true
+  },
+  "sc5_majority": {
+    "all_five_choices_required_valid": true,
+    "canonical_recommendation": "strict majority of five exact-label samples",
+    "items": 1222,
+    "low_effort": true,
+    "max_completion_tokens": 512,
+    "n": 5,
+    "raw_agreement": "majority vote count / 5",
+    "seed": "frozen item-specific SC5 seed",
+    "stream": false,
+    "temperature": 0.4,
+    "thinking_enabled": true,
+    "valid_choice": "exact ESCALATE or DO_NOT_ESCALATE"
+  },
+  "scope": "Calibration-DEV only",
+  "status": "FROZEN",
+  "transport_and_semantic_policy": {
+    "cloudflare_3036": "clean session pause; logical item unresolved; resume unchanged after provider reset",
+    "fallback_backoff_seconds": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "http_200_malformed": "terminal semantic invalid; no silent regeneration",
+    "max_transport_attempts_per_session": 5,
+    "retryable": [
+      "transport/status 0",
+      "HTTP 429",
+      "HTTP 5xx"
+    ]
+  },
+  "vc_self_eval": {
+    "input_recommendation": "frozen SC5 majority",
+    "low_effort": true,
+    "max_completion_tokens": 512,
+    "n": 1,
+    "prompt_path": "benchmarks/gate6d/collector_v1/vc_self_eval_system_prompt.txt",
+    "prompt_sha256": "51bb3bb0912123a315dba5c34cb08bed103f2a6b51795febbe2125e31cb47f2d",
+    "raw_confidence": "integer / 100",
+    "recommendation_may_change": false,
+    "seed": "same frozen item-specific seed",
+    "stream": false,
+    "temperature": 0,
+    "thinking_enabled": true,
+    "valid_output": "exact integer 0 through 100"
+  }
+}
