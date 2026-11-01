@@ -1,0 +1,39 @@
+{
+  "deciding_stage": "redline_balanced_accuracy",
+  "eligible_candidates": [
+    "ZB1",
+    "ZB2"
+  ],
+  "external_test_accessed": false,
+  "frozen_utc": "2026-11-01T18:28:26.064119+00:00",
+  "ineligible_candidates": [
+    "ZB3"
+  ],
+  "interpretation": "ZB1 and ZB2 tied on the frozen primary metric. Because the absolute primary difference was <0.02, the frozen winner rule advanced to Redline-only balanced accuracy, where ZB1 exceeded ZB2. ZB3 was ineligible because logical-response validity was below 99%.",
+  "muhstik_malicious_recall": {
+    "ZB1": 0.0,
+    "ZB2": 0.0,
+    "ZB3": 0.0
+  },
+  "primary_ctu_evidence_covered_balanced_accuracy": {
+    "ZB1": 0.8333333333333333,
+    "ZB2": 0.8333333333333333,
+    "ZB3": 0.7752732240437159
+  },
+  "redline_balanced_accuracy": {
+    "ZB1": 0.625,
+    "ZB2": 0.4921875,
+    "ZB3": 0.4921875
+  },
+  "response_validity_rate": {
+    "ZB1": 1.0,
+    "ZB2": 1.0,
+    "ZB3": 0.9674185463659147
+  },
+  "scored_items_sha256": "ad1e626ecc109faf4c8d94bb3c2805219fe9e309403faf9e759bb8f3075be85f",
+  "scorer_sha256": "6e4216609af0fdc880055a7b47c958d547455d165c1cee7f98d3ff9d4721a678",
+  "scoring_summary_sha256": "2bbcb0080f4dc9fe0f7976c8f242292b1d94a498e368bf0c34f6ba798b2e5565",
+  "status": "FROZEN_GATE6C_MODEL_SELECTION_RESULT",
+  "winner_candidate_id": "ZB1",
+  "winner_model": "@cf/nvidia/nemotron-3-120b-a12b"
+}
