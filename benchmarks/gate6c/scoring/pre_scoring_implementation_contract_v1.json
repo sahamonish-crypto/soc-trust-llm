@@ -1,0 +1,103 @@
+{
+  "status": "FROZEN_BEFORE_AUTOMATED_CORRECTNESS_SCORING",
+  "version": "v1",
+
+  "canonical_prediction_rule": {
+    "method": "majority_of_three_valid_logical_runs",
+    "minimum_valid_runs": 2,
+    "no_valid_majority": "INVALID_FOR_CANDIDATE"
+  },
+
+  "observed_pre_ground_truth_structure": {
+    "ZB1": {
+      "valid_logical_responses": 399,
+      "total_logical_responses": 399,
+      "response_validity_rate": 1.0,
+      "canonical_valid_items": 133,
+      "canonical_invalid_items": 0
+    },
+    "ZB2": {
+      "valid_logical_responses": 399,
+      "total_logical_responses": 399,
+      "response_validity_rate": 1.0,
+      "canonical_valid_items": 133,
+      "canonical_invalid_items": 0
+    },
+    "ZB3": {
+      "valid_logical_responses": 386,
+      "total_logical_responses": 399,
+      "response_validity_rate": 0.9674185463659148,
+      "canonical_valid_items": 129,
+      "canonical_invalid_items": 4
+    }
+  },
+
+  "competence_validity_floor": {
+    "required_response_validity_rate": 0.99,
+    "interpretation": "candidate must have at least 99 percent valid logical benchmark responses",
+    "pre_correctness_result": {
+      "ZB1": "PASSES_VALIDITY_COMPONENT",
+      "ZB2": "PASSES_VALIDITY_COMPONENT",
+      "ZB3": "FAILS_VALIDITY_COMPONENT"
+    }
+  },
+
+  "invalid_canonical_prediction_handling": {
+    "primary_reporting": "STRICT",
+    "strict_rule": "An INVALID_FOR_CANDIDATE canonical output is not a correct prediction for either class. For class recall it remains in the denominator of its true class and contributes zero to the correct-prediction numerator.",
+    "sensitivity_reporting": "Also report metrics restricted to canonical-valid predictions, together with explicit coverage.",
+    "winner_safety_rule": "If an otherwise competence-eligible candidate has any INVALID_FOR_CANDIDATE canonical item relevant to winner selection, halt winner selection for explicit protocol review rather than silently changing denominator handling.",
+    "current_pre_correctness_implication": "ZB3 already fails the frozen 99 percent response-validity competence criterion, independent of ground-truth correctness."
+  },
+
+  "primary_metric": {
+    "name": "CTU evidence-covered balanced accuracy",
+    "subset_definition": "group == CTU_DEV and evidence_count > 0",
+    "expected_n": 73,
+    "formula": "mean(ESCALATE recall, DO_NOT_ESCALATE recall)"
+  },
+
+  "mandatory_subsets": {
+    "CTU_DEV": 87,
+    "CTU_EVIDENCE_COVERED": 73,
+    "REDLINE": 68,
+    "REMCOS": 19,
+    "MUHSTIK_EXTERNAL_DEV": 46
+  },
+
+  "stability": {
+    "formula": "fraction of 133 items for which all three logical runs return the same valid label"
+  },
+
+  "latency": {
+    "winner_metric": "median successful HTTP-200 attempt latency_ms",
+    "exclude_from_latency_metric": [
+      "HTTP 429 attempts",
+      "transport failures",
+      "quota waiting time"
+    ],
+    "report_operational_retry_counts_separately": true
+  },
+
+  "cost": {
+    "raw_logs_contain_direct_comparable_usd_cost": false,
+    "report_usage_quantities": true,
+    "winner_rule_if_cost_tiebreak_is_reached_without_comparable_cost": "UNRESOLVED_TIE_REQUIRES_EXPLICIT_PROTOCOL_REVIEW",
+    "no_post_hoc_price_assumption": true
+  },
+
+  "winner_rule": [
+    "candidate must first pass all frozen competence criteria",
+    "higher CTU evidence-covered balanced accuracy",
+    "if top-two primary difference is less than 0.02, higher Redline-only balanced accuracy",
+    "if Redline difference remains less than 0.02, higher Muhstik malicious recall",
+    "if still tied, higher three-run stability",
+    "if still tied, lower median successful HTTP-200 latency",
+    "if still tied, lower comparable total benchmark cost",
+    "if cost is unavailable/non-comparable and required to resolve the tie, return unresolved rather than invent a cost rule"
+  ],
+
+  "ground_truth_correctness_used_to_create_this_contract": false,
+  "automated_correctness_scoring_performed": false,
+  "external_test_accessed": false
+}
