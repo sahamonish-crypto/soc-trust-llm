@@ -1,0 +1,123 @@
+{
+  "calibration_candidates": {
+    "always_evaluate": [
+      "raw estimator / identity mapping",
+      "Platt-style logistic mapping"
+    ],
+    "conditional_sensitivity": [
+      "isotonic regression"
+    ],
+    "isotonic_minimum_requirements": {
+      "correct_items": 20,
+      "distinct_raw_scores": 3,
+      "incorrect_items": 20
+    }
+  },
+  "candidate_estimators": [
+    {
+      "additional_model_call_required": false,
+      "definition": "fraction of five stochastic samples equal to the five-sample majority recommendation",
+      "id": "SC5_AGREEMENT",
+      "possible_values": [
+        0.6,
+        0.8,
+        1.0
+      ],
+      "role": "primary_candidate"
+    },
+    {
+      "additional_model_call_required": true,
+      "definition": "separate deterministic self-evaluation of the probability that the already-frozen SC5 majority recommendation is correct",
+      "ground_truth_visible_to_model": false,
+      "id": "VC_SELF_EVAL",
+      "n": 1,
+      "output": "single integer 0 through 100 inclusive",
+      "raw_confidence": "integer / 100",
+      "recommendation_change_permitted": false,
+      "role": "primary_candidate",
+      "temperature": 0.0
+    }
+  ],
+  "data_usage": {
+    "calibration_dev_items": 1222,
+    "calibration_eval_items": 458,
+    "dev_usage": "estimator comparison and calibrator fitting",
+    "eval_usage": "untouched final evaluation after method freeze",
+    "external_test_accessed": false,
+    "gate6c_benchmark_reuse": false,
+    "human_study_item_reuse": false,
+    "label_conditioned_subsampling": false,
+    "use_full_eligible_dev_pool": true,
+    "use_full_eligible_eval_pool": true
+  },
+  "derived_diagnostics_not_separate_estimators": [
+    {
+      "id": "SC5_BINARY_ENTROPY",
+      "reason": "with two exact labels and n=5, entropy is a monotonic transformation of the same vote count underlying SC5_AGREEMENT"
+    }
+  ],
+  "development_evaluation": {
+    "constant_baseline": "DEV empirical correctness prevalence",
+    "cross_validation": "5-fold grouped cross-validation on Calibration-DEV",
+    "fold_assignment": "must be frozen before correctness-based estimator comparison",
+    "group_unit": "capture + episode_start_utc",
+    "primary_metric": "out-of-fold Brier score for prediction correctness",
+    "secondary_metrics": [
+      "AUROC for distinguishing correct vs incorrect recommendations",
+      "AUPRC with incorrect recommendation as the positive failure class",
+      "10-bin expected calibration error",
+      "reliability diagram",
+      "class/capture/episode sensitivity summaries"
+    ],
+    "selection_rule": [
+      "lowest grouped-cross-validated Brier score",
+      "if effectively tied, prefer the estimator with better error-discrimination AUROC",
+      "if still tied, prefer SC5_AGREEMENT because it requires no additional model call beyond the recommendation-generation samples"
+    ]
+  },
+  "excluded_estimators": [
+    {
+      "id": "VISIBLE_LABEL_LOGPROB",
+      "reason": "under the frozen thinking-enabled Nemotron configuration, returned logprob entries were observed to align with reasoning-generation tokens rather than a clean visible final decision-label token stream; the synthetic probe contained reasoning references to candidate labels that could not be treated as probability of the final visible answer",
+      "status": "EXCLUDED"
+    }
+  ],
+  "frozen_utc": "2026-11-01T19:11:03.286236+00:00",
+  "gate7_started": false,
+  "participant_facing_display": {
+    "note": "estimator and probability calibration are separate from the later HCI/display decision",
+    "status": "UNRESOLVED"
+  },
+  "post_selection": {
+    "calibration_eval": "run exactly once after method freeze",
+    "failure_safeguard": "if the selected calibrated confidence does not show useful correctness discrimination or fails to improve on the constant-confidence baseline on untouched Calibration-EVAL, halt before any participant-facing calibrated-confidence use and require explicit protocol review",
+    "method_freeze_required_before_eval_calls": true,
+    "refit": "after estimator/calibrator selection, refit the selected calibration mapping on all valid Calibration-DEV observations"
+  },
+  "recommendation_generation": {
+    "allowed_visible_labels": [
+      "ESCALATE",
+      "DO_NOT_ESCALATE"
+    ],
+    "canonical_recommendation": "strict majority among five valid exact-label samples",
+    "chat_template_kwargs": {
+      "enable_thinking": true,
+      "low_effort": true
+    },
+    "infrastructure_retry_policy": "transport, HTTP429, HTTP5xx and equivalent provider failures may be retried without changing the logical sample set",
+    "max_completion_tokens": 512,
+    "n": 5,
+    "name": "SC5_MAJORITY",
+    "samples_per_item": 5,
+    "seed_policy": "deterministic SHA256-derived item-specific seed; exact implementation frozen before collection",
+    "stream": false,
+    "temperature": 0.4,
+    "validity_requirement": "all five choices must parse as exact allowed labels; successful HTTP200 malformed outputs are terminal semantic invalids and are not silently regenerated"
+  },
+  "source_bindings": {
+    "calibration_data_boundary_sha256": "8b5ed36ad1561f3afe78b0d44f29f27ace5f0748ff0074ad64d678840866a3b8",
+    "synthetic_capability_probe_sha256": "fdee07023269633485e34febbf1237df2814d8ae8b8bb7ca7eb5df2edc83e696"
+  },
+  "status": "FROZEN_GATE6D_UNCERTAINTY_ESTIMATOR_PROTOCOL",
+  "winner_model": "@cf/nvidia/nemotron-3-120b-a12b"
+}
