@@ -1,0 +1,309 @@
+Starting ZB3 logical run 2
+Already resolved: 0
+1/133 DEV-CTU-072
+  attempt 1 | HTTP 200 | valid=False | latency_ms=1332.1
+2/133 DEV-CTU-065
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1128.5
+3/133 DEV-CTU-073
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1127.4
+4/133 DEV-MUH-016
+  attempt 1 | HTTP 200 | valid=True | latency_ms=827.2
+5/133 DEV-CTU-014
+  attempt 1 | HTTP 200 | valid=True | latency_ms=898.6
+6/133 DEV-CTU-029
+  attempt 1 | HTTP 200 | valid=True | latency_ms=974.8
+7/133 DEV-MUH-039
+  attempt 1 | HTTP 200 | valid=True | latency_ms=998.1
+8/133 DEV-CTU-001
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1013.7
+9/133 DEV-CTU-055
+  attempt 1 | HTTP 200 | valid=True | latency_ms=911.5
+10/133 DEV-CTU-054
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1065.5
+11/133 DEV-MUH-018
+  attempt 1 | HTTP 200 | valid=True | latency_ms=886.2
+12/133 DEV-CTU-070
+  attempt 1 | HTTP 200 | valid=True | latency_ms=737.8
+13/133 DEV-CTU-069
+  attempt 1 | HTTP 200 | valid=True | latency_ms=797.8
+14/133 DEV-CTU-011
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1003.9
+15/133 DEV-MUH-019
+  attempt 1 | HTTP 200 | valid=False | latency_ms=1174.5
+16/133 DEV-CTU-046
+  attempt 1 | HTTP 200 | valid=True | latency_ms=823.9
+17/133 DEV-CTU-039
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1049.2
+18/133 DEV-MUH-031
+  attempt 1 | HTTP 200 | valid=True | latency_ms=895.7
+19/133 DEV-MUH-004
+  attempt 1 | HTTP 200 | valid=True | latency_ms=783.3
+20/133 DEV-MUH-036
+  attempt 1 | HTTP 200 | valid=True | latency_ms=767.3
+21/133 DEV-MUH-003
+  attempt 1 | HTTP 200 | valid=True | latency_ms=816.1
+22/133 DEV-MUH-044
+  attempt 1 | HTTP 200 | valid=True | latency_ms=731.2
+23/133 DEV-MUH-017
+  attempt 1 | HTTP 200 | valid=True | latency_ms=872.3
+24/133 DEV-MUH-021
+  attempt 1 | HTTP 200 | valid=True | latency_ms=751.4
+25/133 DEV-CTU-048
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1024.4
+26/133 DEV-CTU-033
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1034.4
+27/133 DEV-MUH-034
+  attempt 1 | HTTP 200 | valid=True | latency_ms=845.8
+28/133 DEV-MUH-029
+  attempt 1 | HTTP 200 | valid=True | latency_ms=853.8
+29/133 DEV-CTU-052
+  attempt 1 | HTTP 200 | valid=True | latency_ms=899.2
+30/133 DEV-CTU-064
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1133.6
+31/133 DEV-CTU-008
+  attempt 1 | HTTP 200 | valid=True | latency_ms=918.7
+32/133 DEV-MUH-005
+  attempt 1 | HTTP 200 | valid=False | latency_ms=1218.6
+33/133 DEV-MUH-010
+  attempt 1 | HTTP 200 | valid=True | latency_ms=812.6
+34/133 DEV-CTU-027
+  attempt 1 | HTTP 200 | valid=True | latency_ms=688.7
+35/133 DEV-CTU-047
+  attempt 1 | HTTP 200 | valid=True | latency_ms=893.4
+36/133 DEV-MUH-028
+  attempt 1 | HTTP 200 | valid=True | latency_ms=752.2
+37/133 DEV-CTU-020
+  attempt 1 | HTTP 200 | valid=True | latency_ms=901.8
+38/133 DEV-CTU-071
+  attempt 1 | HTTP 200 | valid=True | latency_ms=634.4
+39/133 DEV-CTU-067
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1129.6
+40/133 DEV-MUH-012
+  attempt 1 | HTTP 200 | valid=True | latency_ms=887.6
+41/133 DEV-CTU-083
+  attempt 1 | HTTP 200 | valid=True | latency_ms=992.0
+42/133 DEV-CTU-031
+  attempt 1 | HTTP 200 | valid=True | latency_ms=984.1
+43/133 DEV-MUH-009
+  attempt 1 | HTTP 200 | valid=True | latency_ms=720.2
+44/133 DEV-CTU-037
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1044.4
+45/133 DEV-CTU-075
+  attempt 1 | HTTP 200 | valid=True | latency_ms=762.4
+46/133 DEV-MUH-026
+  attempt 1 | HTTP 200 | valid=True | latency_ms=947.8
+47/133 DEV-MUH-032
+  attempt 1 | HTTP 200 | valid=True | latency_ms=858.8
+48/133 DEV-MUH-038
+  attempt 1 | HTTP 200 | valid=True | latency_ms=939.2
+49/133 DEV-CTU-053
+  attempt 1 | HTTP 200 | valid=True | latency_ms=912.6
+50/133 DEV-CTU-084
+  attempt 1 | HTTP 200 | valid=True | latency_ms=967.8
+51/133 DEV-CTU-076
+  attempt 1 | HTTP 200 | valid=True | latency_ms=726.1
+52/133 DEV-CTU-040
+  attempt 1 | HTTP 200 | valid=True | latency_ms=898.8
+53/133 DEV-CTU-082
+  attempt 1 | HTTP 200 | valid=True | latency_ms=934.9
+54/133 DEV-CTU-050
+  attempt 1 | HTTP 200 | valid=True | latency_ms=928.3
+55/133 DEV-CTU-026
+  attempt 1 | HTTP 200 | valid=True | latency_ms=961.3
+56/133 DEV-CTU-016
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1078.6
+57/133 DEV-CTU-007
+  attempt 1 | HTTP 200 | valid=True | latency_ms=900.1
+58/133 DEV-MUH-027
+  attempt 1 | HTTP 200 | valid=True | latency_ms=753.5
+59/133 DEV-MUH-041
+  attempt 1 | HTTP 200 | valid=True | latency_ms=788.4
+60/133 DEV-CTU-010
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1226.7
+61/133 DEV-CTU-057
+  attempt 1 | HTTP 200 | valid=True | latency_ms=682.8
+62/133 DEV-MUH-037
+  attempt 1 | HTTP 200 | valid=True | latency_ms=787.8
+63/133 DEV-CTU-005
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1113.9
+64/133 DEV-CTU-078
+  attempt 1 | HTTP 200 | valid=True | latency_ms=870.4
+65/133 DEV-CTU-080
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1045.6
+66/133 DEV-CTU-030
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1213.2
+67/133 DEV-CTU-034
+  attempt 1 | HTTP 200 | valid=True | latency_ms=901.9
+68/133 DEV-CTU-044
+  attempt 1 | HTTP 200 | valid=True | latency_ms=904.4
+69/133 DEV-CTU-079
+  attempt 1 | HTTP 200 | valid=True | latency_ms=730.4
+70/133 DEV-CTU-042
+  attempt 1 | HTTP 200 | valid=True | latency_ms=987.8
+71/133 DEV-CTU-041
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1079.1
+72/133 DEV-MUH-025
+  attempt 1 | HTTP 200 | valid=True | latency_ms=790.3
+73/133 DEV-MUH-015
+  attempt 1 | HTTP 200 | valid=True | latency_ms=689.1
+74/133 DEV-MUH-020
+  attempt 1 | HTTP 200 | valid=True | latency_ms=789.9
+75/133 DEV-CTU-045
+  attempt 1 | HTTP 200 | valid=True | latency_ms=950.2
+76/133 DEV-CTU-077
+  attempt 1 | HTTP 200 | valid=False | latency_ms=1192.3
+77/133 DEV-CTU-051
+  attempt 1 | HTTP 200 | valid=True | latency_ms=964.7
+78/133 DEV-CTU-060
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1001.4
+79/133 DEV-MUH-001
+  attempt 1 | HTTP 200 | valid=True | latency_ms=839.7
+80/133 DEV-MUH-040
+  attempt 1 | HTTP 200 | valid=True | latency_ms=772.6
+81/133 DEV-CTU-086
+  attempt 1 | HTTP 200 | valid=True | latency_ms=617.1
+82/133 DEV-CTU-056
+  attempt 1 | HTTP 200 | valid=True | latency_ms=936.6
+83/133 DEV-CTU-018
+  attempt 1 | HTTP 200 | valid=True | latency_ms=970.0
+84/133 DEV-CTU-015
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1055.1
+85/133 DEV-CTU-035
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1578.1
+86/133 DEV-CTU-002
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1382.1
+87/133 DEV-CTU-019
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1019.2
+88/133 DEV-CTU-063
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1053.4
+89/133 DEV-CTU-004
+  attempt 1 | HTTP 200 | valid=True | latency_ms=946.2
+90/133 DEV-MUH-023
+  attempt 1 | HTTP 200 | valid=True | latency_ms=762.0
+91/133 DEV-MUH-002
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1011.0
+92/133 DEV-MUH-033
+  attempt 1 | HTTP 200 | valid=True | latency_ms=822.7
+93/133 DEV-MUH-014
+  attempt 1 | HTTP 200 | valid=True | latency_ms=891.4
+94/133 DEV-CTU-032
+  attempt 1 | HTTP 200 | valid=True | latency_ms=935.3
+95/133 DEV-MUH-043
+  attempt 1 | HTTP 200 | valid=True | latency_ms=876.2
+96/133 DEV-CTU-049
+  attempt 1 | HTTP 200 | valid=True | latency_ms=925.8
+97/133 DEV-CTU-009
+  attempt 1 | HTTP 200 | valid=True | latency_ms=995.6
+98/133 DEV-MUH-007
+  attempt 1 | HTTP 200 | valid=True | latency_ms=760.4
+99/133 DEV-MUH-008
+  attempt 1 | HTTP 200 | valid=True | latency_ms=736.5
+100/133 DEV-CTU-003
+  attempt 1 | HTTP 429 | valid=False | latency_ms=61.3
+  retry wait: 387.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=935.9
+101/133 DEV-MUH-035
+  attempt 1 | HTTP 429 | valid=False | latency_ms=60.7
+  retry wait: 196.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=939.6
+102/133 DEV-MUH-022
+  attempt 1 | HTTP 429 | valid=False | latency_ms=57.9
+  retry wait: 262.0s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=92.5
+  retry wait: 130s
+  attempt 3 | HTTP 200 | valid=True | latency_ms=861.5
+103/133 DEV-CTU-021
+  attempt 1 | HTTP 429 | valid=False | latency_ms=60.6
+  retry wait: 255.0s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=80.5
+  retry wait: 130s
+  attempt 3 | HTTP 200 | valid=True | latency_ms=895.1
+104/133 DEV-CTU-013
+  attempt 1 | HTTP 429 | valid=False | latency_ms=86.2
+  retry wait: 370.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=1032.5
+105/133 DEV-CTU-017
+  attempt 1 | HTTP 429 | valid=False | latency_ms=65.5
+  retry wait: 976.0s
+  attempt 2 | HTTP 200 | valid=False | latency_ms=1237.3
+106/133 DEV-CTU-085
+  attempt 1 | HTTP 429 | valid=False | latency_ms=66.0
+  retry wait: 216.0s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=67.7
+  retry wait: 130s
+  attempt 3 | HTTP 200 | valid=True | latency_ms=797.9
+107/133 DEV-MUH-045
+  attempt 1 | HTTP 429 | valid=False | latency_ms=58.0
+  retry wait: 65s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=887.2
+108/133 DEV-CTU-022
+  attempt 1 | HTTP 429 | valid=False | latency_ms=65.3
+  retry wait: 353.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=877.2
+109/133 DEV-MUH-011
+  attempt 1 | HTTP 429 | valid=False | latency_ms=62.0
+  retry wait: 277.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=824.6
+110/133 DEV-CTU-087
+  attempt 1 | HTTP 429 | valid=False | latency_ms=61.7
+  retry wait: 1326.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=1454.5
+111/133 DEV-CTU-025
+  attempt 1 | HTTP 429 | valid=False | latency_ms=59.9
+  retry wait: 463.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=943.9
+112/133 DEV-MUH-030
+  attempt 1 | HTTP 429 | valid=False | latency_ms=60.3
+  retry wait: 290.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=809.5
+113/133 DEV-CTU-061
+  attempt 1 | HTTP 429 | valid=False | latency_ms=83.2
+  retry wait: 409.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=1069.3
+114/133 DEV-CTU-006
+  attempt 1 | HTTP 429 | valid=False | latency_ms=80.3
+  retry wait: 508.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=873.3
+115/133 DEV-CTU-043
+  attempt 1 | HTTP 429 | valid=False | latency_ms=72.1
+  retry wait: 368.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=928.7
+116/133 DEV-CTU-068
+  attempt 1 | HTTP 429 | valid=False | latency_ms=59.8
+  retry wait: 475.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=1044.7
+117/133 DEV-MUH-042
+  attempt 1 | HTTP 429 | valid=False | latency_ms=58.6
+  retry wait: 218.0s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=71.4
+  retry wait: 130s
+  attempt 3 | HTTP 200 | valid=True | latency_ms=724.2
+118/133 DEV-CTU-062
+  attempt 1 | HTTP 429 | valid=False | latency_ms=58.3
+  retry wait: 343.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=979.1
+119/133 DEV-CTU-074
+  attempt 1 | HTTP 429 | valid=False | latency_ms=61.4
+  retry wait: 275.0s
+  attempt 2 | HTTP 429 | valid=False | latency_ms=88.6
+  retry wait: 130s
+  attempt 3 | HTTP 200 | valid=True | latency_ms=1050.4
+120/133 DEV-CTU-038
+  attempt 1 | HTTP 429 | valid=False | latency_ms=66.1
+  retry wait: 395.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=855.4
+121/133 DEV-CTU-036
+  attempt 1 | HTTP 429 | valid=False | latency_ms=72.2
+  retry wait: 337.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=1030.0
+122/133 DEV-CTU-012
+  attempt 1 | HTTP 429 | valid=False | latency_ms=86.9
+  retry wait: 150.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=685.4
+123/133 DEV-MUH-006
+  attempt 1 | HTTP 429 | valid=False | latency_ms=60.8
+  retry wait: 283.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=757.8
+124/133 DEV-MUH-013
+  attempt 1 | HTTP 429 | valid=False | latency_ms=61.4
+  retry wait: 223.0s

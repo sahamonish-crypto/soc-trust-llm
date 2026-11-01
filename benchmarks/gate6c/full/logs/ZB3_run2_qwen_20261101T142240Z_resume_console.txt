@@ -1,0 +1,146 @@
+Starting ZB3 logical run 2
+Already resolved: 123
+1/133 DEV-CTU-072 | already resolved; skip
+2/133 DEV-CTU-065 | already resolved; skip
+3/133 DEV-CTU-073 | already resolved; skip
+4/133 DEV-MUH-016 | already resolved; skip
+5/133 DEV-CTU-014 | already resolved; skip
+6/133 DEV-CTU-029 | already resolved; skip
+7/133 DEV-MUH-039 | already resolved; skip
+8/133 DEV-CTU-001 | already resolved; skip
+9/133 DEV-CTU-055 | already resolved; skip
+10/133 DEV-CTU-054 | already resolved; skip
+11/133 DEV-MUH-018 | already resolved; skip
+12/133 DEV-CTU-070 | already resolved; skip
+13/133 DEV-CTU-069 | already resolved; skip
+14/133 DEV-CTU-011 | already resolved; skip
+15/133 DEV-MUH-019 | already resolved; skip
+16/133 DEV-CTU-046 | already resolved; skip
+17/133 DEV-CTU-039 | already resolved; skip
+18/133 DEV-MUH-031 | already resolved; skip
+19/133 DEV-MUH-004 | already resolved; skip
+20/133 DEV-MUH-036 | already resolved; skip
+21/133 DEV-MUH-003 | already resolved; skip
+22/133 DEV-MUH-044 | already resolved; skip
+23/133 DEV-MUH-017 | already resolved; skip
+24/133 DEV-MUH-021 | already resolved; skip
+25/133 DEV-CTU-048 | already resolved; skip
+26/133 DEV-CTU-033 | already resolved; skip
+27/133 DEV-MUH-034 | already resolved; skip
+28/133 DEV-MUH-029 | already resolved; skip
+29/133 DEV-CTU-052 | already resolved; skip
+30/133 DEV-CTU-064 | already resolved; skip
+31/133 DEV-CTU-008 | already resolved; skip
+32/133 DEV-MUH-005 | already resolved; skip
+33/133 DEV-MUH-010 | already resolved; skip
+34/133 DEV-CTU-027 | already resolved; skip
+35/133 DEV-CTU-047 | already resolved; skip
+36/133 DEV-MUH-028 | already resolved; skip
+37/133 DEV-CTU-020 | already resolved; skip
+38/133 DEV-CTU-071 | already resolved; skip
+39/133 DEV-CTU-067 | already resolved; skip
+40/133 DEV-MUH-012 | already resolved; skip
+41/133 DEV-CTU-083 | already resolved; skip
+42/133 DEV-CTU-031 | already resolved; skip
+43/133 DEV-MUH-009 | already resolved; skip
+44/133 DEV-CTU-037 | already resolved; skip
+45/133 DEV-CTU-075 | already resolved; skip
+46/133 DEV-MUH-026 | already resolved; skip
+47/133 DEV-MUH-032 | already resolved; skip
+48/133 DEV-MUH-038 | already resolved; skip
+49/133 DEV-CTU-053 | already resolved; skip
+50/133 DEV-CTU-084 | already resolved; skip
+51/133 DEV-CTU-076 | already resolved; skip
+52/133 DEV-CTU-040 | already resolved; skip
+53/133 DEV-CTU-082 | already resolved; skip
+54/133 DEV-CTU-050 | already resolved; skip
+55/133 DEV-CTU-026 | already resolved; skip
+56/133 DEV-CTU-016 | already resolved; skip
+57/133 DEV-CTU-007 | already resolved; skip
+58/133 DEV-MUH-027 | already resolved; skip
+59/133 DEV-MUH-041 | already resolved; skip
+60/133 DEV-CTU-010 | already resolved; skip
+61/133 DEV-CTU-057 | already resolved; skip
+62/133 DEV-MUH-037 | already resolved; skip
+63/133 DEV-CTU-005 | already resolved; skip
+64/133 DEV-CTU-078 | already resolved; skip
+65/133 DEV-CTU-080 | already resolved; skip
+66/133 DEV-CTU-030 | already resolved; skip
+67/133 DEV-CTU-034 | already resolved; skip
+68/133 DEV-CTU-044 | already resolved; skip
+69/133 DEV-CTU-079 | already resolved; skip
+70/133 DEV-CTU-042 | already resolved; skip
+71/133 DEV-CTU-041 | already resolved; skip
+72/133 DEV-MUH-025 | already resolved; skip
+73/133 DEV-MUH-015 | already resolved; skip
+74/133 DEV-MUH-020 | already resolved; skip
+75/133 DEV-CTU-045 | already resolved; skip
+76/133 DEV-CTU-077 | already resolved; skip
+77/133 DEV-CTU-051 | already resolved; skip
+78/133 DEV-CTU-060 | already resolved; skip
+79/133 DEV-MUH-001 | already resolved; skip
+80/133 DEV-MUH-040 | already resolved; skip
+81/133 DEV-CTU-086 | already resolved; skip
+82/133 DEV-CTU-056 | already resolved; skip
+83/133 DEV-CTU-018 | already resolved; skip
+84/133 DEV-CTU-015 | already resolved; skip
+85/133 DEV-CTU-035 | already resolved; skip
+86/133 DEV-CTU-002 | already resolved; skip
+87/133 DEV-CTU-019 | already resolved; skip
+88/133 DEV-CTU-063 | already resolved; skip
+89/133 DEV-CTU-004 | already resolved; skip
+90/133 DEV-MUH-023 | already resolved; skip
+91/133 DEV-MUH-002 | already resolved; skip
+92/133 DEV-MUH-033 | already resolved; skip
+93/133 DEV-MUH-014 | already resolved; skip
+94/133 DEV-CTU-032 | already resolved; skip
+95/133 DEV-MUH-043 | already resolved; skip
+96/133 DEV-CTU-049 | already resolved; skip
+97/133 DEV-CTU-009 | already resolved; skip
+98/133 DEV-MUH-007 | already resolved; skip
+99/133 DEV-MUH-008 | already resolved; skip
+100/133 DEV-CTU-003 | already resolved; skip
+101/133 DEV-MUH-035 | already resolved; skip
+102/133 DEV-MUH-022 | already resolved; skip
+103/133 DEV-CTU-021 | already resolved; skip
+104/133 DEV-CTU-013 | already resolved; skip
+105/133 DEV-CTU-017 | already resolved; skip
+106/133 DEV-CTU-085 | already resolved; skip
+107/133 DEV-MUH-045 | already resolved; skip
+108/133 DEV-CTU-022 | already resolved; skip
+109/133 DEV-MUH-011 | already resolved; skip
+110/133 DEV-CTU-087 | already resolved; skip
+111/133 DEV-CTU-025 | already resolved; skip
+112/133 DEV-MUH-030 | already resolved; skip
+113/133 DEV-CTU-061 | already resolved; skip
+114/133 DEV-CTU-006 | already resolved; skip
+115/133 DEV-CTU-043 | already resolved; skip
+116/133 DEV-CTU-068 | already resolved; skip
+117/133 DEV-MUH-042 | already resolved; skip
+118/133 DEV-CTU-062 | already resolved; skip
+119/133 DEV-CTU-074 | already resolved; skip
+120/133 DEV-CTU-038 | already resolved; skip
+121/133 DEV-CTU-036 | already resolved; skip
+122/133 DEV-CTU-012 | already resolved; skip
+123/133 DEV-MUH-006 | already resolved; skip
+124/133 DEV-MUH-013
+  retry wait: 223.0s
+  attempt 2 | HTTP 200 | valid=True | latency_ms=1538.4
+125/133 DEV-MUH-046
+  attempt 1 | HTTP 200 | valid=True | latency_ms=681.2
+126/133 DEV-CTU-059
+  attempt 1 | HTTP 200 | valid=True | latency_ms=941.1
+127/133 DEV-CTU-081
+  attempt 1 | HTTP 200 | valid=True | latency_ms=691.5
+128/133 DEV-CTU-058
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1033.1
+129/133 DEV-CTU-066
+  attempt 1 | HTTP 200 | valid=True | latency_ms=1089.0
+130/133 DEV-CTU-023
+  attempt 1 | HTTP 200 | valid=True | latency_ms=953.1
+131/133 DEV-CTU-024
+  attempt 1 | HTTP 200 | valid=True | latency_ms=946.8
+132/133 DEV-MUH-024
+  attempt 1 | HTTP 200 | valid=True | latency_ms=770.9
+133/133 DEV-CTU-028
+  attempt 1 | HTTP 200 | valid=True | latency_ms=864.9
