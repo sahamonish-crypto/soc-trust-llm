@@ -1,0 +1,31 @@
+{
+  "attempt_http_status_counts": {
+    "200": 133
+  },
+  "attempt_phase_counts": {
+    "initial": 133
+  },
+  "attempt_records": 133,
+  "attempts_sha256": "f589eea1ba285f0e51c5661c4dcedcd33212f590e0b7e89407163adfbdc3ef7f",
+  "candidate_id": "ZB3",
+  "classification": "RUN3_COLLECTION_COMPLETE_TERMINAL_133",
+  "final_status_counts": {
+    "INVALID_HTTP200": 4,
+    "VALID_HTTP200": 129
+  },
+  "final_unresolved_recovery_items": 0,
+  "final_valid_exact_label_counts": {
+    "False": 4,
+    "True": 129
+  },
+  "ground_truth_loaded": false,
+  "historical_recovery_queue_records": 0,
+  "logical_history_records": 133,
+  "logical_run": 3,
+  "logical_sha256": "6b832b4c04ea3873b38c2fd859280c9e62841a8248823e62cb46ea0a753c1fe4",
+  "provider_model_id_mismatches": 0,
+  "requested_model": "qwen/qwen3.8-27b",
+  "scoring_performed": false,
+  "selective_invalid_output_retries": false,
+  "unique_logical_items": 133
+}

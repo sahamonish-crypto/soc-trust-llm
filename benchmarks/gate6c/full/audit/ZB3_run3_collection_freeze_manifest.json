@@ -1,0 +1,24 @@
+{
+  "attempt_records": 133,
+  "attempts_sha256": "f589eea1ba285f0e51c5661c4dcedcd33212f590e0b7e89407163adfbdc3ef7f",
+  "candidate_id": "ZB3",
+  "final_items": 133,
+  "frozen_utc": "2026-11-01T17:38:10.347384+00:00",
+  "gate6c_winner": "OPEN",
+  "ground_truth_loaded": false,
+  "http_429_attempts": 0,
+  "integrity_audit_sha256": "93c14176231f9097fd2c806a1e1c18a0e6cff5ff760c7583a8a7036c30cc9118",
+  "invalid_http200": 4,
+  "log_artifact_sha256": {
+    "logs/ZB3_run3_qwen_20261101T144521Z_console.txt": "aa76b78a7bee9875fb6a43923685b9f3492d7eaa23cd7290cb2bf4b433cdb889",
+    "logs/ZB3_run3_qwen_20261101T144521Z_console_exit_status.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "logical_run": 3,
+  "logical_sha256": "6b832b4c04ea3873b38c2fd859280c9e62841a8248823e62cb46ea0a753c1fe4",
+  "model": "qwen/qwen3.8-27b",
+  "recovery_queue_records": 0,
+  "scoring_performed": false,
+  "selective_invalid_output_retries": false,
+  "status": "FROZEN_NON_SCORING_COLLECTION",
+  "valid_http200": 129
+}

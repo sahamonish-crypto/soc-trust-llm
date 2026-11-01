@@ -1,0 +1,17 @@
+{
+  "candidate_id": "ZB3",
+  "frozen_utc": "2026-11-01T17:38:10.347384+00:00",
+  "gate6c_winner": "OPEN",
+  "ground_truth_loaded": false,
+  "interim_candidate_comparison": false,
+  "invalid_http200": 13,
+  "logical_runs": 3,
+  "model": "qwen/qwen3.8-27b",
+  "run1_freeze_manifest_sha256": "f8d5683672fbfb502aa0d8c1dee77f3594c383f9cc6c288164d47b3798b3b8f1",
+  "run2_freeze_manifest_sha256": "25d990096ccc1b68d7b577dc05bff68c8b521c3a75a81bda8c467d91eca11faf",
+  "run3_freeze_manifest_sha256": "fd9725e7177e032b9580a8ee94fd9459c12cbd873370771f5dcf8ff7ef13c8f6",
+  "scoring_performed": false,
+  "status": "FROZEN_NON_SCORING_COLLECTION",
+  "terminal_results": 399,
+  "valid_http200": 386
+}
