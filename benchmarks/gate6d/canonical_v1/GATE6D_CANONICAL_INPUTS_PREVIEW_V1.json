@@ -1,0 +1,65 @@
+{
+  "artifact": "GATE6D_CANONICAL_INPUTS_PREVIEW_V1",
+  "collection_state": {
+    "calibration_dev_model_calls": 0,
+    "calibration_eval_model_calls": 0,
+    "external_test_accessed": false
+  },
+  "counts": {
+    "dev_groups": 48,
+    "dev_items": 1222,
+    "eval_items": 458,
+    "folds": 5,
+    "total_items": 1680
+  },
+  "fold_algorithm": {
+    "allocation_objective": "minimum capture-specific item load, then total item load, then group count, then fold number",
+    "group_unit": "capture + episode_start_utc",
+    "n_folds": 5,
+    "ordering": "descending group size, capture, deterministic SHA256 group hash, episode",
+    "uses_calibration_performance": false,
+    "uses_ground_truth": false,
+    "uses_model_correctness": false,
+    "uses_model_output": false
+  },
+  "gate6c_semantics": {
+    "anchor": "primary alert timestamp",
+    "endpoint_pair_priority": 1,
+    "evidence_budget": 6,
+    "exact_cid_priority": 0,
+    "flow": "first flow with flow.start else first flow",
+    "model_visible_schema_changed": false,
+    "primary_alert": "earliest alert timestamp; signature lexical tie-break",
+    "retrieval_window_seconds": 30
+  },
+  "generated_file_hashes": {
+    "benchmarks/gate6d/canonical_v1/canonical_dev_model_inputs.jsonl": "f861b49f8d829d05aa0c788e59bbb16e377633ddd57e6e45c346d7abc7e5b45b",
+    "benchmarks/gate6d/canonical_v1/canonical_prompt.txt": "58c21362374142766269d0b11cba538b257a16a82df9f4bc679329c1deafd3c0",
+    "benchmarks/gate6d/canonical_v1/dev_collection_manifest.csv": "de9bcd31706393abc9c42c249b4bc463e9542a0a34b3705d9aec9acc9ca19626",
+    "benchmarks/gate6d/canonical_v1/dev_group_folds.csv": "a50dad3c2c03b1ae78fe42ad6bc77430bb0b7bd2278ce2d3c0a331588d0e4d6f",
+    "benchmarks/gate6d/canonical_v1/hidden/dev_ground_truth.jsonl": "db3d294d5d5e0653834241b3415f82795ab2d8a3287743a4de7506ae6e3ae40e",
+    "benchmarks/gate6d/canonical_v1/hidden/eval_ground_truth.jsonl": "9ffb438d26a7f0b1e9d981998c66edab1c96a1348a90db0eb5769bc674e6ed55",
+    "benchmarks/gate6d/canonical_v1/sealed_eval_manifest.csv": "084501099471ec1b5289cd99e44305e9c824bea62676f389b8d13485544636a7",
+    "benchmarks/gate6d/canonical_v1/sealed_eval_model_inputs.jsonl": "ba9870fcb9223fb3acc46e87a24b6f8c490171b79cc49c08fc433bd7d4ef8d9c"
+  },
+  "prior_artifact_hashes": {
+    "benchmarks/gate6d/GATE6D_ALERT_CARD_VALIDITY_FREEZE_V1.json": "ce8441838f0798c54d3b01775982ca3f1e30050dcf2f5dbc5f89576b0c9c8506",
+    "benchmarks/gate6d/GATE6D_CALIBRATION_DATA_BOUNDARY_V1.json": "8b5ed36ad1561f3afe78b0d44f29f27ace5f0748ff0074ad64d678840866a3b8",
+    "benchmarks/gate6d/GATE6D_CANONICAL_SOURCE_BINDING_V1.json": "0e513924eb6a93cabc5444d98280609f3da283f8e924866acda43f5c358ae994",
+    "benchmarks/gate6d/GATE6D_UNCERTAINTY_ESTIMATOR_PROTOCOL_V1.json": "e80093b719f63647d102d5d95d8990cc1e9f08eb872a2bf2d7e90379560b573d",
+    "data/processed/gate6/gate6_partition_inventory_items.csv": "84975b00dfcd012e4f2f7ec0ad7b2cb820217753e39239fdef555208e78f1dde"
+  },
+  "prompt": {
+    "sha256": "58c21362374142766269d0b11cba538b257a16a82df9f4bc679329c1deafd3c0",
+    "source_path": "benchmarks/gate6c/canonical_prompt.txt"
+  },
+  "seed_algorithm": {
+    "hash": "SHA256",
+    "input": "UTF8('GATE6D_SC5_V1|' + item_id)",
+    "integer_bytes": "first 4 digest bytes, unsigned big-endian",
+    "namespace": "GATE6D_SC5_V1",
+    "range_rule": "value & 0x7fffffff; replace 0 with 1"
+  },
+  "source_scope_adaptation": "Alert/flow first-pass lookup is keyed by (source_path, community_id) because frozen Windows capture files contain overlapping Community IDs. This prevents cross-capture event mixing while preserving Gate 6C per-source semantics.",
+  "status": "PRE_FREEZE_LOCAL_PREVIEW"
+}

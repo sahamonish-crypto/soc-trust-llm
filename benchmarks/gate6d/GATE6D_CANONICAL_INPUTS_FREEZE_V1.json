@@ -1,0 +1,123 @@
+{
+  "artifact": "GATE6D_CANONICAL_INPUTS_FREEZE_V1",
+  "builder": {
+    "path": "scripts/gate6/build_gate6d_calibration_inputs.py",
+    "sha256": "2c4a2eb3d32781ed4f0f6ac021fd6a43ec6ecfd0a256fa4033cab99b03ddc429"
+  },
+  "canonical_artifact_hashes": {
+    "benchmarks/gate6d/canonical_v1/GATE6D_CANONICAL_INPUTS_PREVIEW_V1.json": "35f9cfe8f7ace68cb6d6155bc508296892ea14b8a6c0e6e515e3018d66075bea",
+    "benchmarks/gate6d/canonical_v1/canonical_dev_model_inputs.jsonl": "f861b49f8d829d05aa0c788e59bbb16e377633ddd57e6e45c346d7abc7e5b45b",
+    "benchmarks/gate6d/canonical_v1/canonical_prompt.txt": "58c21362374142766269d0b11cba538b257a16a82df9f4bc679329c1deafd3c0",
+    "benchmarks/gate6d/canonical_v1/dev_collection_manifest.csv": "de9bcd31706393abc9c42c249b4bc463e9542a0a34b3705d9aec9acc9ca19626",
+    "benchmarks/gate6d/canonical_v1/dev_group_folds.csv": "a50dad3c2c03b1ae78fe42ad6bc77430bb0b7bd2278ce2d3c0a331588d0e4d6f",
+    "benchmarks/gate6d/canonical_v1/hidden/dev_ground_truth.jsonl": "db3d294d5d5e0653834241b3415f82795ab2d8a3287743a4de7506ae6e3ae40e",
+    "benchmarks/gate6d/canonical_v1/hidden/eval_ground_truth.jsonl": "9ffb438d26a7f0b1e9d981998c66edab1c96a1348a90db0eb5769bc674e6ed55",
+    "benchmarks/gate6d/canonical_v1/sealed_eval_manifest.csv": "084501099471ec1b5289cd99e44305e9c824bea62676f389b8d13485544636a7",
+    "benchmarks/gate6d/canonical_v1/sealed_eval_model_inputs.jsonl": "ba9870fcb9223fb3acc46e87a24b6f8c490171b79cc49c08fc433bd7d4ef8d9c"
+  },
+  "collection_state_at_freeze": {
+    "calibration_dev_model_calls": 0,
+    "calibration_eval_model_calls": 0,
+    "external_test_accessed": false
+  },
+  "counts": {
+    "calibration_dev": 1222,
+    "calibration_eval": 458,
+    "dev_cv_folds": 5,
+    "dev_episode_groups": 48,
+    "total": 1680
+  },
+  "deterministic_rebuild_check": {
+    "artifacts_reproduced_byte_for_byte": 8,
+    "preview_metadata_also_reproduced": true,
+    "status": "PASS"
+  },
+  "dev_fold_policy": {
+    "assignment": "Deterministic balancing by capture-specific item load, then total item load, then group count, then fold number.",
+    "fold_stats": {
+      "1": {
+        "AmazonEcho-2023-02-21": 51,
+        "Windows7AD-2023-02-21": 186,
+        "items": 237
+      },
+      "2": {
+        "AmazonEcho-2023-02-21": 62,
+        "Windows7AD-2023-02-21": 187,
+        "items": 249
+      },
+      "3": {
+        "AmazonEcho-2023-02-21": 62,
+        "Windows7AD-2023-02-21": 187,
+        "items": 249
+      },
+      "4": {
+        "AmazonEcho-2023-02-21": 62,
+        "Windows7AD-2023-02-21": 176,
+        "items": 238
+      },
+      "5": {
+        "AmazonEcho-2023-02-21": 62,
+        "Windows7AD-2023-02-21": 187,
+        "items": 249
+      }
+    },
+    "group_unit": "capture + episode_start_utc",
+    "n_folds": 5,
+    "uses_calibration_performance": false,
+    "uses_ground_truth": false,
+    "uses_model_correctness": false,
+    "uses_model_outputs": false
+  },
+  "eval_seal": {
+    "ground_truth_mapping_created": true,
+    "manifest_created": true,
+    "model_inference_permitted_before_method_freeze": false,
+    "model_inputs_created": true,
+    "release_condition": "Selected uncertainty estimator and calibration mapping must first be frozen from Calibration-DEV only.",
+    "scoring_or_correctness_inspection_permitted_before_method_freeze": false,
+    "use_for_calibrator_selection": false,
+    "use_for_estimator_selection": false
+  },
+  "freeze_date": "2026-11-02",
+  "gate6c_input_semantics": {
+    "alert_card_schema_changed": false,
+    "anchor_rule": "Primary-alert timestamp.",
+    "evidence_deduplication": "Canonical pruned application-layer payload.",
+    "evidence_pattern_budget": 6,
+    "flow_rule": "First flow carrying flow.start; otherwise first flow.",
+    "primary_alert_rule": "Earliest alert timestamp; lexicographic signature tie-break.",
+    "retrieval_priority": [
+      "exact community_id",
+      "same endpoint pair"
+    ],
+    "retrieval_window_seconds": 30
+  },
+  "next_step": "Implement and preflight the frozen SC5_MAJORITY plus VC_SELF_EVAL Calibration-DEV collector using only the canonical DEV inputs and frozen seeds. Do not access EVAL.",
+  "opaque_item_ids": {
+    "dev_format": "G6D-D-NNNN",
+    "eval_format": "G6D-E-NNNN",
+    "labels_encoded_in_ids": false
+  },
+  "prior_freeze_hashes": {
+    "benchmarks/gate6d/GATE6D_ALERT_CARD_VALIDITY_FREEZE_V1.json": "ce8441838f0798c54d3b01775982ca3f1e30050dcf2f5dbc5f89576b0c9c8506",
+    "benchmarks/gate6d/GATE6D_CALIBRATION_DATA_BOUNDARY_V1.json": "8b5ed36ad1561f3afe78b0d44f29f27ace5f0748ff0074ad64d678840866a3b8",
+    "benchmarks/gate6d/GATE6D_CANONICAL_SOURCE_BINDING_V1.json": "0e513924eb6a93cabc5444d98280609f3da283f8e924866acda43f5c358ae994",
+    "benchmarks/gate6d/GATE6D_UNCERTAINTY_ESTIMATOR_PROTOCOL_V1.json": "e80093b719f63647d102d5d95d8990cc1e9f08eb872a2bf2d7e90379560b573d"
+  },
+  "prompt": {
+    "identical_to_gate6c_canonical_prompt": true,
+    "sha256": "58c21362374142766269d0b11cba538b257a16a82df9f4bc679329c1deafd3c0"
+  },
+  "sc5_seed_policy": {
+    "hash": "SHA256",
+    "input": "UTF8('GATE6D_SC5_V1|' + item_id)",
+    "integer_rule": "First four digest bytes as unsigned big-endian integer; clear sign bit with & 0x7fffffff; replace zero with one.",
+    "namespace": "GATE6D_SC5_V1",
+    "seed_collisions": 0
+  },
+  "source_scope_safety_adaptation": {
+    "changes_model_visible_semantics": false,
+    "description": "First-pass alert/flow lookups are scoped by (source_path, community_id) to prevent mixing events between frozen capture files that contain overlapping Community IDs."
+  },
+  "status": "FROZEN"
+}
