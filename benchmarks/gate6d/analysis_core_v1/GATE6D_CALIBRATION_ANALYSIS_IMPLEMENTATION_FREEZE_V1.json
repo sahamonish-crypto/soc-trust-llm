@@ -1,0 +1,55 @@
+{
+  "artifact": "GATE6D_CALIBRATION_ANALYSIS_IMPLEMENTATION_FREEZE_V1",
+  "freeze_date": "2026-11-02",
+  "status": "FROZEN",
+  "analysis_core": {
+    "path": "scripts/gate6/gate6d_calibration_analysis_core.py",
+    "sha256": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba"
+  },
+  "synthetic_self_test": {
+    "path": "benchmarks/gate6d/analysis_core_v1/synthetic_self_test.txt",
+    "sha256": "874e9feb52c120c87ed7c42af3c212fc1716345ef3b08bd4fb2cb6cbc3d0ba68",
+    "status": "PASS",
+    "synthetic_rows": 500,
+    "fold_counts": [
+      97,
+      101,
+      102,
+      98,
+      102
+    ]
+  },
+  "environment_manifest": {
+    "path": "benchmarks/gate6d/analysis_core_v1/environment_versions.txt",
+    "sha256": "3aac7c6cc7207709333a2e38d60cac59e55f74e02cd2d66f017627607bb84bef"
+  },
+  "frozen_analysis_rules": {
+    "primary_metric": "grouped-5-fold out-of-fold Brier score",
+    "brier_effective_tie_threshold": 0.01,
+    "brier_effective_tie_operator": "<",
+    "first_tiebreak": "higher AUROC for correctness",
+    "second_tiebreak": "prefer SC5_AGREEMENT estimator",
+    "ece_bins": 10,
+    "auprc_positive_class": "incorrect",
+    "auprc_score": "1 - calibrated correctness probability",
+    "constant_baseline_dev": "training-fold correctness prevalence applied to held-out fold",
+    "platt": "unregularized logistic regression: sigmoid(a * raw_confidence + b)",
+    "isotonic_min_correct": 20,
+    "isotonic_min_incorrect": 20,
+    "isotonic_min_distinct_raw_scores": 3,
+    "isotonic_out_of_bounds": "clip"
+  },
+  "safety_state_at_freeze": {
+    "real_sc5_vc_outputs_read": false,
+    "real_dev_ground_truth_read": false,
+    "correctness_based_method_comparison_performed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "new_model_calls": 0
+  },
+  "future_use": {
+    "real_dev_analysis_enabled_in_this_core": false,
+    "requires_separate_real_dev_wrapper": true,
+    "eval_must_remain_sealed_until_method_freeze": true
+  }
+}

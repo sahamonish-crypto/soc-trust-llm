@@ -1,0 +1,18 @@
+=== GATE 6D SYNTHETIC ANALYSIS SELF-TEST ===
+SELF-TEST: PASS
+Synthetic rows: 500
+Fold counts: [97, 101, 102, 98, 102]
+Candidate estimator/calibrator rows: 6
+Valid candidate rows: 6
+Synthetic constant-baseline Brier: 0.247390
+Synthetic winner: VC_SELF_EVAL + platt
+Frozen Brier tie threshold: 0.01
+ECE bins: 10
+Platt definition: sigmoid(a * raw_confidence + b)
+Isotonic DEV eligibility: >=20 correct, >=20 incorrect, >=3 raw scores
+
+Real SC5/VC outputs read: NO
+Real DEV ground truth read: NO
+Calibration-EVAL accessed: NO
+External-TEST accessed: NO
+Model calls: 0
