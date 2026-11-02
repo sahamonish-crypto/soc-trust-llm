@@ -1,0 +1,32 @@
+{
+  "artifact": "PRE_GATE7_SYNTHETIC_FRAMEWORK_FREEZE_V1",
+  "status": "FROZEN_PREPARATION_ONLY",
+  "gate7_open": false,
+  "script": {
+    "path": "scripts/pre_gate7/pre_gate7_logging_randomization_v1.py",
+    "sha256": "5f26417bf45e248b7aeca554817a7b173e6179e3e2dacb0fe0b5a9bc87adb120"
+  },
+  "synthetic_self_test": {
+    "path": "benchmarks/pre_gate7/synthetic_v1/self_test_result.json",
+    "sha256": "61d9cefcaa2cfc96058e617679b96adff753a632fe5fab59871e3a933d38cd40",
+    "status": "PASS"
+  },
+  "validated_properties": {
+    "synthetic_participants": 60,
+    "synthetic_conditions": 3,
+    "condition_permutations": 6,
+    "participants_per_permutation": 10,
+    "synthetic_trials_per_participant": 12,
+    "deterministic_trial_order": true,
+    "event_schema_validation": true
+  },
+  "boundary": {
+    "conditions_are_placeholders": true,
+    "real_participants_allowed": false,
+    "final_calibrated_confidence_allowed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0
+  },
+  "interpretation": "This freeze covers infrastructure behavior only. It does not freeze the final human-study design, conditions, participant sample size, trial count, or final randomization scheme."
+}

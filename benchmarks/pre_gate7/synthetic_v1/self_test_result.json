@@ -1,0 +1,17 @@
+{
+  "artifact": "PRE_GATE7_SYNTHETIC_FRAMEWORK_SELF_TEST_V1",
+  "status": "PASS",
+  "synthetic_participants": 60,
+  "synthetic_conditions": 3,
+  "condition_permutations": 6,
+  "participants_per_permutation": 10,
+  "synthetic_trials_per_participant": 12,
+  "deterministic_trial_order": true,
+  "event_schema_validation": true,
+  "gate7_opened": false,
+  "real_participants": false,
+  "final_calibrated_confidence_used": false,
+  "calibration_eval_accessed": false,
+  "external_test_accessed": false,
+  "model_calls": 0
+}
