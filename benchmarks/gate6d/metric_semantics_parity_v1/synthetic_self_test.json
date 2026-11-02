@@ -1,0 +1,1255 @@
+{
+  "absolute_tolerance": 1e-12,
+  "artifact": "GATE6D_METRIC_SEMANTICS_PARITY_SYNTHETIC_SELF_TEST_V1",
+  "auroc_weighting_parity": true,
+  "average_precision_weighting_parity": true,
+  "brier_weighting_parity": true,
+  "calibration_eval_accessed": false,
+  "comparison_definition": "secondary metric_bundle(y,p,integer_weights) versus frozen calibration metric_bundle on explicitly duplicated rows",
+  "ece10_weighting_parity": true,
+  "ece_boundary_case": {
+    "boundary_semantics": {
+      "boundary_membership": "PASS",
+      "edges": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "expected_expanded_bin_counts": [
+        1,
+        2,
+        3,
+        1,
+        4,
+        2,
+        5,
+        1,
+        3,
+        6
+      ],
+      "observed_calibration_bin_counts": [
+        1,
+        2,
+        3,
+        1,
+        4,
+        2,
+        5,
+        1,
+        3,
+        6
+      ],
+      "rule": "[0,.1), [.1,.2), ..., [.9,1.0]"
+    },
+    "comparison": {
+      "max_absolute_difference": 5.551115123125783e-17,
+      "metrics": {
+        "auprc_incorrect": {
+          "absolute_difference": 0.0,
+          "calibration": 0.727958152958153,
+          "equal": true,
+          "uncertainty": 0.727958152958153
+        },
+        "auroc_correct": {
+          "absolute_difference": 0.0,
+          "calibration": 0.41875,
+          "equal": true,
+          "uncertainty": 0.41875
+        },
+        "brier": {
+          "absolute_difference": 5.551115123125783e-17,
+          "calibration": 0.4,
+          "equal": true,
+          "uncertainty": 0.39999999999999997
+        },
+        "ece10": {
+          "absolute_difference": 0.0,
+          "calibration": 0.5428571428571429,
+          "equal": true,
+          "uncertainty": 0.5428571428571429
+        }
+      }
+    },
+    "expanded_rows": 28,
+    "name": "all_fixed_ece_boundaries",
+    "source_rows": 11,
+    "weight_sum": 28,
+    "zero_weight_rows": 0
+  },
+  "ece_fixed_boundary_semantics": "PASS",
+  "external_test_accessed": false,
+  "fail_closed_input_tests": 3,
+  "frozen_dependencies": {
+    "calibration_core_sha256": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba",
+    "secondary_uncertainty_core_sha256": "b4bda1429f8476081bd2dc03ed3834f07a018426b65199fa5873a29560e2b008"
+  },
+  "gate7_opened": false,
+  "maximum_absolute_metric_difference": 2.7755575615628914e-16,
+  "metrics": [
+    "brier",
+    "auroc_correct",
+    "auprc_incorrect",
+    "ece10"
+  ],
+  "model_calls": 0,
+  "random_integer_weight_cases": [
+    {
+      "comparison": {
+        "max_absolute_difference": 2.7755575615628914e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5834482711969827,
+            "equal": true,
+            "uncertainty": 0.5834482711969827
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.6646934460887949,
+            "equal": true,
+            "uncertainty": 0.6646934460887949
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.2587275510204082,
+            "equal": true,
+            "uncertainty": 0.2587275510204082
+          },
+          "ece10": {
+            "absolute_difference": 2.7755575615628914e-17,
+            "calibration": 0.2421428571428571,
+            "equal": true,
+            "uncertainty": 0.24214285714285713
+          }
+        }
+      },
+      "expanded_rows": 98,
+      "name": "random_integer_weights_01",
+      "source_rows": 37,
+      "weight_sum": 98,
+      "zero_weight_rows": 5
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.602416543313498,
+            "equal": true,
+            "uncertainty": 0.602416543313498
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.40482796892341844,
+            "equal": true,
+            "uncertainty": 0.40482796892341844
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.39220344827586195,
+            "equal": true,
+            "uncertainty": 0.39220344827586195
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.4460919540229885,
+            "equal": true,
+            "uncertainty": 0.4460919540229885
+          }
+        }
+      },
+      "expanded_rows": 87,
+      "name": "random_integer_weights_02",
+      "source_rows": 37,
+      "weight_sum": 87,
+      "zero_weight_rows": 7
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.3133061757224319,
+            "equal": true,
+            "uncertainty": 0.3133061757224319
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5451770451770451,
+            "equal": true,
+            "uncertainty": 0.5451770451770451
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.3073752808988764,
+            "equal": true,
+            "uncertainty": 0.3073752808988764
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.3530337078651685,
+            "equal": true,
+            "uncertainty": 0.3530337078651685
+          }
+        }
+      },
+      "expanded_rows": 89,
+      "name": "random_integer_weights_03",
+      "source_rows": 37,
+      "weight_sum": 89,
+      "zero_weight_rows": 4
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5974545715710474,
+            "equal": true,
+            "uncertainty": 0.5974545715710474
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5575396825396826,
+            "equal": true,
+            "uncertainty": 0.5575396825396826
+          },
+          "brier": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.29561666666666664,
+            "equal": true,
+            "uncertainty": 0.2956166666666667
+          },
+          "ece10": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.2605555555555556,
+            "equal": true,
+            "uncertainty": 0.26055555555555554
+          }
+        }
+      },
+      "expanded_rows": 90,
+      "name": "random_integer_weights_04",
+      "source_rows": 37,
+      "weight_sum": 90,
+      "zero_weight_rows": 7
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.4079062178126575,
+            "equal": true,
+            "uncertainty": 0.4079062178126575
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5723461798512508,
+            "equal": true,
+            "uncertainty": 0.5723461798512508
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.278255,
+            "equal": true,
+            "uncertainty": 0.278255
+          },
+          "ece10": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.21949999999999997,
+            "equal": true,
+            "uncertainty": 0.21950000000000003
+          }
+        }
+      },
+      "expanded_rows": 80,
+      "name": "random_integer_weights_05",
+      "source_rows": 37,
+      "weight_sum": 80,
+      "zero_weight_rows": 8
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 1.1102230246251565e-16,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5267733057056612,
+            "equal": true,
+            "uncertainty": 0.5267733057056612
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.47882231404958675,
+            "equal": true,
+            "uncertainty": 0.47882231404958675
+          },
+          "brier": {
+            "absolute_difference": 1.1102230246251565e-16,
+            "calibration": 0.33985909090909083,
+            "equal": true,
+            "uncertainty": 0.33985909090909094
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.3784090909090909,
+            "equal": true,
+            "uncertainty": 0.3784090909090909
+          }
+        }
+      },
+      "expanded_rows": 88,
+      "name": "random_integer_weights_06",
+      "source_rows": 37,
+      "weight_sum": 88,
+      "zero_weight_rows": 5
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 2.7755575615628914e-16,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5362898701844657,
+            "equal": true,
+            "uncertainty": 0.5362898701844657
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.3522727272727273,
+            "equal": true,
+            "uncertainty": 0.3522727272727273
+          },
+          "brier": {
+            "absolute_difference": 2.7755575615628914e-16,
+            "calibration": 0.4215699029126211,
+            "equal": true,
+            "uncertainty": 0.42156990291262136
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.4457281553398058,
+            "equal": true,
+            "uncertainty": 0.4457281553398058
+          }
+        }
+      },
+      "expanded_rows": 103,
+      "name": "random_integer_weights_07",
+      "source_rows": 37,
+      "weight_sum": 103,
+      "zero_weight_rows": 4
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.4209258737464212,
+            "equal": true,
+            "uncertainty": 0.4209258737464212
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.29892229154849687,
+            "equal": true,
+            "uncertainty": 0.29892229154849687
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.44231309523809526,
+            "equal": true,
+            "uncertainty": 0.44231309523809526
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5070238095238095,
+            "equal": true,
+            "uncertainty": 0.5070238095238095
+          }
+        }
+      },
+      "expanded_rows": 84,
+      "name": "random_integer_weights_08",
+      "source_rows": 37,
+      "weight_sum": 84,
+      "zero_weight_rows": 9
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.6641854519556556,
+            "equal": true,
+            "uncertainty": 0.6641854519556556
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5670122887864822,
+            "equal": true,
+            "uncertainty": 0.5670122887864822
+          },
+          "brier": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.3403932692307692,
+            "equal": true,
+            "uncertainty": 0.34039326923076924
+          },
+          "ece10": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.3535576923076923,
+            "equal": true,
+            "uncertainty": 0.35355769230769235
+          }
+        }
+      },
+      "expanded_rows": 104,
+      "name": "random_integer_weights_09",
+      "source_rows": 37,
+      "weight_sum": 104,
+      "zero_weight_rows": 5
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.42906682803707974,
+            "equal": true,
+            "uncertainty": 0.42906682803707974
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5949074074074074,
+            "equal": true,
+            "uncertainty": 0.5949074074074074
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.29247582417582413,
+            "equal": true,
+            "uncertainty": 0.29247582417582413
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.35087912087912093,
+            "equal": true,
+            "uncertainty": 0.35087912087912093
+          }
+        }
+      },
+      "expanded_rows": 91,
+      "name": "random_integer_weights_10",
+      "source_rows": 37,
+      "weight_sum": 91,
+      "zero_weight_rows": 5
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 1.6653345369377348e-16,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5973334686060774,
+            "equal": true,
+            "uncertainty": 0.5973334686060774
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.31635802469135804,
+            "equal": true,
+            "uncertainty": 0.31635802469135804
+          },
+          "brier": {
+            "absolute_difference": 1.6653345369377348e-16,
+            "calibration": 0.4296712643678163,
+            "equal": true,
+            "uncertainty": 0.4296712643678161
+          },
+          "ece10": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.43931034482758624,
+            "equal": true,
+            "uncertainty": 0.4393103448275862
+          }
+        }
+      },
+      "expanded_rows": 87,
+      "name": "random_integer_weights_11",
+      "source_rows": 37,
+      "weight_sum": 87,
+      "zero_weight_rows": 6
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5902258257409643,
+            "equal": true,
+            "uncertainty": 0.5902258257409643
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.45295138888888886,
+            "equal": true,
+            "uncertainty": 0.45295138888888886
+          },
+          "brier": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.35686944444444435,
+            "equal": true,
+            "uncertainty": 0.3568694444444444
+          },
+          "ece10": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.2867592592592592,
+            "equal": true,
+            "uncertainty": 0.28675925925925927
+          }
+        }
+      },
+      "expanded_rows": 108,
+      "name": "random_integer_weights_12",
+      "source_rows": 37,
+      "weight_sum": 108,
+      "zero_weight_rows": 3
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 2.7755575615628914e-16,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.4317932351112428,
+            "equal": true,
+            "uncertainty": 0.4317932351112428
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.3576965669988926,
+            "equal": true,
+            "uncertainty": 0.3576965669988926
+          },
+          "brier": {
+            "absolute_difference": 2.7755575615628914e-16,
+            "calibration": 0.38291058823529434,
+            "equal": true,
+            "uncertainty": 0.38291058823529406
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.37811764705882356,
+            "equal": true,
+            "uncertainty": 0.37811764705882356
+          }
+        }
+      },
+      "expanded_rows": 85,
+      "name": "random_integer_weights_13",
+      "source_rows": 37,
+      "weight_sum": 85,
+      "zero_weight_rows": 7
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.6597906517315287,
+            "equal": true,
+            "uncertainty": 0.6597906517315287
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5185185185185185,
+            "equal": true,
+            "uncertainty": 0.5185185185185185
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.3439533333333333,
+            "equal": true,
+            "uncertainty": 0.3439533333333333
+          },
+          "ece10": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.41044444444444445,
+            "equal": true,
+            "uncertainty": 0.4104444444444444
+          }
+        }
+      },
+      "expanded_rows": 90,
+      "name": "random_integer_weights_14",
+      "source_rows": 37,
+      "weight_sum": 90,
+      "zero_weight_rows": 5
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.3380951221910211,
+            "equal": true,
+            "uncertainty": 0.3380951221910211
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.30380830124090713,
+            "equal": true,
+            "uncertainty": 0.30380830124090713
+          },
+          "brier": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.4183081632653062,
+            "equal": true,
+            "uncertainty": 0.4183081632653061
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.40938775510204084,
+            "equal": true,
+            "uncertainty": 0.40938775510204084
+          }
+        }
+      },
+      "expanded_rows": 98,
+      "name": "random_integer_weights_15",
+      "source_rows": 37,
+      "weight_sum": 98,
+      "zero_weight_rows": 7
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.47824115463413486,
+            "equal": true,
+            "uncertainty": 0.47824115463413486
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.618867924528302,
+            "equal": true,
+            "uncertainty": 0.618867924528302
+          },
+          "brier": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.2777443181818182,
+            "equal": true,
+            "uncertainty": 0.27774431818181816
+          },
+          "ece10": {
+            "absolute_difference": 2.7755575615628914e-17,
+            "calibration": 0.23534090909090907,
+            "equal": true,
+            "uncertainty": 0.2353409090909091
+          }
+        }
+      },
+      "expanded_rows": 88,
+      "name": "random_integer_weights_16",
+      "source_rows": 37,
+      "weight_sum": 88,
+      "zero_weight_rows": 8
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.7131900621286379,
+            "equal": true,
+            "uncertainty": 0.7131900621286379
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5926501035196687,
+            "equal": true,
+            "uncertainty": 0.5926501035196687
+          },
+          "brier": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.3241784090909091,
+            "equal": true,
+            "uncertainty": 0.32417840909090906
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.36011363636363636,
+            "equal": true,
+            "uncertainty": 0.36011363636363636
+          }
+        }
+      },
+      "expanded_rows": 88,
+      "name": "random_integer_weights_17",
+      "source_rows": 37,
+      "weight_sum": 88,
+      "zero_weight_rows": 8
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.4499504712729687,
+            "equal": true,
+            "uncertainty": 0.4499504712729687
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.4564393939393939,
+            "equal": true,
+            "uncertainty": 0.4564393939393939
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.35074875000000005,
+            "equal": true,
+            "uncertainty": 0.35074875000000005
+          },
+          "ece10": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.250125,
+            "equal": true,
+            "uncertainty": 0.25012500000000004
+          }
+        }
+      },
+      "expanded_rows": 80,
+      "name": "random_integer_weights_18",
+      "source_rows": 37,
+      "weight_sum": 80,
+      "zero_weight_rows": 6
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 1.1102230246251565e-16,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.4525527313645907,
+            "equal": true,
+            "uncertainty": 0.4525527313645907
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.4183673469387755,
+            "equal": true,
+            "uncertainty": 0.4183673469387755
+          },
+          "brier": {
+            "absolute_difference": 1.1102230246251565e-16,
+            "calibration": 0.38295058823529404,
+            "equal": true,
+            "uncertainty": 0.38295058823529415
+          },
+          "ece10": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.43717647058823533,
+            "equal": true,
+            "uncertainty": 0.4371764705882353
+          }
+        }
+      },
+      "expanded_rows": 85,
+      "name": "random_integer_weights_19",
+      "source_rows": 37,
+      "weight_sum": 85,
+      "zero_weight_rows": 5
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 2.7755575615628914e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5593951975693687,
+            "equal": true,
+            "uncertainty": 0.5593951975693687
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.701496138996139,
+            "equal": true,
+            "uncertainty": 0.701496138996139
+          },
+          "brier": {
+            "absolute_difference": 2.7755575615628914e-17,
+            "calibration": 0.23464086021505373,
+            "equal": true,
+            "uncertainty": 0.23464086021505376
+          },
+          "ece10": {
+            "absolute_difference": 2.7755575615628914e-17,
+            "calibration": 0.22043010752688175,
+            "equal": true,
+            "uncertainty": 0.22043010752688177
+          }
+        }
+      },
+      "expanded_rows": 93,
+      "name": "random_integer_weights_20",
+      "source_rows": 37,
+      "weight_sum": 93,
+      "zero_weight_rows": 5
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.6908803441299405,
+            "equal": true,
+            "uncertainty": 0.6908803441299405
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.6202020202020201,
+            "equal": true,
+            "uncertainty": 0.6202020202020201
+          },
+          "brier": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.28008539325842696,
+            "equal": true,
+            "uncertainty": 0.280085393258427
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.27775280898876403,
+            "equal": true,
+            "uncertainty": 0.27775280898876403
+          }
+        }
+      },
+      "expanded_rows": 89,
+      "name": "random_integer_weights_21",
+      "source_rows": 37,
+      "weight_sum": 89,
+      "zero_weight_rows": 6
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.6721253035420272,
+            "equal": true,
+            "uncertainty": 0.6721253035420272
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5972868217054264,
+            "equal": true,
+            "uncertainty": 0.5972868217054264
+          },
+          "brier": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.3029821917808219,
+            "equal": true,
+            "uncertainty": 0.302982191780822
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.31219178082191773,
+            "equal": true,
+            "uncertainty": 0.31219178082191773
+          }
+        }
+      },
+      "expanded_rows": 73,
+      "name": "random_integer_weights_22",
+      "source_rows": 37,
+      "weight_sum": 73,
+      "zero_weight_rows": 7
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.7869830904953662,
+            "equal": true,
+            "uncertainty": 0.7869830904953662
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.6913372582001682,
+            "equal": true,
+            "uncertainty": 0.6913372582001682
+          },
+          "brier": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.23470707070707067,
+            "equal": true,
+            "uncertainty": 0.23470707070707073
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.26585858585858585,
+            "equal": true,
+            "uncertainty": 0.26585858585858585
+          }
+        }
+      },
+      "expanded_rows": 99,
+      "name": "random_integer_weights_23",
+      "source_rows": 37,
+      "weight_sum": 99,
+      "zero_weight_rows": 5
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 1.1102230246251565e-16,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.48346287027631324,
+            "equal": true,
+            "uncertainty": 0.48346287027631324
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.3052832244008714,
+            "equal": true,
+            "uncertainty": 0.3052832244008714
+          },
+          "brier": {
+            "absolute_difference": 1.1102230246251565e-16,
+            "calibration": 0.4340885057471265,
+            "equal": true,
+            "uncertainty": 0.4340885057471264
+          },
+          "ece10": {
+            "absolute_difference": 5.551115123125783e-17,
+            "calibration": 0.4617241379310345,
+            "equal": true,
+            "uncertainty": 0.46172413793103445
+          }
+        }
+      },
+      "expanded_rows": 87,
+      "name": "random_integer_weights_24",
+      "source_rows": 37,
+      "weight_sum": 87,
+      "zero_weight_rows": 3
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 1.6653345369377348e-16,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.39756491382565523,
+            "equal": true,
+            "uncertainty": 0.39756491382565523
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.36983032873807,
+            "equal": true,
+            "uncertainty": 0.36983032873807
+          },
+          "brier": {
+            "absolute_difference": 1.6653345369377348e-16,
+            "calibration": 0.4127471264367814,
+            "equal": true,
+            "uncertainty": 0.4127471264367816
+          },
+          "ece10": {
+            "absolute_difference": 1.1102230246251565e-16,
+            "calibration": 0.4524137931034483,
+            "equal": true,
+            "uncertainty": 0.4524137931034482
+          }
+        }
+      },
+      "expanded_rows": 87,
+      "name": "random_integer_weights_25",
+      "source_rows": 37,
+      "weight_sum": 87,
+      "zero_weight_rows": 8
+    }
+  ],
+  "random_parity_cases": 25,
+  "real_dev_ground_truth_read": false,
+  "real_dev_outputs_read": false,
+  "status": "PASS",
+  "total_parity_cases": 33,
+  "unweighted_cases": [
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 1.0,
+            "equal": true,
+            "uncertainty": 1.0
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 1.0,
+            "equal": true,
+            "uncertainty": 1.0
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.09681999999999999,
+            "equal": true,
+            "uncertainty": 0.09681999999999999
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.278,
+            "equal": true,
+            "uncertainty": 0.278
+          }
+        }
+      },
+      "name": "ordinary_unweighted",
+      "rows": 10
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5,
+            "equal": true,
+            "uncertainty": 0.5
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.5,
+            "equal": true,
+            "uncertainty": 0.5
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.31750000000000006,
+            "equal": true,
+            "uncertainty": 0.31750000000000006
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.22500000000000003,
+            "equal": true,
+            "uncertainty": 0.22500000000000003
+          }
+        }
+      },
+      "name": "ties_unweighted",
+      "rows": 8
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": null,
+            "calibration": null,
+            "equal": true,
+            "uncertainty": null
+          },
+          "auroc_correct": {
+            "absolute_difference": null,
+            "calibration": null,
+            "equal": true,
+            "uncertainty": null
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.11000000000000001,
+            "equal": true,
+            "uncertainty": 0.11000000000000001
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.3,
+            "equal": true,
+            "uncertainty": 0.3
+          }
+        }
+      },
+      "name": "all_correct",
+      "rows": 5
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 1.0,
+            "equal": true,
+            "uncertainty": 1.0
+          },
+          "auroc_correct": {
+            "absolute_difference": null,
+            "calibration": null,
+            "equal": true,
+            "uncertainty": null
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.11000000000000001,
+            "equal": true,
+            "uncertainty": 0.11000000000000001
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.30000000000000004,
+            "equal": true,
+            "uncertainty": 0.30000000000000004
+          }
+        }
+      },
+      "name": "all_incorrect",
+      "rows": 5
+    }
+  ],
+  "weighted_cases": [
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 1.0,
+            "equal": true,
+            "uncertainty": 1.0
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 1.0,
+            "equal": true,
+            "uncertainty": 1.0
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.09902352941176472,
+            "equal": true,
+            "uncertainty": 0.09902352941176472
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.2988235294117647,
+            "equal": true,
+            "uncertainty": 0.2988235294117647
+          }
+        }
+      },
+      "expanded_rows": 17,
+      "name": "ordinary_integer_multiplicity",
+      "source_rows": 6,
+      "weight_sum": 17,
+      "zero_weight_rows": 0
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 1.0,
+            "equal": true,
+            "uncertainty": 1.0
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 1.0,
+            "equal": true,
+            "uncertainty": 1.0
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.08049999999999999,
+            "equal": true,
+            "uncertainty": 0.08049999999999999
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.25,
+            "equal": true,
+            "uncertainty": 0.25
+          }
+        }
+      },
+      "expanded_rows": 10,
+      "name": "zero_weight_rows",
+      "source_rows": 6,
+      "weight_sum": 10,
+      "zero_weight_rows": 2
+    },
+    {
+      "comparison": {
+        "max_absolute_difference": 0.0,
+        "metrics": {
+          "auprc_incorrect": {
+            "absolute_difference": 0.0,
+            "calibration": 0.661904761904762,
+            "equal": true,
+            "uncertainty": 0.661904761904762
+          },
+          "auroc_correct": {
+            "absolute_difference": 0.0,
+            "calibration": 0.7545454545454546,
+            "equal": true,
+            "uncertainty": 0.7545454545454546
+          },
+          "brier": {
+            "absolute_difference": 0.0,
+            "calibration": 0.19642857142857142,
+            "equal": true,
+            "uncertainty": 0.19642857142857142
+          },
+          "ece10": {
+            "absolute_difference": 0.0,
+            "calibration": 0.07142857142857141,
+            "equal": true,
+            "uncertainty": 0.07142857142857141
+          }
+        }
+      },
+      "expanded_rows": 21,
+      "name": "weighted_ties",
+      "source_rows": 6,
+      "weight_sum": 21,
+      "zero_weight_rows": 0
+    }
+  ],
+  "weighted_multiplicity_equivalent_to_row_duplication": true
+}

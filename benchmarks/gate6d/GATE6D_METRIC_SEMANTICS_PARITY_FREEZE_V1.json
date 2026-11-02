@@ -1,0 +1,65 @@
+{
+  "artifact": "GATE6D_METRIC_SEMANTICS_PARITY_FREEZE_V1",
+  "status": "FROZEN_SYNTHETIC_VALIDATED",
+  "purpose": "Freeze compatibility evidence that the secondary uncertainty core's integer-weight metric semantics equal the frozen calibration core evaluated on explicitly duplicated rows.",
+  "implementation": {
+    "path": "scripts/gate6/gate6d_metric_semantics_parity_v1.py",
+    "sha256": "807178948546ca604053f2b888275d27e99de3b807633d7eb90ce5df24c336ad"
+  },
+  "synthetic_evidence": {
+    "path": "benchmarks/gate6d/metric_semantics_parity_v1/synthetic_self_test.json",
+    "sha256": "0d0408eaf4fc6214be6dbde3dddab27ce5c584fbfdfba7d1064db55f218d632c",
+    "status": "PASS"
+  },
+  "bound_frozen_cores": {
+    "calibration_core": {
+      "path": "scripts/gate6/gate6d_calibration_analysis_core.py",
+      "sha256": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba"
+    },
+    "secondary_uncertainty_core": {
+      "path": "scripts/gate6/gate6d_secondary_uncertainty_core_v1.py",
+      "sha256": "b4bda1429f8476081bd2dc03ed3834f07a018426b65199fa5873a29560e2b008"
+    }
+  },
+  "comparison_contract": {
+    "weighted_side": "secondary uncertainty metric_bundle(y,p,integer multiplicity weights)",
+    "reference_side": "frozen calibration metric_bundle on explicitly duplicated rows",
+    "metrics": [
+      "Brier correctness",
+      "AUROC correctness",
+      "AUPRC incorrect-positive using 1-p",
+      "ECE10 fixed bins"
+    ],
+    "absolute_tolerance": 1e-12,
+    "ece_bins": "[0,.1), [.1,.2), ..., [.9,1.0]",
+    "integer_zero_weight_rows": "excluded equivalently to zero duplication"
+  },
+  "results": {
+    "total_parity_cases": 33,
+    "random_parity_cases": 25,
+    "maximum_absolute_metric_difference": 2.7755575615628914e-16,
+    "within_frozen_tolerance": true,
+    "brier_parity": true,
+    "auroc_parity": true,
+    "auprc_parity": true,
+    "ece10_parity": true,
+    "ece_boundary_semantics": "PASS",
+    "weighted_multiplicity_equivalent_to_explicit_duplication": true,
+    "fail_closed_input_tests": 3
+  },
+  "scientific_interpretation": {
+    "bootstrap_multiplicity_semantics_validated": true,
+    "secondary_metric_reimplementation_compatibility_concern": "RESOLVED",
+    "frozen_cores_modified": false,
+    "primary_method_selection_changed": false,
+    "secondary_uncertainty_can_change_primary_winner": false
+  },
+  "safety_state": {
+    "real_dev_outputs_read": false,
+    "real_dev_ground_truth_read": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0,
+    "gate7_opened": false
+  }
+}
