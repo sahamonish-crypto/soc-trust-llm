@@ -1,0 +1,164 @@
+{
+  "artifact": "GATE6D_EVAL_EXECUTION_SAFEGUARD_PROTOCOL_V1",
+  "status": "FROZEN_PROSPECTIVE_EVAL_OPERATIONALIZATION",
+  "freeze_date": "2026-11-03",
+  "purpose": "Prospectively operationalize the already-frozen Calibration-EVAL safeguard before any EVAL inference, correctness inspection, or scoring.",
+  "parent_rule": {
+    "source": "GATE6D_UNCERTAINTY_ESTIMATOR_PROTOCOL_V1",
+    "original_requirement": "If the selected calibrated confidence does not show useful correctness discrimination or fails to improve on the constant-confidence baseline on untouched Calibration-EVAL, halt before participant-facing calibrated-confidence use and require explicit protocol review.",
+    "this_artifact_changes_parent_rule": false,
+    "role": "numeric and procedural operationalization only"
+  },
+  "sealed_eval_boundary": {
+    "items": 458,
+    "capture": "Windows7AD-2023-02-22",
+    "model_inputs_sha256": "ba9870fcb9223fb3acc46e87a24b6f8c490171b79cc49c08fc433bd7d4ef8d9c",
+    "manifest_sha256": "084501099471ec1b5289cd99e44305e9c824bea62676f389b8d13485544636a7",
+    "ground_truth_sha256": "9ffb438d26a7f0b1e9d981998c66edab1c96a1348a90db0eb5769bc674e6ed55",
+    "eval_files_opened_to_set_this_protocol": false,
+    "eval_correctness_inspected": false,
+    "eval_model_outputs_exist": false
+  },
+  "unlock_requirements": {
+    "real_dev_method_freeze_required": true,
+    "required_artifact": "benchmarks/gate6d/GATE6D_DEV_METHOD_FREEZE_V1.json",
+    "required_status": "FROZEN_METHOD_SELECTED",
+    "selected_estimator_must_be_frozen": true,
+    "selected_calibrator_mapping_must_be_frozen": true,
+    "winner_valid_dev_prevalence_must_be_frozen": true,
+    "eval_cannot_refit_or_reselect_method": true
+  },
+  "one_shot_semantics": {
+    "eval_is_one_logical_final_evaluation": true,
+    "all_458_items_attempted": true,
+    "provider_quota_or_transport_interruption_may_resume_same_logical_collection": true,
+    "infrastructure_failure_retry_permitted": true,
+    "terminal_semantic_invalid_regeneration_permitted": false,
+    "ground_truth_must_remain_unopened_during_model_collection": true,
+    "collection_outputs_must_be_frozen_before_ground_truth_scoring": true,
+    "final_scoring_decision_created_once": true,
+    "later_exact_reproduction_is_audit_not_new_method_selection": true
+  },
+  "selected_estimator_collection": {
+    "SC5_AGREEMENT": {
+      "sc5_required_for_all_458_items": true,
+      "vc_calls_permitted": false,
+      "selected_method_valid_item": "terminal-valid SC5 majority",
+      "terminal_invalid_sc5": "exclude_from_scoring without regeneration and report coverage"
+    },
+    "VC_SELF_EVAL": {
+      "sc5_required_for_all_458_items": true,
+      "vc_required_only_after_terminal_valid_sc5": true,
+      "selected_method_valid_item": "terminal-valid SC5 majority plus terminal-valid VC_SELF_EVAL",
+      "terminal_invalid_sc5": "exclude from scoring without VC call and without regeneration",
+      "terminal_invalid_vc": "exclude from scoring without regeneration",
+      "coverage_report_required": true
+    },
+    "missing_terminal_after_logical_collection_completion": "EVAL_COLLECTION_INCOMPLETE_DO_NOT_SCORE",
+    "duplicate_selected_terminal_record": "HALT_PROTOCOL_REVIEW"
+  },
+  "scoring_population": {
+    "definition": "all EVAL items having a terminal-valid output for the already-frozen selected estimator pipeline",
+    "same_items_for_selected_method_and_constant_baseline": true,
+    "eval_empirical_prevalence_used_as_baseline": false,
+    "coverage_threshold_invented_for_pass_fail": false,
+    "coverage_reported": true,
+    "coverage_can_override_safeguard": false,
+    "metric_undefined": "HALT_PROTOCOL_REVIEW"
+  },
+  "constant_baseline": {
+    "probability": "frozen winner-valid Calibration-DEV empirical correctness prevalence from GATE6D_DEV_METHOD_FREEZE_V1.json",
+    "same_constant_probability_for_every_valid_eval_item": true,
+    "refit_on_eval": false,
+    "eval_labels_used_to_choose_baseline": false,
+    "baseline_brier_computed_on_exact_same_valid_eval_items_as_selected_method": true
+  },
+  "primary_safeguard": {
+    "formal_null_hypothesis_test": false,
+    "correctness_discrimination": {
+      "metric": "AUROC_CORRECTNESS",
+      "useful_boundary": 0.5,
+      "pass_rule": "finite AUROC_correct > 0.5",
+      "equal_to_0_5": "FAIL_HALT",
+      "below_0_5": "FAIL_HALT",
+      "undefined": "FAIL_HALT",
+      "arbitrary_conventional_threshold_such_as_0_7_used": false
+    },
+    "constant_baseline_improvement": {
+      "metric": "BRIER",
+      "difference_definition": "Brier_selected - Brier_constant_DEV_prevalence",
+      "pass_rule": "finite difference < 0.0",
+      "equal_to_zero": "FAIL_HALT",
+      "greater_than_zero": "FAIL_HALT",
+      "undefined": "FAIL_HALT"
+    },
+    "overall_rule": "PASS_CONTINUE only if AUROC_correct > 0.5 AND Brier_selected < Brier_constant_DEV_prevalence",
+    "if_either_condition_fails": "HALT_BEFORE_PARTICIPANT_FACING_CALIBRATED_CONFIDENCE_AND_REQUIRE_EXPLICIT_PROTOCOL_REVIEW",
+    "pass_does_not_open_gate7_automatically": true
+  },
+  "secondary_eval_reporting": {
+    "metrics": [
+      "Brier selected",
+      "Brier frozen-DEV-prevalence constant baseline",
+      "paired Brier difference",
+      "AUROC correctness",
+      "AUPRC incorrect-positive",
+      "ECE10",
+      "10-bin reliability diagram",
+      "coverage and invalid reasons",
+      "capture summary",
+      "episode sensitivity"
+    ],
+    "cluster_bootstrap": {
+      "protocol": "GATE6D_SECONDARY_UNCERTAINTY_SENSITIVITY_PROTOCOL_V1",
+      "replicates": 10000,
+      "confidence_level": 0.95,
+      "interval": "percentile",
+      "resampling_unit": "episode",
+      "single_eval_capture": "treated as the single fixed capture stratum; episode clusters resampled with replacement within it",
+      "paired_brier_difference_uses_same_episode_draws": true
+    },
+    "bootstrap_ci_used_for_primary_pass_halt": false,
+    "ci_overlap_used_for_primary_pass_halt": false,
+    "statistical_significance_used_for_primary_pass_halt": false,
+    "auprc_used_for_primary_pass_halt": false,
+    "ece_used_for_primary_pass_halt": false,
+    "coverage_used_for_primary_pass_halt": false
+  },
+  "post_eval_governance": {
+    "if_pass": "Gate 6D may proceed toward closure; Gate 7 still requires its own explicit opening and participant-facing display decision.",
+    "if_halt": "No participant-facing calibrated confidence; no post-hoc recalibration, estimator switch, threshold relaxation, EVAL-driven refit, or second EVAL attempt without explicit protocol review.",
+    "eval_may_not_change_dev_winner": true,
+    "eval_may_not_choose_new_calibrator": true,
+    "external_test_remains_untouched": true
+  },
+  "methodological_rationale": {
+    "auroc_boundary": "0.5 is the non-informative ranking boundary; no domain-justified higher utility threshold was prospectively established.",
+    "brier_rule": "Brier is a strictly proper probability score; strict improvement over the frozen constant forecast is required.",
+    "point_estimate_gate": "The safeguard is an operational tripwire, not a confirmatory significance test. Exact prospective inequalities avoid sample-size-dependent or post-hoc interpretation.",
+    "uncertainty": "Cluster-bootstrap confidence intervals are reported as secondary evidence but cannot reverse the predeclared safeguard decision."
+  },
+  "information_not_inspected_to_set_protocol": [
+    "sealed EVAL model inputs",
+    "sealed EVAL manifest rows",
+    "hidden EVAL ground truth",
+    "EVAL model outputs",
+    "EVAL correctness",
+    "EVAL Brier",
+    "EVAL AUROC",
+    "EVAL AUPRC",
+    "EVAL ECE",
+    "External-TEST"
+  ],
+  "safety_state_at_freeze": {
+    "real_dev_method_selection_performed": false,
+    "real_dev_method_freeze_exists": false,
+    "eval_model_inputs_opened": false,
+    "eval_manifest_opened": false,
+    "eval_ground_truth_opened": false,
+    "eval_model_calls": 0,
+    "eval_correctness_inspected": false,
+    "external_test_accessed": false,
+    "gate7_opened": false
+  }
+}
