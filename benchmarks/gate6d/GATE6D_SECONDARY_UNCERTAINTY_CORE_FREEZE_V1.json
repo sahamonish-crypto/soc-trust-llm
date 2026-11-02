@@ -1,0 +1,62 @@
+{
+  "artifact": "GATE6D_SECONDARY_UNCERTAINTY_CORE_FREEZE_V1",
+  "status": "FROZEN_SYNTHETIC_VALIDATED",
+  "implementation": {
+    "path": "scripts/gate6/gate6d_secondary_uncertainty_core_v1.py",
+    "sha256": "b4bda1429f8476081bd2dc03ed3834f07a018426b65199fa5873a29560e2b008"
+  },
+  "synthetic_self_test": {
+    "path": "benchmarks/gate6d/secondary_uncertainty_v1/synthetic_self_test.json",
+    "sha256": "fc891ac14ada750240f759c8762d4baa266590ddb7dbad1ee8f33c57ebe33581",
+    "status": "PASS",
+    "bootstrap_replicates": 10000,
+    "synthetic_rows": 488,
+    "episode_groups": 48,
+    "draw_plan_sha256": "4e9f29343e7ffb2b4fb2bc645f14243cdbb3b20ccfe5f5682308b73c0ef4d8e1"
+  },
+  "bound_frozen_dependencies": {
+    "secondary_uncertainty_protocol": {
+      "path": "benchmarks/gate6d/GATE6D_SECONDARY_UNCERTAINTY_SENSITIVITY_PROTOCOL_V1.json",
+      "sha256": "6859c2ac8df4b36d392ec820461401b6ea5610dbc20db9dd24f3c59a460d4a33"
+    },
+    "dev_normalization_core": {
+      "path": "scripts/gate6/gate6d_dev_normalization_core_v1.py",
+      "sha256": "7983ed4320908fd87913bc7a3b03113350763efb0fed1d8d00ba675da81e7ba0"
+    },
+    "calibration_analysis_core": {
+      "path": "scripts/gate6/gate6d_calibration_analysis_core.py",
+      "sha256": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba"
+    }
+  },
+  "implemented_contract": {
+    "capture_stratified_episode_cluster_bootstrap": true,
+    "alert_row_bootstrap": false,
+    "bootstrap_replicates": 10000,
+    "confidence_interval": "95_PERCENT_PERCENTILE",
+    "minimum_valid_replicates": 9500,
+    "same_draws_across_methods": true,
+    "paired_differences": true,
+    "ground_truth_class_sensitivity": true,
+    "capture_sensitivity": true,
+    "leave_one_episode_out": true,
+    "calibrator_refit_inside_bootstrap": false,
+    "silent_redraw_of_undefined_metric": false,
+    "formal_null_hypothesis_test": false,
+    "can_change_primary_winner": false
+  },
+  "real_use_boundary": {
+    "real_dev_loader_present": false,
+    "real_dev_analysis_enabled": false,
+    "collection_complete_freeze_required": true,
+    "real_method_selection_required": true,
+    "eval_remains_sealed_until_method_freeze": true
+  },
+  "safety_state_at_freeze": {
+    "real_dev_outputs_read": false,
+    "real_dev_ground_truth_read": false,
+    "correctness_based_real_analysis_performed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0
+  }
+}
