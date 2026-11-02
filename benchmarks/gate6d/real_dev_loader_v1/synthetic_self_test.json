@@ -1,0 +1,51 @@
+{
+  "artifact": "GATE6D_REAL_DEV_LOADER_SYNTHETIC_SELF_TEST_V1",
+  "calibration_eval_accessed": false,
+  "complete_freeze_schema_validation": "PASS",
+  "correctness_based_real_analysis": false,
+  "current_real_gate_allowed": false,
+  "current_real_gate_reasons": [
+    "GATE6D_ALLOW_REAL_DEV_LOAD is not YES",
+    "DEV500 collection-complete freeze artifact does not exist"
+  ],
+  "external_test_accessed": false,
+  "fail_closed_tests": [
+    {
+      "failure_detected": "Collection-complete freeze status is not FROZEN_COMPLETE.",
+      "status": "PASS",
+      "test": "non_frozen_complete_status"
+    },
+    {
+      "failure_detected": "selected_dev_complete is not 500.",
+      "status": "PASS",
+      "test": "selected_complete_not_500"
+    },
+    {
+      "failure_detected": "Collection freeze audit-tool SHA mismatch.",
+      "status": "PASS",
+      "test": "audit_tool_sha_mismatch"
+    }
+  ],
+  "frozen_dependencies": {
+    "collection_audit_tool_sha256": "8df4bf36a3b1bd0213a333f8b9b3defff9897e682862856fc35574ad33fa6123",
+    "normalization_core_sha256": "7983ed4320908fd87913bc7a3b03113350763efb0fed1d8d00ba675da81e7ba0"
+  },
+  "model_calls": 0,
+  "real_dev_ground_truth_read": false,
+  "real_dev_outputs_read": false,
+  "real_loader_called": false,
+  "real_loader_function_present": true,
+  "status": "PASS",
+  "synthetic_normalization": {
+    "episode_metadata_joined": true,
+    "paired_common_valid_items": 488,
+    "paired_episode_groups": 48,
+    "sc5_valid_items": 495,
+    "selected_captures": [
+      "AmazonEcho-2023-02-21",
+      "Windows7AD-2023-02-21"
+    ],
+    "selected_episode_groups": 48,
+    "selected_items": 500
+  }
+}

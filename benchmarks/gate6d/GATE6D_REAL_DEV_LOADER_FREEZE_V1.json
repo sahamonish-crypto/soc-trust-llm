@@ -1,0 +1,79 @@
+{
+  "artifact": "GATE6D_REAL_DEV_LOADER_FREEZE_V1",
+  "status": "FROZEN_DISABLED_SYNTHETIC_VALIDATED",
+  "loader": {
+    "path": "scripts/gate6/gate6d_real_dev_loader_v1.py",
+    "sha256": "f425035fc6114e4dd54db5682fdcc9851514fd072c4b79c5cdc1652b9b565e27"
+  },
+  "synthetic_self_test": {
+    "path": "benchmarks/gate6d/real_dev_loader_v1/synthetic_self_test.json",
+    "sha256": "ee93cef3849fc3393957a2fd9cadd60d3fba1e6967f1bcecd107de62db97eab1",
+    "status": "PASS"
+  },
+  "bound_frozen_code": {
+    "normalization_core": {
+      "path": "scripts/gate6/gate6d_dev_normalization_core_v1.py",
+      "sha256": "7983ed4320908fd87913bc7a3b03113350763efb0fed1d8d00ba675da81e7ba0"
+    },
+    "collection_audit_tool": {
+      "path": "scripts/gate6/audit_gate6d_dev500_collection_v1.py",
+      "sha256": "8df4bf36a3b1bd0213a333f8b9b3defff9897e682862856fc35574ad33fa6123"
+    }
+  },
+  "future_static_real_inputs": {
+    "selected_manifest": {
+      "path": "benchmarks/gate6d/dev500_v1/dev500_selected_items.csv",
+      "sha256": "db1016850df42736c1851b66a296550f82e4509e90b33f08fff8a73bad2e0f87"
+    },
+    "canonical_dev_manifest": {
+      "path": "benchmarks/gate6d/canonical_v1/dev_collection_manifest.csv",
+      "sha256": "de9bcd31706393abc9c42c249b4bc463e9542a0a34b3705d9aec9acc9ca19626"
+    },
+    "hidden_dev_ground_truth": {
+      "path": "benchmarks/gate6d/canonical_v1/hidden/dev_ground_truth.jsonl",
+      "sha256": "db3d294d5d5e0653834241b3415f82795ab2d8a3287743a4de7506ae6e3ae40e",
+      "opened_during_this_freeze": false
+    }
+  },
+  "unlock_requirements": {
+    "required_collection_complete_artifact": "benchmarks/gate6d/GATE6D_DEV500_COLLECTION_COMPLETE_FREEZE_V1.json",
+    "required_collection_status": "FROZEN_COMPLETE",
+    "required_selected_dev_complete": 500,
+    "required_selected_dev_remaining": 0,
+    "required_explicit_environment_gate": "GATE6D_ALLOW_REAL_DEV_LOAD=YES",
+    "collection_file_sha_match_required": true,
+    "selected_manifest_sha_match_required": true,
+    "canonical_manifest_sha_match_required": true,
+    "hidden_dev_ground_truth_sha_match_required": true
+  },
+  "real_loader_contract": {
+    "real_dev_loader_exists": true,
+    "real_dev_loader_currently_enabled": false,
+    "opens_correctness_bearing_dev_only_after_gate": true,
+    "uses_frozen_normalization_core": true,
+    "adds_capture_metadata": true,
+    "adds_episode_start_metadata": true,
+    "requires_exactly_48_selected_episode_groups": true,
+    "expected_capture_set": [
+      "AmazonEcho-2023-02-21",
+      "Windows7AD-2023-02-21"
+    ],
+    "performs_method_selection": false,
+    "accesses_calibration_eval": false,
+    "accesses_external_test": false
+  },
+  "current_state": {
+    "collection_complete_freeze_exists": false,
+    "real_load_gate_open": false,
+    "real_loader_called": false
+  },
+  "safety_state_at_freeze": {
+    "real_dev_outputs_read": false,
+    "real_dev_ground_truth_read": false,
+    "correctness_computed": false,
+    "correctness_based_real_analysis_performed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0
+  }
+}
