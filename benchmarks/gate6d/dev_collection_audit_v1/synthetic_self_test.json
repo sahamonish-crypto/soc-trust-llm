@@ -1,0 +1,39 @@
+{
+  "artifact": "GATE6D_DEV500_COLLECTION_AUDIT_SYNTHETIC_SELF_TEST_V1",
+  "calibration_eval_accessed": false,
+  "calibration_metrics_computed": false,
+  "complete_fixture": {
+    "selected_dev_complete": 500,
+    "selected_sc5_invalid": 10,
+    "selected_sc5_valid": 490,
+    "selected_vc_invalid": 7,
+    "selected_vc_valid": 483
+  },
+  "correctness_inspected": false,
+  "external_test_accessed": false,
+  "fail_closed_tests": [
+    {
+      "failure_detected": "sc5_terminal: duplicate selected terminal record for G6D-D-0021",
+      "status": "PASS",
+      "test": "duplicate_selected_sc5"
+    },
+    {
+      "failure_detected": "G6D-D-0001: VC terminal exists after terminal-invalid SC5.",
+      "status": "PASS",
+      "test": "vc_after_invalid_sc5"
+    },
+    {
+      "failure_detected": "VC terminal exists without selected SC5 terminal: G6D-D-0020",
+      "status": "PASS",
+      "test": "vc_without_sc5_terminal"
+    }
+  ],
+  "ground_truth_accessed": false,
+  "incomplete_fixture": {
+    "selected_dev_complete": 499,
+    "selected_dev_remaining": 1,
+    "status": "INCOMPLETE"
+  },
+  "model_calls": 0,
+  "status": "PASS"
+}

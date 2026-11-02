@@ -1,0 +1,50 @@
+{
+  "artifact": "GATE6D_DEV500_COLLECTION_AUDIT_TOOL_FREEZE_V1",
+  "status": "FROZEN_IMPLEMENTATION",
+  "audit_tool": {
+    "path": "scripts/gate6/audit_gate6d_dev500_collection_v1.py",
+    "sha256": "8df4bf36a3b1bd0213a333f8b9b3defff9897e682862856fc35574ad33fa6123"
+  },
+  "synthetic_self_test": {
+    "path": "benchmarks/gate6d/dev_collection_audit_v1/synthetic_self_test.json",
+    "sha256": "beadec0d2da7c5a4c6f3d7f80c7f41af657fe5e40ab49b57843d26d5ddee4029",
+    "status": "PASS"
+  },
+  "frozen_inputs": {
+    "selected_manifest": {
+      "path": "benchmarks/gate6d/dev500_v1/dev500_selected_items.csv",
+      "sha256": "db1016850df42736c1851b66a296550f82e4509e90b33f08fff8a73bad2e0f87",
+      "selected_items": 500
+    },
+    "collector_implementation_freeze": {
+      "path": "benchmarks/gate6d/GATE6D_DEV500_COLLECTION_IMPLEMENTATION_FREEZE_V1_2.json",
+      "sha256": "b6a8dfb8115d6a1acac4ec751ee3d4c5844e60709b60b2ceaaf24f2a6d9edcb1"
+    }
+  },
+  "logical_completion_rule": {
+    "sc5_terminal_required_for_every_selected_item": true,
+    "invalid_sc5_resolves_item_without_vc": true,
+    "valid_sc5_requires_terminal_vc": true,
+    "valid_or_invalid_vc_after_valid_sc5_resolves_item": true,
+    "duplicate_selected_terminal_records": "FAIL_CLOSED",
+    "vc_without_sc5_terminal": "FAIL_CLOSED",
+    "vc_after_invalid_sc5": "FAIL_CLOSED"
+  },
+  "complete_freeze_gate": {
+    "required_selected_complete": 500,
+    "required_environment_variable": "GATE6D_ALLOW_COLLECTION_COMPLETE_FREEZE=YES",
+    "current_complete_freeze_created": false
+  },
+  "operational_artifacts": {
+    "current_audit_json_is_mutable": true,
+    "current_audit_json_is_part_of_implementation_freeze": false
+  },
+  "safety_state_at_freeze": {
+    "correctness_inspected": false,
+    "ground_truth_accessed": false,
+    "calibration_metrics_computed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0
+  }
+}
