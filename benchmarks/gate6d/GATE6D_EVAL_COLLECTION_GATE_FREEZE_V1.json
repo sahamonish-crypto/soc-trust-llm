@@ -1,0 +1,68 @@
+{
+  "artifact": "GATE6D_EVAL_COLLECTION_GATE_FREEZE_V1",
+  "status": "FROZEN_DISABLED_SYNTHETIC_VALIDATED",
+  "implementation": {
+    "path": "scripts/gate6/gate6d_eval_collection_gate_v1.py",
+    "sha256": "fae0f5f4c3aaef1d1781d692102f6f2efd6964f6d42e42536de4b2a9bc6165f1"
+  },
+  "synthetic_self_test": {
+    "path": "benchmarks/gate6d/eval_collection_gate_v1/synthetic_self_test.json",
+    "sha256": "2fe773aef8447ce6b4d8961ba83ca761e9b1c0f83451db7429b0c96487292967",
+    "status": "PASS"
+  },
+  "bound_frozen_dependencies": {
+    "dev_collector_v1_2": {
+      "path": "scripts/gate6/run_gate6d_dev_uncertainty_collection_v1_2.py",
+      "sha256": "25da7632efd3fc49352652c08ce8deed8f09f00d6c16334e56e7d4de2568ac99"
+    },
+    "eval_safeguard_protocol": {
+      "path": "benchmarks/gate6d/GATE6D_EVAL_EXECUTION_SAFEGUARD_PROTOCOL_V1.json",
+      "sha256": "48f187e146510a578fac405fc06d8b39b5159b57c1433889e276e40f380d7c0e"
+    },
+    "dev_method_freeze_core": {
+      "path": "benchmarks/gate6d/GATE6D_DEV_METHOD_FREEZE_CORE_FREEZE_V1.json",
+      "sha256": "fd41f251bc5a0f1a932897f5fb4198550fddb869bf9534bc7ccea525e7e1d92b"
+    },
+    "vc_system_prompt": {
+      "path": "benchmarks/gate6d/collector_v1_2/vc_self_eval_system_prompt.txt",
+      "sha256": "51bb3bb0912123a315dba5c34cb08bed103f2a6b51795febbe2125e31cb47f2d"
+    }
+  },
+  "frozen_execution_contract": {
+    "eval_items": 458,
+    "collector_semantics_reimplemented": false,
+    "reuse_frozen_dev_collector_functions": true,
+    "sc5_required_for_every_eval_item": true,
+    "vc_only_if_selected_estimator_is_vc": true,
+    "vc_only_after_valid_sc5": true,
+    "terminal_semantic_invalid_regeneration": false,
+    "ground_truth_open_during_collection": false,
+    "collection_freeze_before_ground_truth": true,
+    "real_collection_mode_present_in_v1": false
+  },
+  "synthetic_evidence": {
+    "synthetic_items": 12,
+    "sc5_selected_valid_scoring_items": 11,
+    "sc5_selected_vc_terminal_records": 0,
+    "vc_selected_valid_scoring_items": 10,
+    "vc_selected_vc_terminal_records": 11,
+    "fail_closed_tests": 3
+  },
+  "real_unlock_boundary": {
+    "required_real_method_freeze": "benchmarks/gate6d/GATE6D_DEV_METHOD_FREEZE_V1.json",
+    "required_method_status": "FROZEN_METHOD_SELECTED",
+    "required_environment_gate": "GATE6D_ALLOW_EVAL_COLLECTION=YES",
+    "current_real_gate_allowed": false,
+    "v1_can_collect_real_eval_even_after_unlock": false
+  },
+  "safety_state_at_freeze": {
+    "real_dev_method_freeze_exists": false,
+    "sealed_eval_model_inputs_opened": false,
+    "sealed_eval_manifest_opened": false,
+    "sealed_eval_ground_truth_opened": false,
+    "real_eval_collection_performed": false,
+    "real_eval_model_calls": 0,
+    "external_test_accessed": false,
+    "gate7_opened": false
+  }
+}

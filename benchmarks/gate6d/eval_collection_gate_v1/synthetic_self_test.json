@@ -1,0 +1,97 @@
+{
+  "artifact": "GATE6D_EVAL_COLLECTION_GATE_SYNTHETIC_SELF_TEST_V1",
+  "current_real_gate": {
+    "allowed": false,
+    "env_enabled": false,
+    "real_method_freeze_exists": false,
+    "reasons": [
+      "GATE6D_ALLOW_EVAL_COLLECTION is not YES",
+      "real DEV method-freeze artifact does not exist"
+    ]
+  },
+  "external_test_accessed": false,
+  "fail_closed_tests": 3,
+  "frozen_collector_semantics": {
+    "exact_label_parser_reused": true,
+    "integer_0_100_parser_reused": true,
+    "model": "@cf/nvidia/nemotron-3-120b-a12b",
+    "same_seed_for_sc5_and_vc": true,
+    "sc5_n": 5,
+    "sc5_temperature": 0.4,
+    "vc_n": 1,
+    "vc_temperature": 0
+  },
+  "frozen_dependencies": {
+    "dev_collector_sha256": "25da7632efd3fc49352652c08ce8deed8f09f00d6c16334e56e7d4de2568ac99",
+    "eval_safeguard_sha256": "48f187e146510a578fac405fc06d8b39b5159b57c1433889e276e40f380d7c0e",
+    "method_core_freeze_sha256": "fd41f251bc5a0f1a932897f5fb4198550fddb869bf9534bc7ccea525e7e1d92b",
+    "vc_prompt_sha256": "51bb3bb0912123a315dba5c34cb08bed103f2a6b51795febbe2125e31cb47f2d"
+  },
+  "gate7_opened": false,
+  "model_calls": 0,
+  "real_eval_collection_performed": false,
+  "real_eval_files_opened": false,
+  "sealed_eval_ground_truth_opened": false,
+  "sealed_eval_manifest_opened": false,
+  "sealed_eval_model_inputs_opened": false,
+  "status": "PASS",
+  "synthetic_SC5_selected": {
+    "audit": {
+      "logical_collection_complete": true,
+      "sc5_terminal": 12,
+      "scoring_item_ids": [
+        "SYN-E-001",
+        "SYN-E-002",
+        "SYN-E-003",
+        "SYN-E-004",
+        "SYN-E-006",
+        "SYN-E-007",
+        "SYN-E-008",
+        "SYN-E-009",
+        "SYN-E-010",
+        "SYN-E-011",
+        "SYN-E-012"
+      ],
+      "valid_scoring_items": 11,
+      "vc_terminal": 0
+    },
+    "plan": {
+      "eval_items": 458,
+      "freeze_outputs_before_ground_truth": true,
+      "ground_truth_open_during_collection": false,
+      "sc5_required": true,
+      "terminal_semantic_invalid_regeneration": false,
+      "vc_permitted": false,
+      "vc_required_after_valid_sc5": false
+    }
+  },
+  "synthetic_VC_selected": {
+    "audit": {
+      "logical_collection_complete": true,
+      "sc5_terminal": 12,
+      "scoring_item_ids": [
+        "SYN-E-001",
+        "SYN-E-002",
+        "SYN-E-003",
+        "SYN-E-004",
+        "SYN-E-006",
+        "SYN-E-007",
+        "SYN-E-009",
+        "SYN-E-010",
+        "SYN-E-011",
+        "SYN-E-012"
+      ],
+      "valid_scoring_items": 10,
+      "vc_terminal": 11
+    },
+    "plan": {
+      "eval_items": 458,
+      "freeze_outputs_before_ground_truth": true,
+      "ground_truth_open_during_collection": false,
+      "sc5_required": true,
+      "terminal_semantic_invalid_regeneration": false,
+      "vc_permitted": true,
+      "vc_required_after_valid_sc5": true
+    }
+  }
+}
