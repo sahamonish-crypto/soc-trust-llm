@@ -1,0 +1,70 @@
+{
+  "artifact": "GATE6D_DEV_ANALYSIS_INTEGRATION_FREEZE_V1",
+  "status": "FROZEN_SYNTHETIC_VALIDATED",
+  "integration_harness": {
+    "path": "scripts/gate6/gate6d_dev_analysis_integration_v1.py",
+    "sha256": "95528cf202ad87e78013f99d6d2f80bc1f24d39081b52601d021357de2270912"
+  },
+  "synthetic_self_test": {
+    "path": "benchmarks/gate6d/dev_analysis_integration_v1/synthetic_self_test.json",
+    "sha256": "c88298010e1d8e6558c6680cf84a347de928562aad22c003ee793f2e0bf9eb9e",
+    "status": "PASS"
+  },
+  "bound_frozen_components": {
+    "dev_normalization_core": {
+      "path": "scripts/gate6/gate6d_dev_normalization_core_v1.py",
+      "sha256": "7983ed4320908fd87913bc7a3b03113350763efb0fed1d8d00ba675da81e7ba0"
+    },
+    "calibration_analysis_core": {
+      "path": "scripts/gate6/gate6d_calibration_analysis_core.py",
+      "sha256": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba"
+    },
+    "collection_audit_tool": {
+      "path": "scripts/gate6/audit_gate6d_dev500_collection_v1.py",
+      "sha256": "8df4bf36a3b1bd0213a333f8b9b3defff9897e682862856fc35574ad33fa6123"
+    }
+  },
+  "pipeline_contract": [
+    "collection-complete metadata gate",
+    "DEV normalization",
+    "paired-common-valid estimator comparison",
+    "grouped 5-fold OOF calibration",
+    "grouped OOF constant baseline",
+    "frozen estimator/calibrator method selection"
+  ],
+  "frozen_selection_behavior": {
+    "primary_metric": "grouped OOF Brier",
+    "effective_tie_threshold": 0.01,
+    "first_tiebreak": "better AUROC correctness",
+    "remaining_tiebreak": "prefer SC5_AGREEMENT where frozen rule uniquely resolves",
+    "eval_used_for_selection": false
+  },
+  "synthetic_test_expectations": {
+    "selected_items": 500,
+    "paired_common_valid_items": 488,
+    "paired_fold_counts": {
+      "1": 95,
+      "2": 99,
+      "3": 100,
+      "4": 96,
+      "5": 98
+    },
+    "candidate_rows": 6,
+    "valid_candidate_rows": 5,
+    "synthetic_winner_has_scientific_meaning": false
+  },
+  "real_analysis_boundary": {
+    "real_dev_analysis_enabled": false,
+    "collection_complete_freeze_required": true,
+    "real_loader_enablement_required": true,
+    "method_freeze_required_before_eval": true
+  },
+  "safety_state_at_freeze": {
+    "real_dev_outputs_read": false,
+    "real_dev_ground_truth_read": false,
+    "correctness_based_real_comparison_performed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0
+  }
+}
