@@ -1,0 +1,30 @@
+{
+  "artifact": "GATE6D_REAL_DEV_WRAPPER_SYNTHETIC_TEST_V1",
+  "status": "PASS",
+  "frozen_core_sha": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba",
+  "synthetic_rows": 500,
+  "fold_counts": [
+    97,
+    101,
+    102,
+    98,
+    102
+  ],
+  "candidate_rows": 6,
+  "valid_candidate_rows": 6,
+  "constant_baseline_brier": 0.25026986426119274,
+  "synthetic_winner_estimator": "VC_SELF_EVAL",
+  "synthetic_winner_calibrator": "platt",
+  "frozen_brier_tie_threshold": 0.01,
+  "real_dev_gate_allowed": false,
+  "real_dev_gate_reasons": [
+    "GATE6D_ALLOW_REAL_DEV_ANALYSIS is not YES",
+    "DEV500 collection-complete freeze artifact does not exist"
+  ],
+  "real_dev_outputs_read": false,
+  "real_dev_ground_truth_read": false,
+  "correctness_based_real_comparison": false,
+  "calibration_eval_accessed": false,
+  "external_test_accessed": false,
+  "model_calls": 0
+}

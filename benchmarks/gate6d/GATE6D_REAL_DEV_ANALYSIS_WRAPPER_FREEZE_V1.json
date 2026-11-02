@@ -1,0 +1,37 @@
+{
+  "artifact": "GATE6D_REAL_DEV_ANALYSIS_WRAPPER_FREEZE_V1",
+  "status": "FROZEN_FAIL_CLOSED",
+  "wrapper": {
+    "path": "scripts/gate6/gate6d_real_dev_analysis_wrapper_v1.py",
+    "sha256": "2a86634d4f5f1345033024b118d7278395233db2dcfb64137afc8a37d300fb1d"
+  },
+  "synthetic_self_test": {
+    "path": "benchmarks/gate6d/real_dev_wrapper_v1/synthetic_self_test.json",
+    "sha256": "efd3241da3c9633e2f27d77b4638bd6b8ae9d745f84462ad21c90307b1c734d0",
+    "status": "PASS"
+  },
+  "frozen_analysis_core": {
+    "path": "scripts/gate6/gate6d_calibration_analysis_core.py",
+    "sha256": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba"
+  },
+  "real_dev_enablement": {
+    "currently_enabled": false,
+    "required_environment_variable": "GATE6D_ALLOW_REAL_DEV_ANALYSIS=YES",
+    "required_future_artifact": "benchmarks/gate6d/GATE6D_DEV500_COLLECTION_COMPLETE_FREEZE_V1.json",
+    "required_future_status": "FROZEN_COMPLETE",
+    "required_selected_dev_complete": 500
+  },
+  "safety_state_at_freeze": {
+    "real_dev_outputs_read": false,
+    "real_dev_ground_truth_read": false,
+    "correctness_based_real_comparison_performed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0
+  },
+  "future_boundary": {
+    "real_dev_normalization_layer_not_yet_created": true,
+    "real_dev_analysis_not_yet_permitted": true,
+    "eval_must_remain_sealed_until_method_freeze": true
+  }
+}
