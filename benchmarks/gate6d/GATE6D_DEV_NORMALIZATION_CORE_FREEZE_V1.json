@@ -1,0 +1,52 @@
+{
+  "artifact": "GATE6D_DEV_NORMALIZATION_CORE_FREEZE_V1",
+  "status": "FROZEN_SYNTHETIC_VALIDATED",
+  "normalization_core": {
+    "path": "scripts/gate6/gate6d_dev_normalization_core_v1.py",
+    "sha256": "7983ed4320908fd87913bc7a3b03113350763efb0fed1d8d00ba675da81e7ba0"
+  },
+  "synthetic_self_test": {
+    "path": "benchmarks/gate6d/dev_normalization_v1/synthetic_self_test.json",
+    "sha256": "a78d59af424197b1cbc01aa09cc25cf2932e68d20fd34979f137e0005035d228",
+    "status": "PASS"
+  },
+  "parent_invalid_output_policy": {
+    "path": "benchmarks/gate6d/GATE6D_INVALID_OUTPUT_COMPARISON_POLICY_V1.json",
+    "sha256": "afeb4cc1919c79014998db090410092c37e45d342036712f2ba9d2f0b0e0a0b1"
+  },
+  "frozen_behavior": {
+    "selected_dev_items": 500,
+    "primary_analysis_set": "PAIRED_COMMON_VALID",
+    "requires_exact_five_folds": true,
+    "duplicate_terminal_records": "FAIL_CLOSED",
+    "missing_sc5_terminal_after_completion": "FAIL_CLOSED",
+    "missing_vc_for_valid_sc5_after_completion": "FAIL_CLOSED",
+    "vc_recommendation_mismatch": "FAIL_CLOSED",
+    "sc5_agreement_domain": [
+      0.6,
+      0.8,
+      1.0
+    ],
+    "vc_integer_domain": "0..100",
+    "vc_raw_confidence": "confidence_integer / 100",
+    "vc_leading_zero_integer_text_accepted": true,
+    "nonselected_historical_records": "IGNORED"
+  },
+  "post_selection_behavior": {
+    "sc5_all_valid_rows_retained": true,
+    "purpose": "Allow all-valid winner refit if SC5 wins."
+  },
+  "safety_state_at_freeze": {
+    "real_dev_outputs_read": false,
+    "real_dev_ground_truth_read": false,
+    "correctness_based_real_comparison_performed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0
+  },
+  "future_boundary": {
+    "real_file_loader_not_enabled": true,
+    "collection_complete_freeze_required_first": true,
+    "real_correctness_analysis_requires_separate_enablement": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "artifact": "GATE6D_DEV_NORMALIZATION_SYNTHETIC_TEST_V1",
+  "calibration_eval_accessed": false,
+  "correctness_based_real_comparison": false,
+  "external_test_accessed": false,
+  "fail_closed_tests": [
+    {
+      "failure_detected": "sc5_terminal: duplicate terminal/item record for G6D-D-0001",
+      "status": "PASS",
+      "test": "duplicate_sc5_terminal"
+    },
+    {
+      "failure_detected": "Collection incomplete: valid SC5 item G6D-D-0001 has no VC terminal.",
+      "status": "PASS",
+      "test": "missing_vc_for_valid_sc5"
+    },
+    {
+      "failure_detected": "G6D-D-0001: VC frozen recommendation does not equal SC5 majority.",
+      "status": "PASS",
+      "test": "vc_recommendation_mismatch"
+    }
+  ],
+  "invalid_reasons": {
+    "SC5:SYNTHETIC_SC5_INVALID": 5,
+    "VC:SYNTHETIC_VC_INVALID": 7
+  },
+  "model_calls": 0,
+  "paired_fold_counts": {
+    "1": 95,
+    "2": 99,
+    "3": 100,
+    "4": 96,
+    "5": 98
+  },
+  "primary_analysis_set": "PAIRED_COMMON_VALID",
+  "real_dev_ground_truth_read": false,
+  "real_dev_outputs_read": false,
+  "status": "PASS",
+  "synthetic_paired_common_valid": 488,
+  "synthetic_sc5_valid": 495,
+  "synthetic_selected_items": 500,
+  "synthetic_vc_valid": 488,
+  "vc_leading_zero_integer_format_test": true
+}
