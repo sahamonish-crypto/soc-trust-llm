@@ -1,0 +1,39 @@
+{
+  "artifact": "GATE6D_BRIER_TIE_THRESHOLD_FREEZE_V1",
+  "freeze_date": "2026-11-02",
+  "status": "FROZEN",
+  "primary_metric": "grouped-5-fold out-of-fold Brier score",
+  "effective_tie_rule": {
+    "absolute_brier_difference_threshold": 0.01,
+    "comparison": "abs(Brier_A - Brier_B) < 0.01",
+    "interpretation": "Methods within 0.01 absolute OOF Brier are treated as effectively tied for primary selection."
+  },
+  "winner_rule": [
+    "Choose lowest grouped-CV OOF Brier score.",
+    "If absolute Brier difference between leading methods is < 0.01, choose better AUROC for correctness discrimination.",
+    "If still tied, prefer SC5_AGREEMENT."
+  ],
+  "sensitivity_only": {
+    "thresholds": [0.005, 0.02],
+    "may_change_primary_winner": false
+  },
+  "rationale": "No universal Brier-score practical-equivalence threshold exists. A 0.01 absolute margin is predeclared before correctness or calibration analysis to prevent post-hoc winner selection. Sensitivity thresholds are reporting-only.",
+  "information_used_to_choose_threshold": [
+    "pre-existing Gate 6D protocol",
+    "Brier score scale",
+    "calibration-methodology literature"
+  ],
+  "information_not_used": [
+    "DEV ground truth",
+    "DEV correctness",
+    "SC5 agreement results",
+    "VC confidence results",
+    "calibration performance",
+    "Calibration-EVAL"
+  ],
+  "collection_state": {
+    "new_model_calls": 0,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false
+  }
+}
