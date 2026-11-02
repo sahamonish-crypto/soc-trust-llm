@@ -1,0 +1,28 @@
+{
+  "artifact": "GATE6D_REAL_DEV_ANALYSIS_OUTPUT_CONTRACT_FREEZE_V1",
+  "status": "FROZEN_PROSPECTIVE_PRE_REAL_DEV_ANALYSIS",
+  "contract": {
+    "path": "benchmarks/gate6d/GATE6D_REAL_DEV_ANALYSIS_OUTPUT_CONTRACT_V1.json",
+    "sha256": "b6ef2f678753c34e22fe6834bdc748326fd0cc67716c9e3a6232acd3bd6989cd"
+  },
+  "primary_population": "PAIRED_COMMON_VALID",
+  "candidate_slots": 6,
+  "primary_metric": "Brier",
+  "item_level_grouped_oof_required": true,
+  "final_commit_marker": "benchmarks/gate6d/GATE6D_DEV_OOF_PREDICTIONS_FREEZE_V1.json",
+  "method_freeze_alone_can_unlock_eval": false,
+  "secondary_requires_commit_marker": true,
+  "frozen_before_real_correctness_inspection": true,
+  "safety_state": {
+    "collection_complete_freeze_exists": false,
+    "real_method_freeze_exists": false,
+    "real_oof_predictions_exist": false,
+    "real_oof_commit_marker_exists": false,
+    "real_dev_outputs_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0,
+    "gate7_opened": false
+  }
+}

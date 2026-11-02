@@ -1,0 +1,222 @@
+{
+  "artifact": "GATE6D_REAL_DEV_ANALYSIS_OUTPUT_CONTRACT_V1",
+  "status": "PROSPECTIVE_PRE_REAL_DEV_ANALYSIS",
+  "purpose": "Prospectively define the immutable real-DEV method-freeze and item-level grouped-OOF output artifacts required for reproducible Gate 6D primary selection and frozen secondary uncertainty analysis.",
+  "frozen_dependencies": {
+    "real_dev_loader": {
+      "path": "scripts/gate6/gate6d_real_dev_loader_v1.py",
+      "sha256": "f425035fc6114e4dd54db5682fdcc9851514fd072c4b79c5cdc1652b9b565e27"
+    },
+    "real_dev_loader_freeze": {
+      "path": "benchmarks/gate6d/GATE6D_REAL_DEV_LOADER_FREEZE_V1.json",
+      "sha256": "51ed038d3ccf1aa0ff122c84da65c5910348d77a37a15471c2cf1ff82f337939"
+    },
+    "method_freeze_core": {
+      "path": "scripts/gate6/gate6d_dev_method_freeze_core_v1.py",
+      "sha256": "7551a3989ff71405f3301a9544dae5a4051f6997aa21f022aefb44cd091b8df8"
+    },
+    "method_freeze_core_freeze": {
+      "path": "benchmarks/gate6d/GATE6D_DEV_METHOD_FREEZE_CORE_FREEZE_V1.json",
+      "sha256": "fd41f251bc5a0f1a932897f5fb4198550fddb869bf9534bc7ccea525e7e1d92b"
+    },
+    "calibration_core": {
+      "path": "scripts/gate6/gate6d_calibration_analysis_core.py",
+      "sha256": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba"
+    },
+    "secondary_protocol": {
+      "path": "benchmarks/gate6d/GATE6D_SECONDARY_UNCERTAINTY_SENSITIVITY_PROTOCOL_V1.json",
+      "sha256": "6859c2ac8df4b36d392ec820461401b6ea5610dbc20db9dd24f3c59a460d4a33"
+    },
+    "secondary_core": {
+      "path": "scripts/gate6/gate6d_secondary_uncertainty_core_v1.py",
+      "sha256": "b4bda1429f8476081bd2dc03ed3834f07a018426b65199fa5873a29560e2b008"
+    },
+    "metric_parity_freeze": {
+      "path": "benchmarks/gate6d/GATE6D_METRIC_SEMANTICS_PARITY_FREEZE_V1.json",
+      "sha256": "e48fabc0a9f7f3974a0311c9006299aaab51ab99382d332f6be2371215d0f687"
+    },
+    "invalid_output_policy": {
+      "path": "benchmarks/gate6d/GATE6D_INVALID_OUTPUT_COMPARISON_POLICY_V1.json",
+      "sha256": "afeb4cc1919c79014998db090410092c37e45d342036712f2ba9d2f0b0e0a0b1"
+    }
+  },
+  "real_analysis_unlock": {
+    "required_collection_complete_artifact": "benchmarks/gate6d/GATE6D_DEV500_COLLECTION_COMPLETE_FREEZE_V1.json",
+    "required_collection_status": "FROZEN_COMPLETE",
+    "selected_dev_complete": 500,
+    "selected_dev_remaining": 0,
+    "required_real_loader_environment_gate": "GATE6D_ALLOW_REAL_DEV_LOAD=YES",
+    "real_dev_loader_must_authorize_load": true,
+    "before_unlock_real_sc5_open": false,
+    "before_unlock_real_vc_open": false,
+    "before_unlock_hidden_dev_gt_open": false
+  },
+  "future_outputs": {
+    "oof_predictions": {
+      "path": "benchmarks/gate6d/dev_analysis_real_v1/oof_predictions.jsonl",
+      "role": "item-level frozen grouped-OOF predictions for primary paired-common-valid DEV rows and later secondary episode-cluster uncertainty analysis"
+    },
+    "method_freeze": {
+      "path": "benchmarks/gate6d/GATE6D_DEV_METHOD_FREEZE_V1.json",
+      "required_status": "FROZEN_METHOD_SELECTED"
+    },
+    "oof_freeze": {
+      "path": "benchmarks/gate6d/GATE6D_DEV_OOF_PREDICTIONS_FREEZE_V1.json",
+      "required_status": "FROZEN_OOF_PREDICTIONS",
+      "transaction_role": "FINAL_SCIENTIFIC_COMMIT_MARKER"
+    }
+  },
+  "primary_analysis_population": {
+    "rule": "PAIRED_COMMON_VALID",
+    "source": "frozen normalization output paired_rows",
+    "must_retain_all_five_folds": true,
+    "duplicate_item_id_permitted": false,
+    "population_item_id_set_sha_must_match_method_freeze": true
+  },
+  "oof_row_contract": {
+    "one_json_object_per_paired_item": true,
+    "deterministic_final_order": "lexicographic item_id",
+    "required_fields": [
+      "item_id",
+      "capture",
+      "episode_start_utc",
+      "cv_fold",
+      "ground_truth",
+      "correctness",
+      "sc5_agreement",
+      "vc_raw_confidence",
+      "oof_probabilities",
+      "constant_baseline_oof_probability"
+    ],
+    "ground_truth_allowed_values": [
+      "ESCALATE",
+      "DO_NOT_ESCALATE"
+    ],
+    "correctness_allowed_values": [
+      0,
+      1
+    ],
+    "cv_fold_allowed_values": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "raw_probability_range": "[0,1]",
+    "oof_probability_range": "[0,1]",
+    "oof_probabilities_schema": {
+      "SC5_AGREEMENT": [
+        "identity",
+        "platt",
+        "isotonic"
+      ],
+      "VC_SELF_EVAL": [
+        "identity",
+        "platt",
+        "isotonic"
+      ]
+    },
+    "valid_candidate_rule": "Every paired item must have one finite [0,1] OOF probability.",
+    "invalid_candidate_rule": "Every paired item must have null for that candidate's OOF probability.",
+    "constant_baseline_rule": "Grouped training-fold correctness prevalence OOF prediction; finite [0,1] for every paired item.",
+    "reliability_metrics_recomputed_from_frozen_oof": true
+  },
+  "candidate_contract": {
+    "estimators": [
+      "SC5_AGREEMENT",
+      "VC_SELF_EVAL"
+    ],
+    "calibrators": [
+      "identity",
+      "platt",
+      "isotonic"
+    ],
+    "candidate_slots": 6,
+    "candidate_validity_source": "frozen calibration core MethodResult.valid",
+    "selection_source": "frozen calibration core select_method",
+    "coverage_can_change_winner": false,
+    "secondary_uncertainty_can_change_winner": false
+  },
+  "method_freeze_contract": {
+    "artifact": "GATE6D_DEV_METHOD_FREEZE_V1",
+    "status": "FROZEN_METHOD_SELECTED",
+    "primary_comparison": "paired-common-valid grouped 5-fold OOF",
+    "primary_metric": "Brier",
+    "effective_brier_tie": "abs(Brier_A - Brier_B) < 0.01",
+    "first_tiebreak": "higher AUROC correctness",
+    "remaining_estimator_tiebreak": "SC5_AGREEMENT",
+    "post_selection_refit": "ALL_VALID_DEV_FOR_WINNING_ESTIMATOR",
+    "serialized_mapping_required": true,
+    "serialization_prediction_tolerance": 1e-12,
+    "eval_constant_baseline": "empirical correctness prevalence from the same winner-valid DEV refit population",
+    "oof_predictions_path_and_sha_required": true,
+    "eval_used_for_selection": false,
+    "external_test_used_for_selection": false,
+    "scientifically_valid_only_after_oof_commit_marker": true
+  },
+  "artifact_creation_order": [
+    "1_load_and_normalize_real_DEV_only_after_unlock",
+    "2_compute_primary_grouped_OOF_candidates_once",
+    "3_validate_candidate_and_population_invariants",
+    "4_write_oof_predictions_to_temporary_file",
+    "5_validate_temporary_oof_file_and_compute_sha256",
+    "6_build_method_freeze_embedding_oof_path_and_sha256",
+    "7_write_method_freeze_to_temporary_file_and_compute_sha256",
+    "8_validate_cross_bindings_between_temporary_oof_and_method_freeze",
+    "9_atomically_rename_oof_predictions_into_final_path_without_overwrite",
+    "10_atomically_rename_method_freeze_into_final_path_without_overwrite",
+    "11_write_GATE6D_DEV_OOF_PREDICTIONS_FREEZE_V1_as_final_commit_marker",
+    "12_consumers_accept_real_DEV_analysis_only_if_commit_marker_exists_and_all_bound_hashes_match",
+    "13_secondary_uncertainty_reads_only_commit-marker-validated_frozen_oof_predictions"
+  ],
+  "atomicity_and_immutability": {
+    "filesystem_multi_file_atomicity_claimed": false,
+    "commit_marker": "benchmarks/gate6d/GATE6D_DEV_OOF_PREDICTIONS_FREEZE_V1.json",
+    "commit_marker_written_last": true,
+    "commit_marker_role": "scientific transaction commit marker binding OOF predictions, DEV method freeze, and frozen dependencies",
+    "pre_commit_partial_files_may_exist_after_crash": true,
+    "pre_commit_partial_files_scientifically_valid": false,
+    "pre_commit_partial_files_may_unlock_eval": false,
+    "pre_commit_partial_files_may_be_consumed_by_secondary_analysis": false,
+    "consumer_requirement": "Refuse OOF predictions and DEV method freeze unless the commit marker exists, has status FROZEN_OOF_PREDICTIONS, and all recorded SHA256 bindings verify.",
+    "temporary_files_permitted": true,
+    "overwrite_existing_final_artifact_permitted": false,
+    "rerun_to_choose_different_winner_permitted": false,
+    "rerun_after_unfavorable_result_permitted": false,
+    "exact_reproduction_from_frozen_inputs": "audit only"
+  },
+  "secondary_uncertainty_bridge": {
+    "input": "frozen item-level OOF predictions",
+    "recalibration_inside_bootstrap": false,
+    "estimator_refit_inside_bootstrap": false,
+    "cv_reexecution_inside_bootstrap": false,
+    "selection_reexecution_inside_bootstrap": false,
+    "episode_metadata_required": true,
+    "same_episode_draws_across_candidates": true,
+    "integer_multiplicity_metric_semantics": "validated by GATE6D_METRIC_SEMANTICS_PARITY_FREEZE_V1",
+    "secondary_results_can_change_primary_winner": false,
+    "commit_marker_validation_required": true
+  },
+  "eval_boundary": {
+    "method_freeze_required_before_eval": true,
+    "oof_freeze_required_before_eval": true,
+    "calibration_eval_access_during_real_dev_analysis": false,
+    "external_test_access_during_real_dev_analysis": false,
+    "gate7_opened_by_real_dev_method_freeze": false,
+    "method_freeze_alone_can_unlock_eval": false,
+    "commit_marker_validation_required_before_eval": true
+  },
+  "safety_state_at_contract_creation": {
+    "collection_complete_freeze_exists": false,
+    "real_method_freeze_exists": false,
+    "real_oof_predictions_exist": false,
+    "real_oof_freeze_exists": false,
+    "real_dev_outputs_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0,
+    "gate7_opened": false
+  }
+}
