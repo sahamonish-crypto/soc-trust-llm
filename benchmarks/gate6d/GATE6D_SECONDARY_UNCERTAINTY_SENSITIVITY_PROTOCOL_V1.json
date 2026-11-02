@@ -1,0 +1,234 @@
+{
+  "artifact": "GATE6D_SECONDARY_UNCERTAINTY_SENSITIVITY_PROTOCOL_V1",
+  "status": "FROZEN_PROSPECTIVE_SECONDARY_PROTOCOL",
+  "freeze_date": "2026-11-03",
+
+  "role": {
+    "analysis_type": "SECONDARY_ONLY",
+    "primary_method_selection_changed": false,
+    "primary_winner_change_permitted": false,
+    "significance_testing_used_to_override_winner": false,
+    "purpose": [
+      "quantify uncertainty around frozen out-of-fold performance estimates",
+      "assess robustness to episode clustering",
+      "assess capture, ground-truth-class, and episode influence",
+      "provide publication-quality uncertainty reporting"
+    ]
+  },
+
+  "dev_structure": {
+    "alert_rows_nested_within_episode": true,
+    "episode_group_key": [
+      "capture",
+      "episode_start_utc"
+    ],
+    "frozen_dev_episode_groups": 48,
+    "capture_strata": [
+      "AmazonEcho-2023-02-21",
+      "Windows7AD-2023-02-21"
+    ],
+    "capture_treated_as_fixed_stratum": true,
+    "capture_resampled_as_independent_cluster": false
+  },
+
+  "bootstrap": {
+    "name": "CAPTURE_STRATIFIED_EPISODE_CLUSTER_PERCENTILE_BOOTSTRAP",
+    "resampling_unit": "episode",
+    "group_key": [
+      "capture",
+      "episode_start_utc"
+    ],
+    "stratify_by_capture": true,
+    "within_each_capture": {
+      "sample_episode_clusters_with_replacement": true,
+      "number_of_drawn_clusters_equals_original_cluster_count": true,
+      "carry_all_rows_from_drawn_episode": true,
+      "preserve_cluster_multiplicity": true
+    },
+    "row_level_bootstrap_permitted": false,
+
+    "bootstrap_replicates": 10000,
+    "confidence_level": 0.95,
+    "confidence_interval": "percentile",
+    "lower_quantile": 0.025,
+    "upper_quantile": 0.975,
+    "quantile_interpolation_method": "linear",
+
+    "seed_namespace": "GATE6D_SECONDARY_BOOTSTRAP_V1",
+    "seed_sha256": "bc9ed85d9834fe9da0849c7c6f19f4e202eba21b59ab510b51e1ae0510ca04b6",
+    "seed_derivation": "SHA256 UTF-8 namespace; first 8 bytes unsigned big-endian; clear sign bit to uint63; replace zero with one",
+    "seed_uint63": 4368166585093127837,
+
+    "same_episode_draws_reused_across_candidate_methods": true,
+    "same_episode_draws_reused_across_paired_differences": true,
+
+    "undefined_metric_replicate": {
+      "redraw_permitted": false,
+      "stored_as": "undefined",
+      "minimum_valid_fraction_for_ci": 0.95,
+      "minimum_valid_replicates_when_B_10000": 9500,
+      "below_threshold": "CI_UNAVAILABLE_WITH_REASON"
+    }
+  },
+
+  "bootstrap_estimand": {
+    "point_predictions": "frozen grouped-OOF probabilities produced by the frozen calibration-analysis core",
+    "calibrator_refit_inside_bootstrap": false,
+    "estimator_refit_inside_bootstrap": false,
+    "interpretation": "conditional cluster-bootstrap uncertainty of the realized grouped-OOF predictions",
+    "not_interpreted_as": [
+      "full model-training uncertainty",
+      "new cross-validation procedure",
+      "alternative winner-selection procedure"
+    ]
+  },
+
+  "metrics": {
+    "brier": {
+      "target": "prediction correctness",
+      "direction": "lower_is_better",
+      "bootstrap_ci": true
+    },
+    "auroc_correct": {
+      "positive_class": "correct recommendation",
+      "direction": "higher_is_better",
+      "bootstrap_ci": true,
+      "undefined_if_resample_has_one_correctness_class": true
+    },
+    "auprc_incorrect": {
+      "positive_class": "incorrect recommendation",
+      "score": "1 - calibrated probability of correctness",
+      "direction": "higher_failure_discrimination_is_better",
+      "bootstrap_ci": true,
+      "undefined_if_resample_has_no_incorrect_items": true
+    },
+    "ece10": {
+      "bins": 10,
+      "binning": "same frozen fixed equal-width bins",
+      "direction": "lower_is_better",
+      "bootstrap_ci": true
+    },
+    "reliability_diagram": {
+      "same_frozen_10_bins": true,
+      "point_estimate_required": true,
+      "bootstrap_binwise_ci_required": false
+    }
+  },
+
+  "candidate_reporting": {
+    "all_valid_frozen_candidate_rows_receive_ci": true,
+    "invalid_candidate_rows_remain_invalid": true,
+    "bootstrap_may_not_make_invalid_candidate_valid": true,
+    "constant_oof_baseline_receives_secondary_uncertainty_summary": true
+  },
+
+  "paired_estimator_sensitivity": {
+    "population": "frozen paired-common-valid DEV population",
+    "pairing_unit": "same bootstrap episode draw",
+    "difference_definition": "metric(VC_SELF_EVAL) - metric(SC5_AGREEMENT)",
+    "comparisons": [
+      {
+        "calibrator": "identity",
+        "run_if_both_candidate_rows_valid": true
+      },
+      {
+        "calibrator": "platt",
+        "run_if_both_candidate_rows_valid": true
+      },
+      {
+        "calibrator": "isotonic",
+        "run_if_both_candidate_rows_valid": true
+      }
+    ],
+    "paired_difference_percentile_ci": true,
+    "formal_null_hypothesis_test": false,
+    "can_change_primary_winner": false
+  },
+
+  "sensitivity_summaries": {
+    "ground_truth_class": {
+      "definition": [
+        "ESCALATE",
+        "DO_NOT_ESCALATE"
+      ],
+      "metrics": [
+        "Brier",
+        "AUROC correctness when defined",
+        "AUPRC incorrect when defined",
+        "ECE10"
+      ],
+      "descriptive_only": true
+    },
+
+    "capture": {
+      "report_each_capture_separately": true,
+      "metrics": [
+        "Brier",
+        "AUROC correctness when defined",
+        "AUPRC incorrect when defined",
+        "ECE10"
+      ],
+      "inferential_generalization_across_captures": false,
+      "reason": "DEV contains too few top-level captures for capture-level resampling inference"
+    },
+
+    "episode_influence": {
+      "method": "leave-one-episode-out",
+      "recompute_metrics_from_frozen_OOF_predictions": true,
+      "report": [
+        "minimum metric value",
+        "maximum metric value",
+        "maximum absolute deviation from full-data metric",
+        "episode responsible for maximum absolute deviation"
+      ],
+      "can_change_primary_winner": false
+    }
+  },
+
+  "primary_selection_governance": {
+    "frozen_primary_metric": "grouped OOF Brier",
+    "frozen_brier_effective_tie_threshold": 0.01,
+    "frozen_first_tiebreak": "better AUROC correctness",
+    "frozen_remaining_tiebreak": "SC5_AGREEMENT when uniquely resolved by frozen rule",
+    "bootstrap_ci_overlap_used_for_selection": false,
+    "bootstrap_difference_ci_used_for_selection": false,
+    "sensitivity_summary_used_for_selection": false
+  },
+
+  "future_eval_reporting": {
+    "eval_remains_sealed_until_method_freeze": true,
+    "after_one_time_eval": "apply the same episode-cluster percentile-CI principle to selected-method EVAL predictions where structurally applicable",
+    "eval_used_to_reselect_dev_method": false,
+    "external_test_in_scope": false
+  },
+
+  "implementation_requirements": {
+    "synthetic_only_validation_before_real_use": true,
+    "bootstrap_draws_deterministic": true,
+    "bootstrap_draw_plan_shared_across_paired_methods": true,
+    "valid_replicate_count_reported_for_each_metric": true,
+    "no_silent_redraw_of_degenerate_replicates": true,
+    "no_real_correctness_inspection_during_implementation": true
+  },
+
+  "information_not_inspected_to_set_protocol": [
+    "real DEV ground truth",
+    "real DEV correctness",
+    "real DEV Brier",
+    "real DEV AUROC",
+    "real DEV AUPRC",
+    "real DEV ECE",
+    "Calibration-EVAL outputs",
+    "Calibration-EVAL ground truth",
+    "External-TEST"
+  ],
+
+  "safety_state_at_freeze": {
+    "real_dev_outputs_read_for_statistical_design": false,
+    "real_dev_ground_truth_read": false,
+    "correctness_based_real_analysis_performed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0
+  }
+}
