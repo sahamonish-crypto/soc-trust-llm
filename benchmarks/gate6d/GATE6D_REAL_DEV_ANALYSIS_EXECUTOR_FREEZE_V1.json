@@ -1,0 +1,44 @@
+{
+  "artifact": "GATE6D_REAL_DEV_ANALYSIS_EXECUTOR_FREEZE_V1",
+  "status": "FROZEN_PREFLIGHT_SYNTHETIC_VALIDATED",
+  "implementation": {
+    "path": "scripts/gate6/gate6d_real_dev_analysis_executor_v1.py",
+    "sha256": "f9a96c5c7fcbce0693cd47007bb87822bdab0ae87089a24f2914657b234befab"
+  },
+  "synthetic_evidence": {
+    "path": "benchmarks/gate6d/real_dev_analysis_executor_v1/synthetic_self_test.json",
+    "sha256": "ecf657f0bb6c138216080acbc1e08e577903c94b59d26c6c78df313b9b5649bf",
+    "status": "PASS",
+    "transaction_states_checked": 8
+  },
+  "current_capability": {
+    "self_test": true,
+    "real_preflight": true,
+    "real_analysis_execution": false
+  },
+  "transaction_state_machine": {
+    "EMPTY": "no OOF, no method freeze, no commit marker",
+    "PARTIAL_UNCOMMITTED": "one or both final data artifacts exist without commit marker",
+    "INVALID_MARKER_WITH_MISSING_FINAL": "commit marker exists but one or both bound final artifacts are missing",
+    "COMMITTED": "OOF, method freeze, and commit marker exist",
+    "all_boolean_combinations_tested": true
+  },
+  "real_analysis_ready_rule": "real loader gate allowed AND transaction state EMPTY",
+  "fail_closed_rules": {
+    "partial_transaction_may_execute": false,
+    "invalid_marker_transaction_may_execute": false,
+    "already_committed_transaction_may_execute": false
+  },
+  "safety_state_at_freeze": {
+    "real_loader_gate_allowed": false,
+    "real_analysis_ready": false,
+    "transaction_state": "EMPTY",
+    "real_dev_outputs_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "correctness_computed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "model_calls": 0,
+    "gate7_opened": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "all_boolean_combinations_checked": true,
+  "calibration_eval_accessed": false,
+  "external_test_accessed": false,
+  "gate7_opened": false,
+  "hidden_dev_ground_truth_opened": false,
+  "model_calls": 0,
+  "real_dev_outputs_opened": false,
+  "states_checked": 8,
+  "status": "PASS"
+}
