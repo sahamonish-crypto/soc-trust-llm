@@ -1,0 +1,80 @@
+{
+  "artifact": "GATE6D_DEV_METHOD_FREEZE_CORE_FREEZE_V1",
+  "status": "FROZEN_SYNTHETIC_VALIDATED",
+  "implementation": {
+    "path": "scripts/gate6/gate6d_dev_method_freeze_core_v1.py",
+    "sha256": "7551a3989ff71405f3301a9544dae5a4051f6997aa21f022aefb44cd091b8df8"
+  },
+  "synthetic_self_test": {
+    "path": "benchmarks/gate6d/dev_method_freeze_v1/synthetic_self_test.json",
+    "sha256": "a71c31b541f09f0be93802aae048191562ceccf23c73c37b59d7ebe6ee8422c4",
+    "status": "PASS"
+  },
+  "bound_frozen_dependencies": {
+    "normalization_core": {
+      "path": "scripts/gate6/gate6d_dev_normalization_core_v1.py",
+      "sha256": "7983ed4320908fd87913bc7a3b03113350763efb0fed1d8d00ba675da81e7ba0"
+    },
+    "calibration_core": {
+      "path": "scripts/gate6/gate6d_calibration_analysis_core.py",
+      "sha256": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba"
+    },
+    "invalid_output_policy": {
+      "path": "benchmarks/gate6d/GATE6D_INVALID_OUTPUT_COMPARISON_POLICY_V1.json",
+      "sha256": "afeb4cc1919c79014998db090410092c37e45d342036712f2ba9d2f0b0e0a0b1"
+    }
+  },
+  "implemented_contract": {
+    "primary_analysis_population": "PAIRED_COMMON_VALID",
+    "candidate_estimators": [
+      "SC5_AGREEMENT",
+      "VC_SELF_EVAL"
+    ],
+    "candidate_calibrators": [
+      "identity",
+      "platt",
+      "isotonic_if_eligible"
+    ],
+    "primary_metric": "GROUPED_5_FOLD_OOF_BRIER",
+    "brier_effective_tie_threshold": 0.01,
+    "first_tiebreak": "AUROC_CORRECTNESS",
+    "remaining_tiebreak": "SC5_AGREEMENT",
+    "coverage_can_change_winner": false,
+    "secondary_analysis_can_change_winner": false,
+    "post_selection_refit_population": "ALL_VALID_DEV_FOR_WINNING_ESTIMATOR",
+    "eval_constant_baseline_population": "SAME_WINNER_VALID_DEV_POPULATION",
+    "selected_mapping_serializable": true,
+    "method_freeze_required_before_eval": true
+  },
+  "synthetic_contract_evidence": {
+    "paired_common_valid_items": 488,
+    "candidate_rows": 6,
+    "valid_candidate_rows": 5,
+    "synthetic_winner_estimator": "VC_SELF_EVAL",
+    "synthetic_winner_calibrator": "platt",
+    "synthetic_winner_has_real_scientific_meaning": false,
+    "if_sc5_wins_refit_population_n": 495,
+    "if_vc_wins_refit_population_n": 488,
+    "synthetic_winner_refit_population_n": 488,
+    "synthetic_eval_baseline_prevalence": 0.7950819672131147,
+    "synthetic_eval_baseline_prevalence_has_real_scientific_meaning": false
+  },
+  "real_use_boundary": {
+    "real_dev_loader_invoked": false,
+    "real_method_selection_enabled": false,
+    "real_method_freeze_created": false,
+    "required_future_real_artifact": "benchmarks/gate6d/GATE6D_DEV_METHOD_FREEZE_V1.json",
+    "calibration_eval_unlocked": false,
+    "external_test_in_scope": false,
+    "gate7_opened": false
+  },
+  "safety_state_at_freeze": {
+    "real_dev_outputs_read": false,
+    "real_dev_ground_truth_read": false,
+    "correctness_based_real_method_selection": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "model_calls": 0
+  }
+}

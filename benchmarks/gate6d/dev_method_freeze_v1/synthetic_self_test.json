@@ -1,0 +1,198 @@
+{
+  "artifact": "GATE6D_DEV_METHOD_FREEZE_CORE_SYNTHETIC_SELF_TEST_V1",
+  "calibration_eval_accessed": false,
+  "eval_unlock": {
+    "calibration_eval_unlocked": false,
+    "real_method_freeze_created": false
+  },
+  "external_test_accessed": false,
+  "frozen_dependencies": {
+    "calibration_core": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba",
+    "invalid_output_policy": "afeb4cc1919c79014998db090410092c37e45d342036712f2ba9d2f0b0e0a0b1",
+    "normalization_core": "7983ed4320908fd87913bc7a3b03113350763efb0fed1d8d00ba675da81e7ba0"
+  },
+  "gate7_opened": false,
+  "interpretation": {
+    "real_method_selection_performed": false,
+    "synthetic_winner_has_real_scientific_meaning": false
+  },
+  "mapping_serialization_tests": {
+    "identity": {
+      "max_abs_difference": 0.0,
+      "status": "PASS"
+    },
+    "isotonic": {
+      "max_abs_difference": 0.0,
+      "status": "PASS"
+    },
+    "platt": {
+      "max_abs_difference": 0.0,
+      "status": "PASS"
+    }
+  },
+  "model_calls": 0,
+  "real_dev_ground_truth_read": false,
+  "real_dev_outputs_read": false,
+  "refit_population_contract": {
+    "if_SC5_wins_n": 495,
+    "if_VC_wins_n": 488,
+    "synthetic_actual_refit_n": 488,
+    "synthetic_actual_winner": "VC_SELF_EVAL"
+  },
+  "status": "PASS",
+  "synthetic_method_freeze": {
+    "artifact": "GATE6D_DEV_METHOD_FREEZE_SYNTHETIC_V1",
+    "coverage": {
+      "invalid_reasons": {
+        "SC5:SYNTHETIC_SC5_INVALID": 5,
+        "VC:SYNTHETIC_VC_INVALID": 7
+      },
+      "paired_common_valid_items": 488,
+      "sc5_valid_items": 495,
+      "selected_dev_items": 500,
+      "used_to_change_winner": false,
+      "vc_valid_items": 488
+    },
+    "eval_constant_baseline": {
+      "correctness_prevalence": 0.7950819672131147,
+      "definition": "empirical DEV correctness prevalence from the same winner-valid population used for post-selection refit",
+      "n": 488,
+      "source_population": "ALL_VALID_DEV_FOR_WINNING_ESTIMATOR"
+    },
+    "governance": {
+      "coverage_can_change_winner": false,
+      "eval_used_for_method_selection": false,
+      "external_test_used_for_method_selection": false,
+      "method_must_be_frozen_before_eval": true,
+      "secondary_uncertainty_can_change_winner": false
+    },
+    "interpretation": {
+      "scientific_result": false,
+      "synthetic": true
+    },
+    "post_selection_refit": {
+      "calibrator": "platt",
+      "correct": 388,
+      "estimator": "VC_SELF_EVAL",
+      "incorrect": 100,
+      "item_id_set_sha256": "3b5a6559385e5d13e1522e27569e43756d100ad331d601662f05e10b801992de",
+      "mapping": {
+        "C": "infinity",
+        "calibrator": "platt",
+        "coefficient": 33.95783342448051,
+        "definition": "sigmoid(a * raw_confidence + b)",
+        "intercept": -19.090304741590312,
+        "max_iter": 5000,
+        "serialization_validation_max_abs_difference": 0.0,
+        "solver": "lbfgs"
+      },
+      "n": 488,
+      "population_rule": "ALL_VALID_DEV_FOR_WINNING_ESTIMATOR",
+      "raw_distinct_values": 2
+    },
+    "primary_comparison": {
+      "analysis_set": "PAIRED_COMMON_VALID",
+      "candidate_rows": [
+        {
+          "auprc_incorrect": 0.20432726731572062,
+          "auroc_correct": 0.4975128865979381,
+          "brier": 0.19000000000000003,
+          "calibrator": "identity",
+          "ece10": 0.1344262295081967,
+          "estimator": "SC5_AGREEMENT",
+          "n": 488,
+          "reason": "valid",
+          "valid": true
+        },
+        {
+          "auprc_incorrect": 0.19513931302529652,
+          "auroc_correct": 0.481159793814433,
+          "brier": 0.16300223033384223,
+          "calibrator": "platt",
+          "ece10": 0.004323996040664194,
+          "estimator": "SC5_AGREEMENT",
+          "n": 488,
+          "reason": "valid",
+          "valid": true
+        },
+        {
+          "auprc_incorrect": 0.19871217224471815,
+          "auroc_correct": 0.4850644329896907,
+          "brier": 0.16295722828192316,
+          "calibrator": "isotonic",
+          "ece10": 1.9644578631239362e-05,
+          "estimator": "SC5_AGREEMENT",
+          "n": 488,
+          "reason": "valid",
+          "valid": true
+        },
+        {
+          "auprc_incorrect": 1.0,
+          "auroc_correct": 1.0,
+          "brier": 0.05231803278688525,
+          "calibrator": "identity",
+          "ece10": 0.21688524590163927,
+          "estimator": "VC_SELF_EVAL",
+          "n": 488,
+          "reason": "valid",
+          "valid": true
+        },
+        {
+          "auprc_incorrect": 1.0,
+          "auroc_correct": 1.0,
+          "brier": 2.0483894841083067e-07,
+          "calibrator": "platt",
+          "ece10": 0.0003036130470855327,
+          "estimator": "VC_SELF_EVAL",
+          "n": 488,
+          "reason": "valid",
+          "valid": true
+        },
+        {
+          "auprc_incorrect": null,
+          "auroc_correct": null,
+          "brier": null,
+          "calibrator": "isotonic",
+          "ece10": null,
+          "estimator": "VC_SELF_EVAL",
+          "n": 488,
+          "reason": "raw_scores<3",
+          "valid": false
+        }
+      ],
+      "constant_baseline_oof": {
+        "auprc_incorrect": 0.20097646221079293,
+        "auroc_correct": 0.4894974226804124,
+        "brier": 0.1629485118796465,
+        "ece10": 2.2763665123326504e-05
+      },
+      "item_id_set_sha256": "3b5a6559385e5d13e1522e27569e43756d100ad331d601662f05e10b801992de",
+      "n": 488,
+      "selection": {
+        "brier_effective_tie_threshold": 0.01,
+        "reason": "lowest_brier_not_effectively_tied",
+        "shortlist": [
+          "VC_SELF_EVAL+platt"
+        ],
+        "winner_auroc_correct": 1.0,
+        "winner_brier": 2.0483894841083067e-07,
+        "winner_calibrator": "platt",
+        "winner_estimator": "VC_SELF_EVAL"
+      },
+      "winner_oof_metrics": {
+        "auprc_incorrect": 1.0,
+        "auroc_correct": 1.0,
+        "brier": 2.0483894841083067e-07,
+        "ece10": 0.0003036130470855327
+      }
+    },
+    "safety_state": {
+      "calibration_eval_accessed": false,
+      "external_test_accessed": false,
+      "model_calls": 0,
+      "real_dev_ground_truth_read": false,
+      "real_dev_outputs_read": false
+    },
+    "status": "PASS_SYNTHETIC_ONLY"
+  }
+}
