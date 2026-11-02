@@ -1,0 +1,83 @@
+{
+  "artifact": "GATE6D_INVALID_OUTPUT_COMPARISON_POLICY_V1",
+  "freeze_date": "2026-11-03",
+  "status": "FROZEN",
+  "purpose": "Prospectively define handling of terminal semantic-invalid or unavailable uncertainty outputs before correctness-based DEV analysis.",
+  "parent_protocol": "benchmarks/gate6d/GATE6D_UNCERTAINTY_ESTIMATOR_PROTOCOL_V1.json",
+
+  "primary_estimator_comparison": {
+    "analysis_set": "PAIRED_COMMON_VALID",
+    "definition": "Use only frozen DEV500 items having a valid SC5_MAJORITY terminal record and a valid VC_SELF_EVAL terminal record.",
+    "reason": "SC5 and VC must be compared on the same recommendations/items so Brier and discrimination differences are not confounded by different validity subsets.",
+    "winner_metrics": [
+      "grouped-5-fold OOF Brier",
+      "AUROC correctness tie-break",
+      "frozen remaining tie-break"
+    ],
+    "brier_effective_tie_threshold": 0.01
+  },
+
+  "invalid_handling": {
+    "sc5_semantic_invalid": {
+      "vc_expected": false,
+      "primary_comparison": "exclude item from both estimator candidates",
+      "regeneration": false
+    },
+    "vc_semantic_invalid_with_valid_sc5": {
+      "primary_comparison": "exclude item from both estimator candidates",
+      "regeneration": false,
+      "sc5_can_enter_post_selection_refit_if_sc5_wins": true
+    },
+    "missing_terminal_record_after_collection_complete": "collection-complete freeze must fail; do not begin correctness analysis",
+    "duplicate_terminal_record": "halt normalization and require protocol review"
+  },
+
+  "coverage_reporting": {
+    "required": true,
+    "report_sc5_validity": true,
+    "report_vc_validity": true,
+    "report_invalid_reasons": true,
+    "coverage_used_to_change_winner": false
+  },
+
+  "descriptive_sensitivity": {
+    "estimator_specific_valid_set_metrics": true,
+    "may_change_primary_winner": false
+  },
+
+  "constant_baseline": {
+    "primary_comparison": "Grouped OOF correctness prevalence estimated from training folds of the paired common-valid set.",
+    "post_selection_eval_baseline": "After winner selection, freeze empirical correctness prevalence using all valid DEV observations for the selected estimator; use that constant for untouched EVAL comparison."
+  },
+
+  "post_selection_refit": {
+    "rule": "Refit the selected estimator/calibrator mapping on all valid Calibration-DEV observations available for the winning estimator.",
+    "consistency_with_parent_protocol": true
+  },
+
+  "correctness_definition": "SC5 majority recommendation equals hidden ground-truth label. VC_SELF_EVAL never changes the frozen recommendation.",
+
+  "fail_closed_conditions": [
+    "paired common-valid data do not retain all five frozen folds",
+    "no valid candidate calibrator can be evaluated under the frozen core",
+    "frozen selection rules do not uniquely resolve a winner",
+    "collection completeness or identifier consistency checks fail"
+  ],
+
+  "information_not_inspected_to_set_policy": [
+    "DEV ground truth",
+    "DEV correctness",
+    "SC5 agreement performance",
+    "VC confidence performance",
+    "calibration metrics",
+    "Calibration-EVAL",
+    "External-TEST"
+  ],
+
+  "safety_state": {
+    "correctness_based_real_comparison_performed": false,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "new_model_calls": 0
+  }
+}
