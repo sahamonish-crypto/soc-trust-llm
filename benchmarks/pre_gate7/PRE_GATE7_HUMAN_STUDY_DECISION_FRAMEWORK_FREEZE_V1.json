@@ -1,0 +1,42 @@
+{
+  "artifact": "PRE_GATE7_HUMAN_STUDY_DECISION_FRAMEWORK_FREEZE_V1",
+  "boundary": {
+    "external_test_allowed": false,
+    "final_calibrated_confidence_allowed": false,
+    "gate6_closed": false,
+    "gate7_open": false,
+    "real_participants_allowed": false
+  },
+  "explicitly_not_frozen": {
+    "decision_time_model": true,
+    "final_conditions": true,
+    "final_confirmatory_backend": true,
+    "inclusion_exclusion_criteria": true,
+    "nasa_tlx_scoring_and_timing": true,
+    "participant_facing_confidence": true,
+    "participant_population": true,
+    "pilot_plan": true,
+    "primary_hypotheses_and_contrasts": true,
+    "randomization_scheme": true,
+    "recruitment_compensation": true,
+    "sample_size": true,
+    "trial_count": true,
+    "trust_measure": true
+  },
+  "frozen_now": {
+    "governance_framework": true,
+    "participant_item_variability_principle": true,
+    "trial_level_binary_modeling_principle": true,
+    "trust_reliance_distinction": true
+  },
+  "implementation": {
+    "path": "scripts/pre_gate7/pre_gate7_human_study_decision_framework_v1.py",
+    "sha256": "13b18b35bc178d07a614840bdc4c59f37d7bb11b56f12c896a09c6b7b18ba59a"
+  },
+  "status": "FROZEN_PREPARATION_ONLY",
+  "validation": {
+    "path": "benchmarks/pre_gate7/human_study_decision_framework_v1/synthetic_validation.json",
+    "sha256": "d667a04042bb95a1c5bc211e1f45b3cae3e256aeb2a52eb636f1b2750633be30",
+    "status": "PASS"
+  }
+}

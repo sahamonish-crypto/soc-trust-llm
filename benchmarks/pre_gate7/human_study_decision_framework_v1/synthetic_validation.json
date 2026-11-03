@@ -1,0 +1,46 @@
+{
+  "artifact": "PRE_GATE7_HUMAN_STUDY_DECISION_FRAMEWORK_VALIDATION_V1",
+  "boundary": {
+    "external_test_accessed": false,
+    "final_calibrated_confidence_used": false,
+    "gate7_opened": false,
+    "real_participants_used": false
+  },
+  "implementation": {
+    "path": "scripts/pre_gate7/pre_gate7_human_study_decision_framework_v1.py",
+    "sha256": "13b18b35bc178d07a614840bdc4c59f37d7bb11b56f12c896a09c6b7b18ba59a"
+  },
+  "registry_summary": {
+    "decision_axes": 15,
+    "final_values_populated": 0,
+    "statuses": {
+      "binary_outcome_model_family": "PROVISIONAL",
+      "continuous_outcome_model_family": "PROVISIONAL",
+      "decision_time_analysis": "UNRESOLVED",
+      "final_condition_structure": "BLOCKED_ON_GATE6",
+      "inclusion_exclusion_criteria": "UNRESOLVED",
+      "participant_facing_confidence_format": "BLOCKED_ON_GATE6",
+      "participant_population": "PROVISIONAL",
+      "pilot_plan": "UNRESOLVED",
+      "primary_hypotheses_and_contrasts": "UNRESOLVED",
+      "randomization_and_counterbalancing": "UNRESOLVED",
+      "recruitment_and_compensation": "UNRESOLVED",
+      "sample_size": "UNRESOLVED",
+      "trial_count_and_item_sampling": "BLOCKED_ON_GATE6",
+      "trust_measure": "UNRESOLVED",
+      "workload_measure": "PROVISIONAL"
+    }
+  },
+  "status": "PASS",
+  "synthetic_self_test": {
+    "artifact": "PRE_GATE7_HUMAN_STUDY_DECISION_FRAMEWORK_SELF_TEST_V1",
+    "decision_axes": 15,
+    "external_test_accessed": false,
+    "fail_closed_tests": 4,
+    "final_calibrated_confidence_used": false,
+    "final_values_populated": 0,
+    "gate7_opened": false,
+    "real_participants_used": false,
+    "status": "PASS"
+  }
+}
