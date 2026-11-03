@@ -1,0 +1,88 @@
+{
+  "artifact": "GATE6D_REAL_DEV_ANALYSIS_EXECUTOR_V2_SYNTHETIC_VALIDATION",
+  "blocked_real_preflight": {
+    "already_committed": false,
+    "calibration_eval_accessed": false,
+    "correctness_computed": false,
+    "external_test_accessed": false,
+    "future_final_artifacts": {
+      "commit_marker": false,
+      "method_freeze": false,
+      "oof_predictions": false
+    },
+    "gate7_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "invalid_transaction": false,
+    "loader_gate_allowed": false,
+    "loader_gate_reasons": [
+      "GATE6D_ALLOW_REAL_DEV_LOAD is not YES",
+      "DEV500 collection-complete freeze artifact does not exist"
+    ],
+    "model_calls": 0,
+    "partial_transaction_present": false,
+    "ready_for_real_analysis": false,
+    "real_dev_outputs_opened": false,
+    "transaction_state": "EMPTY"
+  },
+  "filesystem_self_test": {
+    "calibration_eval_accessed": false,
+    "crash_after_method_is_partial": true,
+    "crash_after_oof_is_partial": true,
+    "existing_final_overwrite_blocked": true,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "marker_last": true,
+    "method_second": true,
+    "model_calls": 0,
+    "oof_first": true,
+    "real_dev_outputs_opened": false,
+    "real_final_paths_written": false,
+    "status": "PASS"
+  },
+  "implementation": {
+    "path": "scripts/gate6/gate6d_real_dev_analysis_executor_v2.py",
+    "sha256": "ed2313babf4fe4e81585646363897845484254c0fe96d08c174c808aef20a9fe"
+  },
+  "oof_self_test": {
+    "baseline_probability_validation": true,
+    "calibration_eval_accessed": false,
+    "candidate_slots": 6,
+    "commit_marker_cross_binding": true,
+    "episode_groups": 48,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "invalid_candidate_null_semantics": true,
+    "invalid_candidate_slots": 1,
+    "lexicographic_order": true,
+    "method_freeze_oof_cross_binding": true,
+    "method_sha_tamper_blocked": true,
+    "model_calls": 0,
+    "oof_sha_tamper_blocked": true,
+    "paired_rows": 488,
+    "real_dev_outputs_opened": false,
+    "status": "PASS"
+  },
+  "safety": {
+    "calibration_eval_accessed": false,
+    "correctness_computed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "model_calls": 0,
+    "real_dev_outputs_opened": false
+  },
+  "status": "PASS",
+  "transaction_self_test": {
+    "all_boolean_combinations_checked": true,
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "model_calls": 0,
+    "real_dev_outputs_opened": false,
+    "states_checked": 8,
+    "status": "PASS"
+  }
+}

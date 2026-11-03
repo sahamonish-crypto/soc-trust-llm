@@ -1,0 +1,51 @@
+{
+  "artifact": "GATE6D_REAL_DEV_ANALYSIS_EXECUTOR_FREEZE_V2",
+  "current_capability": {
+    "real_analysis_execution": false,
+    "real_preflight": true,
+    "synthetic_filesystem_self_test": true,
+    "synthetic_oof_self_test": true,
+    "synthetic_transaction_self_test": true
+  },
+  "implementation": {
+    "path": "scripts/gate6/gate6d_real_dev_analysis_executor_v2.py",
+    "sha256": "ed2313babf4fe4e81585646363897845484254c0fe96d08c174c808aef20a9fe"
+  },
+  "real_execution_unlock": {
+    "dev500_collection_complete_freeze_required": true,
+    "real_loader_gate_required": true,
+    "separate_real_execution_review_required": true
+  },
+  "safety_state_at_freeze": {
+    "calibration_eval_accessed": false,
+    "correctness_computed": false,
+    "dev500_complete": 167,
+    "dev500_remaining": 333,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "model_calls": 0,
+    "real_analysis_ready": false,
+    "real_dev_outputs_opened": false,
+    "transaction_state": "EMPTY"
+  },
+  "status": "FROZEN_SYNTHETIC_EXECUTION_DESIGN_VALIDATED",
+  "synthetic_evidence": {
+    "candidate_slots": 6,
+    "paired_rows": 488,
+    "path": "benchmarks/gate6d/real_dev_analysis_executor_v2/synthetic_validation.json",
+    "sha256": "e1bd8df4593ed624dadc7c48d5fc1c63b6ff741bf29151b31eda3c3bd9776690",
+    "status": "PASS",
+    "transaction_states_checked": 8
+  },
+  "validated_capabilities": {
+    "candidate_null_semantics": true,
+    "commit_marker_cross_binding": true,
+    "existing_final_overwrite_blocked": true,
+    "marker_written_last": true,
+    "method_freeze_oof_cross_binding": true,
+    "oof_row_construction": true,
+    "partial_transaction_fail_closed": true,
+    "sha_tamper_fail_closed": true
+  }
+}
