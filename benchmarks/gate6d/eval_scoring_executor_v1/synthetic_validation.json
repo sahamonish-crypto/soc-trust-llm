@@ -1,0 +1,110 @@
+{
+  "artifact": "GATE6D_EVAL_SCORING_EXECUTOR_SYNTHETIC_VALIDATION_V1",
+  "blocked_real_execution": {
+    "correctness_computed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "real_eval_scoring_performed": false,
+    "reasons": [
+      "GATE6D_ALLOW_EVAL_SCORING is not YES",
+      "EVAL collection-freeze artifact does not exist"
+    ],
+    "scoring_result_created": false,
+    "sealed_eval_ground_truth_opened": false,
+    "status": "BLOCKED"
+  },
+  "implementation": {
+    "path": "scripts/gate6/gate6d_eval_scoring_executor_v1.py",
+    "sha256": "df4b586efa4fee6541fb8d2a888935f96c6274d2e94f72391c7b7961e99a86b4"
+  },
+  "safety": {
+    "correctness_computed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "real_eval_scoring_performed": false,
+    "real_eval_scoring_result_exists": false,
+    "sealed_eval_ground_truth_opened": false
+  },
+  "status": "PASS",
+  "synthetic_test_suites": {
+    "eval_safeguard": {
+      "bad_discrimination_decision": "HALT_PROTOCOL_REVIEW",
+      "equality_brier_delta": 0.0,
+      "equality_decision": "HALT_PROTOCOL_REVIEW",
+      "external_test_accessed": false,
+      "gate7_opened": false,
+      "passing_decision": "PASS",
+      "real_eval_scoring_performed": false,
+      "sealed_eval_ground_truth_opened": false,
+      "status": "PASS",
+      "undefined_auroc": null,
+      "undefined_auroc_decision": "HALT_PROTOCOL_REVIEW"
+    },
+    "frozen_scoring_configuration": {
+      "dev_correctness_prevalence": 0.75,
+      "external_test_accessed": false,
+      "fail_closed_tests": 5,
+      "gate7_opened": false,
+      "real_dev_method_freeze_opened": false,
+      "real_eval_scoring_performed": false,
+      "sealed_eval_ground_truth_opened": false,
+      "selected_estimator": "SC5_AGREEMENT",
+      "status": "PASS"
+    },
+    "ground_truth_validation": {
+      "external_test_accessed": false,
+      "fail_closed_tests": 4,
+      "first_item": "G6D-E-0001",
+      "gate7_opened": false,
+      "last_item": "G6D-E-0458",
+      "real_eval_ground_truth_file_opened": false,
+      "real_eval_scoring_performed": false,
+      "status": "PASS",
+      "validated_items": 458
+    },
+    "scoring_primitives": {
+      "external_test_accessed": false,
+      "fail_closed_tests": 4,
+      "gate7_opened": false,
+      "identity_probability": 0.8,
+      "platt_probability": 0.6130141761393355,
+      "real_eval_scoring_performed": false,
+      "sc5_raw_confidence": 0.8,
+      "sealed_eval_ground_truth_opened": false,
+      "status": "PASS",
+      "vc_raw_confidence": 0.73
+    },
+    "scoring_result_transaction": {
+      "decision": "PASS",
+      "external_test_accessed": false,
+      "fail_closed_tests": 4,
+      "gate7_opened": false,
+      "installed_sha256": "af38e6b0bd190aead05db5e74251320f1c86ffd8eb4d38bd12695c5de6108593",
+      "overwrite_blocked": true,
+      "real_eval_ground_truth_file_opened": false,
+      "real_eval_scoring_performed": false,
+      "real_scoring_result_created": false,
+      "scoring_population": 4,
+      "status": "PASS"
+    },
+    "scoring_rows": {
+      "external_test_accessed": false,
+      "fail_closed_tests": 3,
+      "gate7_opened": false,
+      "real_eval_scoring_performed": false,
+      "sc5_correctness": [
+        1,
+        0,
+        1
+      ],
+      "sc5_scoring_rows": 3,
+      "sealed_eval_ground_truth_opened": false,
+      "status": "PASS",
+      "vc_correctness": [
+        1,
+        1
+      ],
+      "vc_scoring_rows": 2
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "artifact": "GATE6D_EVAL_SCORING_EXECUTOR_FREEZE_V1",
+  "current_state_at_freeze": {
+    "correctness_computed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "real_eval_collection_freeze_exists": false,
+    "real_eval_scoring_performed": false,
+    "real_eval_scoring_result_exists": false,
+    "sealed_eval_ground_truth_opened": false
+  },
+  "governance": {
+    "collection_freeze_does_not_open_gate7": true,
+    "eval_pass_does_not_automatically_open_gate7": true,
+    "external_test_access_permitted": false,
+    "gate7_opened": false
+  },
+  "implementation": {
+    "path": "scripts/gate6/gate6d_eval_scoring_executor_v1.py",
+    "sha256": "df4b586efa4fee6541fb8d2a888935f96c6274d2e94f72391c7b7961e99a86b4"
+  },
+  "safeguard_contract": {
+    "equality_fails": true,
+    "failure_decision": "HALT_PROTOCOL_REVIEW",
+    "pass_requires_brier_selected_lt_constant_dev_prevalence": true,
+    "pass_requires_finite_auroc_correct_gt_0_50": true,
+    "secondary_metrics_do_not_change_decision": true,
+    "undefined_auroc_fails": true
+  },
+  "scientific_contract": {
+    "constant_baseline_from_dev_correctness_prevalence_only": true,
+    "eval_refit_permitted": false,
+    "eval_reselection_permitted": false,
+    "hidden_eval_gt_open_only_after_full_scoring_gate": true,
+    "post_selection_mapping_from_frozen_dev_method_only": true,
+    "scoring_population_selected_pipeline_terminal_valid_only": true,
+    "selected_estimator_from_frozen_dev_method_only": true
+  },
+  "status": "FROZEN_REAL_SCORING_IMPLEMENTATION_PRE_OUTCOME",
+  "synthetic_validation": {
+    "path": "benchmarks/gate6d/eval_scoring_executor_v1/synthetic_validation.json",
+    "sha256": "7616d08fc76774ef143e483fee4fcd65452be78916318f99b69ad86c8de96b08",
+    "status": "PASS",
+    "test_suites": 6
+  },
+  "transaction_contract": {
+    "collection_completeness_recomputed_before_gt": true,
+    "collection_freeze_cryptographically_revalidated": true,
+    "one_shot_scoring": true,
+    "scoring_result_marker_last": true,
+    "scoring_result_overwrite_permitted": false,
+    "strict_json_nonfinite_to_null": true
+  }
+}
