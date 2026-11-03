@@ -1,0 +1,70 @@
+{
+  "artifact": "GATE6D_EVAL_COLLECTION_GATE_FREEZE_V2",
+  "current_capability": {
+    "collection_gate_allowed": false,
+    "real_eval_collection_implemented": false,
+    "real_eval_scoring_implemented": false,
+    "scoring_gate_allowed": false
+  },
+  "dev_unlock_requirements": {
+    "collection_environment_gate": "GATE6D_ALLOW_EVAL_COLLECTION=YES",
+    "dev_scientific_commit_marker_required": true,
+    "exact_output_contract_required": true,
+    "full_frozen_dependency_set_required": true,
+    "method_freeze_alone_can_unlock_eval": false,
+    "method_hash_must_match_marker": true,
+    "oof_hash_must_match_marker": true
+  },
+  "eval_phase_boundary": {
+    "collection_outputs_must_be_frozen_before_scoring": true,
+    "collection_phase_before_scoring": true,
+    "ground_truth_open_during_collection": false,
+    "required_future_collection_freeze": "benchmarks/gate6d/GATE6D_EVAL_COLLECTION_FREEZE_V1.json",
+    "required_future_collection_status": "FROZEN_EVAL_MODEL_OUTPUTS",
+    "scoring_environment_gate": "GATE6D_ALLOW_EVAL_SCORING=YES"
+  },
+  "implementation": {
+    "path": "scripts/gate6/gate6d_eval_collection_gate_v2.py",
+    "sha256": "d666300f059ee6052461982cb3c7f412e0b41c079a363bf65499a902462f05cf"
+  },
+  "safety_state_at_freeze": {
+    "eval_correctness_computed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "model_calls": 0,
+    "real_eval_collection_performed": false,
+    "real_eval_scoring_performed": false,
+    "sealed_eval_ground_truth_opened": false,
+    "sealed_eval_manifest_opened": false,
+    "sealed_eval_model_inputs_opened": false
+  },
+  "scientific_governance": {
+    "collection_freeze_required_before_ground_truth": true,
+    "eval_refit_permitted": false,
+    "eval_reselection_permitted": false,
+    "external_test_remains_untouched": true,
+    "gate7_opened": false,
+    "method_freeze_alone_unlocks_scoring": false,
+    "semantic_invalid_regeneration_permitted": false
+  },
+  "status": "FROZEN_PROSPECTIVE_EVAL_BOUNDARY_V2",
+  "synthetic_evidence": {
+    "collection_freeze_fail_closed_tests": 3,
+    "dev_commit_fail_closed_tests": 6,
+    "path": "benchmarks/gate6d/eval_collection_gate_v2/synthetic_validation.json",
+    "semantics_fail_closed_tests": 3,
+    "sha256": "8368c91be660959cef902fe5082e16c07c9e204709e8da7a90da466d624b7798",
+    "status": "PASS"
+  },
+  "validated_fail_closed_behavior": {
+    "bad_dev_marker_status_blocked": true,
+    "bad_eval_collection_status_blocked": true,
+    "missing_dev_marker_blocked": true,
+    "missing_eval_collection_freeze_blocked": true,
+    "tampered_contract_binding_blocked": true,
+    "tampered_dependency_set_blocked": true,
+    "tampered_dev_method_freeze_blocked": true,
+    "tampered_dev_oof_blocked": true,
+    "wrong_eval_collection_artifact_blocked": true
+  }
+}
