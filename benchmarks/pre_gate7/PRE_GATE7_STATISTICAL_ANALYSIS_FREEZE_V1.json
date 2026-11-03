@@ -1,0 +1,35 @@
+{
+  "artifact": "PRE_GATE7_STATISTICAL_ANALYSIS_FREEZE_V1",
+  "boundary": {
+    "calibration_eval_accessed": false,
+    "external_test_accessed": false,
+    "final_calibrated_confidence_allowed": false,
+    "gate7_open": false,
+    "real_participants_allowed": false
+  },
+  "implementation": {
+    "path": "scripts/pre_gate7/pre_gate7_statistical_analysis_core_v1.py",
+    "sha256": "85daaed4d75e9b54252531bf940750778e2257c8d1e7f878c880c06a9d922d9e"
+  },
+  "not_frozen": {
+    "final_conditions": true,
+    "final_confirmatory_backend": true,
+    "final_hypotheses_and_contrasts": true,
+    "final_questionnaires": true,
+    "final_sample_size": true,
+    "final_trial_count": true
+  },
+  "status": "FROZEN_PREPARATION_ONLY",
+  "synthetic_validation": {
+    "path": "benchmarks/pre_gate7/statistical_analysis_v1/synthetic_validation.json",
+    "sha256": "006bcaecdb57c88fc5cf0f6025bcbbbbd23038cb35e0810d4a823cfab50b8c27",
+    "status": "PASS"
+  },
+  "validated_infrastructure": {
+    "binary_mixed_models": true,
+    "continuous_mixed_models": true,
+    "item_random_effect": true,
+    "participant_random_effect": true,
+    "synthetic_only": true
+  }
+}
