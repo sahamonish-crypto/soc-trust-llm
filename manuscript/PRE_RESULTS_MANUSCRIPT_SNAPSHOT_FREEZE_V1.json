@@ -1,0 +1,57 @@
+{
+  "artifact": "PRE_RESULTS_MANUSCRIPT_SNAPSHOT_FREEZE_V1",
+  "boundary": {
+    "dev_outcome_reported": false,
+    "eval_outcome_reported": false,
+    "external_test_result_reported": false,
+    "final_condition_design_written": false,
+    "final_sample_size_written": false,
+    "gate7_opened": false,
+    "human_result_reported": false
+  },
+  "files": [
+    {
+      "bytes": 9726,
+      "path": "manuscript/MANUSCRIPT_EVIDENCE_MAP_V1.md",
+      "sha256": "d7a7020a936f159d43204b755cdefb3e23a13a3da40447f0880def5606d1324d"
+    },
+    {
+      "bytes": 6940,
+      "path": "manuscript/01_INTRODUCTION_PRE_RESULTS_V1.md",
+      "sha256": "fcecb34e96c6a2f258f849bedef62edc6f7216711525f575a5babb677e3cd5d6"
+    },
+    {
+      "bytes": 11378,
+      "path": "manuscript/02_BACKGROUND_RELATED_WORK_PRE_RESULTS_V1.md",
+      "sha256": "24e28b6ebbaf6f30d46c50db71c80e229cbede0016bf7429bbb20e74843d7171"
+    },
+    {
+      "bytes": 14331,
+      "path": "manuscript/03_TECHNICAL_METHODS_PRE_RESULTS_V1.md",
+      "sha256": "9d3cd562feb72a1037ce0c2039ebd10478fa7c756e73bf6e9093bfa4e4bb252d"
+    },
+    {
+      "bytes": 13578,
+      "path": "manuscript/08_THREATS_TO_VALIDITY_PRE_RESULTS_V1.md",
+      "sha256": "bf5a0b10c1bf47beeef821505ad6de74dfbb54d2782463260ca56fdf47f5e3f8"
+    }
+  ],
+  "not_finalized": {
+    "abstract": true,
+    "conclusion": true,
+    "discussion": true,
+    "final_contribution_list": true,
+    "final_novelty_claim": true,
+    "human_study_method": true,
+    "human_study_results": true,
+    "technical_results": true
+  },
+  "scope": {
+    "background_related_work": true,
+    "evidence_map": true,
+    "introduction": true,
+    "technical_methods": true,
+    "threats_to_validity": true
+  },
+  "status": "FROZEN_PRE_RESULTS_DRAFT_SNAPSHOT"
+}
