@@ -1,0 +1,63 @@
+{
+  "artifact": "GATE6D_EVAL_COLLECTION_EXECUTOR_FREEZE_V1",
+  "collection_semantics": {
+    "completed_items_not_regenerated": true,
+    "duplicate_terminal_ids_fail_closed": true,
+    "expected_eval_items": 458,
+    "quota_transport_resume_same_logical_collection": true,
+    "sc5_all_items": true,
+    "semantic_invalid_regeneration": false,
+    "vc_only_after_valid_sc5": true,
+    "vc_only_if_frozen_winner_is_vc_self_eval": true
+  },
+  "current_state_at_freeze": {
+    "dev_scientific_commit_complete": false,
+    "eval_correctness_computed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "model_calls": 0,
+    "real_eval_collection_freeze_created": false,
+    "real_eval_collection_gate_allowed": false,
+    "real_eval_collection_performed": false,
+    "sealed_eval_ground_truth_opened": false,
+    "sealed_eval_manifest_opened": false,
+    "sealed_eval_model_inputs_opened": false
+  },
+  "freeze_transaction": {
+    "collection_must_be_complete_before_freeze": true,
+    "dev_transaction_bound": true,
+    "executor_implementation_bound": true,
+    "freeze_installed_marker_last": true,
+    "freeze_overwrite_permitted": false,
+    "ground_truth_expected_hash_identifier_only": true,
+    "ground_truth_opened_before_freeze": false,
+    "output_hashes_bound": true,
+    "sealed_eval_input_identifiers_bound": true
+  },
+  "governance": {
+    "collection_freeze_does_not_open_gate7": true,
+    "eval_refit_permitted": false,
+    "eval_reselection_permitted": false,
+    "external_test_access_permitted": false,
+    "gate7_opened": false
+  },
+  "implementation": {
+    "path": "scripts/gate6/gate6d_eval_collection_executor_v1.py",
+    "sha256": "ab0ac860736875dcd03c97047442d08eabe75f0942a84a94fd1d0f1bb1a81c4f"
+  },
+  "real_execution_boundary": {
+    "requires_completed_dev_scientific_transaction": true,
+    "requires_gate6d_allow_eval_collection_yes": true,
+    "requires_gate6d_allow_real_eval_collection_yes": true,
+    "sealed_eval_ground_truth_open_during_collection": false,
+    "sealed_eval_inputs_open_only_after_all_gates": true,
+    "sealed_eval_manifest_open_only_after_all_gates": true
+  },
+  "status": "FROZEN_REAL_EXECUTION_IMPLEMENTATION_PRE_OUTCOME",
+  "synthetic_validation": {
+    "path": "benchmarks/gate6d/eval_collection_executor_v1/synthetic_validation.json",
+    "sha256": "3891103461261ece1413925cf1640576f8afdaa57c627e8b94161877d16564f2",
+    "status": "PASS",
+    "test_suites": 9
+  }
+}
