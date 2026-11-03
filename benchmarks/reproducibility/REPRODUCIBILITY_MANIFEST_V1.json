@@ -1,0 +1,156 @@
+{
+  "artifact": "REPRODUCIBILITY_MANIFEST_V1",
+  "authoritative_freezes": [
+    {
+      "bytes": 2724,
+      "path": "benchmarks/gate6d/GATE6D_ALERT_CARD_VALIDITY_FREEZE_V1.json",
+      "sha256": "ce8441838f0798c54d3b01775982ca3f1e30050dcf2f5dbc5f89576b0c9c8506"
+    },
+    {
+      "bytes": 1481,
+      "path": "benchmarks/gate6d/GATE6D_BRIER_TIE_THRESHOLD_FREEZE_V1.json",
+      "sha256": "48f283e4d858c6d45ef323dea38881b46363f9bf6248e3bee5d7eed1baaa50f5"
+    },
+    {
+      "bytes": 5572,
+      "path": "benchmarks/gate6d/GATE6D_CANONICAL_INPUTS_FREEZE_V1.json",
+      "sha256": "4c92b50fe1bd909d13b9b80df8624acd6982cf00f31af32363e0990a95e9c87c"
+    },
+    {
+      "bytes": 1944,
+      "path": "benchmarks/gate6d/GATE6D_DEV500_COLLECTION_AUDIT_TOOL_FREEZE_V1.json",
+      "sha256": "1e66b12fef4ebfc2f06df82238177b7c89d51972fe45ae210d6cfa580f0d0b7e"
+    },
+    {
+      "bytes": 2086,
+      "path": "benchmarks/gate6d/GATE6D_DEV500_COLLECTION_IMPLEMENTATION_FREEZE_V1_2.json",
+      "sha256": "b6a8dfb8115d6a1acac4ec751ee3d4c5844e60709b60b2ceaaf24f2a6d9edcb1"
+    },
+    {
+      "bytes": 1998,
+      "path": "benchmarks/gate6d/analysis_core_v1/GATE6D_CALIBRATION_ANALYSIS_IMPLEMENTATION_FREEZE_V1.json",
+      "sha256": "5d0f4b5ed0397890993ed5829e55a5c407c08f1615b454d9a86d908bd1bbed13"
+    },
+    {
+      "bytes": 3082,
+      "path": "benchmarks/gate6d/GATE6D_DEV_METHOD_FREEZE_CORE_FREEZE_V1.json",
+      "sha256": "fd41f251bc5a0f1a932897f5fb4198550fddb869bf9534bc7ccea525e7e1d92b"
+    },
+    {
+      "bytes": 2109,
+      "path": "benchmarks/gate6d/GATE6D_REAL_DEV_ANALYSIS_EXECUTOR_FREEZE_V3.json",
+      "sha256": "1039c65d11f4b7ca1f283169ddc743cca76d822d4fc7099b0e70feaa012950e2"
+    },
+    {
+      "bytes": 2801,
+      "path": "benchmarks/gate6d/GATE6D_EVAL_COLLECTION_GATE_FREEZE_V2.json",
+      "sha256": "ee715f8798b3308a654ddc7fd39ef7bac6b496ca48d5e6bc2450566fb05f96f9"
+    },
+    {
+      "bytes": 2450,
+      "path": "benchmarks/gate6d/GATE6D_EVAL_COLLECTION_EXECUTOR_FREEZE_V1.json",
+      "sha256": "f740786bb92b3c84a4565acf24fd9a594be077cc0ea41568f0c75fd27badb137"
+    },
+    {
+      "bytes": 2118,
+      "path": "benchmarks/gate6d/GATE6D_EVAL_SCORING_EXECUTOR_FREEZE_V1.json",
+      "sha256": "13829dd417cda94bfd7937cf320fcfab374eea767312ebd2a5892f40fdeb110c"
+    },
+    {
+      "bytes": 1241,
+      "path": "benchmarks/pre_gate7/PRE_GATE7_SYNTHETIC_FRAMEWORK_FREEZE_V1.json",
+      "sha256": "b45644e5fe9bc6eb773975c60a0f85a9982009634cf1bc1642de7661cca44342"
+    },
+    {
+      "bytes": 1154,
+      "path": "benchmarks/pre_gate7/PRE_GATE7_STATISTICAL_ANALYSIS_FREEZE_V1.json",
+      "sha256": "757ef0c3c2bee4d0819f1566c4e06cf897846033125720b8056f1621d3aaf1ca"
+    },
+    {
+      "bytes": 1434,
+      "path": "benchmarks/pre_gate7/PRE_GATE7_HUMAN_STUDY_DECISION_FRAMEWORK_FREEZE_V1.json",
+      "sha256": "888ae2eab34165db18ab9eec877e1b98af5c43a7cb941c192e1fc71b43ec9758"
+    }
+  ],
+  "authoritative_implementations": [
+    {
+      "bytes": 34326,
+      "path": "scripts/gate6/run_gate6d_dev_uncertainty_collection_v1_2.py",
+      "sha256": "25da7632efd3fc49352652c08ce8deed8f09f00d6c16334e56e7d4de2568ac99"
+    },
+    {
+      "bytes": 24926,
+      "path": "scripts/gate6/audit_gate6d_dev500_collection_v1.py",
+      "sha256": "8df4bf36a3b1bd0213a333f8b9b3defff9897e682862856fc35574ad33fa6123"
+    },
+    {
+      "bytes": 16994,
+      "path": "scripts/gate6/gate6d_calibration_analysis_core.py",
+      "sha256": "47a03118614e68c000101047c680b39929f1355ab9a8f1ba1565abcb81d52eba"
+    },
+    {
+      "bytes": 37437,
+      "path": "scripts/gate6/gate6d_real_dev_analysis_executor_v3.py",
+      "sha256": "042dc5b04a10b7c2e93989b578e388a2b2b0e73ea7c2fa20c403e4c067ad3767"
+    },
+    {
+      "bytes": 44950,
+      "path": "scripts/gate6/gate6d_eval_collection_gate_v2.py",
+      "sha256": "d666300f059ee6052461982cb3c7f412e0b41c079a363bf65499a902462f05cf"
+    },
+    {
+      "bytes": 81629,
+      "path": "scripts/gate6/gate6d_eval_collection_executor_v1.py",
+      "sha256": "ab0ac860736875dcd03c97047442d08eabe75f0942a84a94fd1d0f1bb1a81c4f"
+    },
+    {
+      "bytes": 49363,
+      "path": "scripts/gate6/gate6d_eval_scoring_executor_v1.py",
+      "sha256": "df4b586efa4fee6541fb8d2a888935f96c6274d2e94f72391c7b7961e99a86b4"
+    },
+    {
+      "bytes": 7310,
+      "path": "scripts/pre_gate7/pre_gate7_logging_randomization_v1.py",
+      "sha256": "5f26417bf45e248b7aeca554817a7b173e6179e3e2dacb0fe0b5a9bc87adb120"
+    },
+    {
+      "bytes": 14365,
+      "path": "scripts/pre_gate7/pre_gate7_statistical_analysis_core_v1.py",
+      "sha256": "85daaed4d75e9b54252531bf940750778e2257c8d1e7f878c880c06a9d922d9e"
+    },
+    {
+      "bytes": 9637,
+      "path": "scripts/pre_gate7/pre_gate7_human_study_decision_framework_v1.py",
+      "sha256": "13b18b35bc178d07a614840bdc4c59f37d7bb11b56f12c896a09c6b7b18ba59a"
+    }
+  ],
+  "counts": {
+    "authoritative_freezes": 14,
+    "authoritative_implementations": 10
+  },
+  "environment": {
+    "numpy": "2.5.1",
+    "pandas": "3.1.0",
+    "python": "3.14.2",
+    "scikit_learn": "1.9.1",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "governance": {
+    "eval_scoring_performed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "hidden_eval_ground_truth_opened": false,
+    "mutable_current_audit_included": false,
+    "real_participants_used": false,
+    "superseded_executor_freezes_authoritative": false
+  },
+  "repository": {
+    "anchor_commit": "67280d5",
+    "generation_head": "67280d571f6ee9dafc79a790706e76215caf62dc",
+    "tracked_worktree_clean": true,
+    "untracked_operational_files": "EXCLUDED_BY_DESIGN"
+  },
+  "status": "PRE_OUTCOME_REPRODUCIBILITY_SNAPSHOT"
+}

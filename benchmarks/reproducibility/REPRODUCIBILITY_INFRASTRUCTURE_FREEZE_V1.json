@@ -1,0 +1,37 @@
+{
+  "artifact": "REPRODUCIBILITY_INFRASTRUCTURE_FREEZE_V1",
+  "boundary": {
+    "eval_scoring_performed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "hidden_eval_ground_truth_opened": false,
+    "real_participants_used": false
+  },
+  "builder": {
+    "path": "scripts/reproducibility/build_reproducibility_manifest_v1.py",
+    "sha256": "9cca48d8cf48373a522ae4d3242a98b3413791bd8ecdc64086ee925202794a99"
+  },
+  "manifest": {
+    "path": "benchmarks/reproducibility/REPRODUCIBILITY_MANIFEST_V1.json",
+    "sha256": "160da7d544ddaa430fe4cf3f5a30859d1367b0a5224205ca328a896628aed8f0"
+  },
+  "status": "FROZEN_PRE_OUTCOME_REPRODUCIBILITY_INFRASTRUCTURE",
+  "validated_scope": {
+    "authoritative_freezes": 14,
+    "authoritative_implementations": 10,
+    "superseded_versions_excluded_from_authoritative_set": true,
+    "tamper_fail_closed_tests": 2,
+    "total_bound_files": 24,
+    "untracked_operational_files_excluded": true
+  },
+  "verification_evidence": {
+    "path": "benchmarks/reproducibility/REPRODUCIBILITY_VERIFICATION_EVIDENCE_V1.json",
+    "sha256": "2611357b61da467de1230e111ded7bfcacffdc29d98235c0b6cac9f201ff7ace",
+    "status": "PASS"
+  },
+  "verifier": {
+    "path": "scripts/reproducibility/verify_reproducibility_manifest_v1.py",
+    "sha256": "98da331c319e98cf53fd0b4a96ddab24273ee18407d6134bd66ecc93c13cfba5"
+  }
+}

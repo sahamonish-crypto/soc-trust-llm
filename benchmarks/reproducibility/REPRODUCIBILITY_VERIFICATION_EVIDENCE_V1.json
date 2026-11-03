@@ -1,0 +1,38 @@
+{
+  "artifact": "REPRODUCIBILITY_VERIFICATION_EVIDENCE_V1",
+  "builder": {
+    "path": "scripts/reproducibility/build_reproducibility_manifest_v1.py",
+    "sha256": "9cca48d8cf48373a522ae4d3242a98b3413791bd8ecdc64086ee925202794a99"
+  },
+  "governance": {
+    "eval_scoring_performed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "hidden_eval_ground_truth_opened": false,
+    "real_participants_used": false
+  },
+  "manifest": {
+    "path": "benchmarks/reproducibility/REPRODUCIBILITY_MANIFEST_V1.json",
+    "sha256": "160da7d544ddaa430fe4cf3f5a30859d1367b0a5224205ca328a896628aed8f0"
+  },
+  "status": "PASS",
+  "verification_result": {
+    "anchor_commit": "67280d5",
+    "eval_scoring_performed": false,
+    "external_test_accessed": false,
+    "fail_closed_tests": 2,
+    "gate7_opened": false,
+    "generation_head": "67280d571f6ee9dafc79a790706e76215caf62dc",
+    "hidden_gt_accessed": false,
+    "status": "PASS",
+    "tampered_authoritative_files": false,
+    "verified_files": 24,
+    "verified_freezes": 14,
+    "verified_implementations": 10
+  },
+  "verifier": {
+    "path": "scripts/reproducibility/verify_reproducibility_manifest_v1.py",
+    "sha256": "98da331c319e98cf53fd0b4a96ddab24273ee18407d6134bd66ecc93c13cfba5"
+  }
+}
