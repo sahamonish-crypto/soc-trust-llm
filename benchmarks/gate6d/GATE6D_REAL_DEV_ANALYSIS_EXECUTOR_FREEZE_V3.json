@@ -1,0 +1,57 @@
+{
+  "artifact": "GATE6D_REAL_DEV_ANALYSIS_EXECUTOR_FREEZE_V3",
+  "implementation": {
+    "path": "scripts/gate6/gate6d_real_dev_analysis_executor_v3.py",
+    "sha256": "042dc5b04a10b7c2e93989b578e388a2b2b0e73ea7c2fa20c403e4c067ad3767"
+  },
+  "real_execution_unlock": {
+    "all_conditions_required": true,
+    "collection_complete_freeze_required": true,
+    "real_analysis_env": "GATE6D_ALLOW_REAL_DEV_ANALYSIS=YES",
+    "real_dev_load_env": "GATE6D_ALLOW_REAL_DEV_LOAD=YES",
+    "transaction_state_required": "EMPTY"
+  },
+  "safety_state_at_freeze": {
+    "calibration_eval_accessed": false,
+    "correctness_computed": false,
+    "dev500_complete": 167,
+    "dev500_remaining": 333,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "hidden_dev_ground_truth_opened": false,
+    "model_calls": 0,
+    "real_analysis_ready": false,
+    "real_dev_outputs_opened": false,
+    "transaction_state": "EMPTY"
+  },
+  "scientific_governance": {
+    "eval_access_before_commit_marker": false,
+    "external_test_access": false,
+    "gate7_opened": false,
+    "real_dev_analysis_rerun_for_winner_choice": false,
+    "rerun_after_unfavorable_result": false,
+    "secondary_analysis_before_commit_marker": false
+  },
+  "status": "FROZEN_REAL_EXECUTION_IMPLEMENTATION_PRE_OUTCOME",
+  "synthetic_evidence": {
+    "path": "benchmarks/gate6d/real_dev_analysis_executor_v3/synthetic_validation.json",
+    "sha256": "b4847371c6b241cb8bedfeadd5e1ba692bfa48b8fdecda8e01ce090b89a413fe",
+    "status": "PASS",
+    "synthetic_paired_rows": 488,
+    "transaction_states_checked": 8
+  },
+  "validated_capabilities": {
+    "commit_marker_written_last": true,
+    "dependency_tamper_fail_closed": true,
+    "frozen_calibration_core_reused": true,
+    "frozen_loader_reused": true,
+    "frozen_method_core_reused": true,
+    "full_frozen_dependency_binding": true,
+    "method_oof_cross_binding": true,
+    "no_overwrite_install": true,
+    "paired_oof_construction_validated": true,
+    "partial_transaction_fail_closed": true,
+    "real_execution_path_present": true,
+    "temporary_file_sha_validation": true
+  }
+}
