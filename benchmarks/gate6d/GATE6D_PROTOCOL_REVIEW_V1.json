@@ -1,0 +1,124 @@
+{
+  "artifact": "GATE6D_PROTOCOL_REVIEW_V1",
+  "status": "FROZEN_PROTOCOL_REVIEW_OPENED",
+  "freeze_date": "2026-11-04",
+  "purpose": "Record the prospectively triggered Gate 6D HALT outcome, document the observed DEV-to-EVAL calibration-transfer failure, and freeze the governance boundary before any calibration-method revision is proposed.",
+  "trigger": {
+    "source_artifact": "benchmarks/gate6d/GATE6D_EVAL_SCORING_RESULT_V1.json",
+    "source_sha256": "a1d2232666f16fa136cb249da842b24c9290a4638b586185290a3e695359eedd",
+    "decision": "HALT_PROTOCOL_REVIEW",
+    "trigger_rule_source": "benchmarks/gate6d/GATE6D_EVAL_EXECUTION_SAFEGUARD_PROTOCOL_V1.json",
+    "reason": "The frozen selected confidence estimator passed the correctness-discrimination requirement but failed the strict Brier improvement requirement against the frozen DEV-prevalence constant baseline."
+  },
+  "frozen_method_under_evaluation": {
+    "estimator": "SC5_AGREEMENT",
+    "calibrator": "platt",
+    "dev_method_freeze": "benchmarks/gate6d/GATE6D_DEV_METHOD_FREEZE_V1.json",
+    "dev_method_freeze_sha256": "ff181467cc4768c6ce6c64c9e719f3b6006cf7b684ba5c6894b1f3f3422d49a9",
+    "eval_collection_freeze": "benchmarks/gate6d/GATE6D_EVAL_COLLECTION_FREEZE_V1.json",
+    "eval_collection_freeze_sha256": "83d566c6a31119a6522235bfbba6e86491f2cfa5bd963d1fb4b599a4ba165054"
+  },
+  "prospective_safeguard_result": {
+    "n_eval": 458,
+    "auroc_correct": 0.579597678766163,
+    "auroc_threshold_strict": 0.5,
+    "auroc_pass": true,
+    "brier_selected": 0.29011365105920783,
+    "brier_constant_dev_prevalence": 0.27864517030567687,
+    "brier_delta_selected_minus_constant": 0.011468480753530963,
+    "brier_pass": false,
+    "overall_pass_requires_both": true,
+    "overall_decision": "HALT_PROTOCOL_REVIEW"
+  },
+  "secondary_eval_diagnostics": {
+    "selected_ece10": 0.2292641989759449,
+    "constant_baseline_ece10": 0.18394759825327522,
+    "selected_auprc_incorrect": 0.48428818199958923,
+    "constant_baseline_auprc_incorrect": 0.4279475982532751,
+    "note": "These diagnostics help characterize the failure but cannot reverse or redefine the prospectively frozen PASS/HALT decision."
+  },
+  "dev_to_eval_diagnostics": {
+    "dev_correctness_prevalence": 0.756,
+    "eval_correctness_prevalence": 0.5720524017467249,
+    "dev_winner_oof": {
+      "brier": 0.11763228680606341,
+      "auroc_correct": 0.7184274438372799,
+      "ece10": 0.020565157097410625
+    },
+    "sc5_agreement_strata": {
+      "0.6": {
+        "dev_n": 26,
+        "dev_accuracy": 0.11538461538461539,
+        "eval_n": 16,
+        "eval_accuracy": 0.5625
+      },
+      "0.8": {
+        "dev_n": 52,
+        "dev_accuracy": 0.15384615384615385,
+        "eval_n": 53,
+        "eval_accuracy": 0.22641509433962265
+      },
+      "1.0": {
+        "dev_n": 422,
+        "dev_accuracy": 0.8696682464454977,
+        "eval_n": 389,
+        "eval_accuracy": 0.6195372750642674
+      }
+    },
+    "interpretation": "The observed evidence is consistent with substantial DEV-to-EVAL calibration and correctness-distribution shift. This is a diagnostic interpretation, not proof of a unique causal mechanism."
+  },
+  "scientific_interpretation": {
+    "ranking_signal_completely_absent": false,
+    "reason": "EVAL AUROC_correct remained above the prospectively defined non-informative boundary of 0.5.",
+    "calibration_transfer_successful": false,
+    "reason_calibration": "The selected calibrated probabilities produced worse EVAL Brier score than the frozen constant baseline.",
+    "coding_or_infrastructure_failure_demonstrated": false,
+    "note": "The frozen collection and scoring transactions completed successfully. The observed safeguard failure is therefore retained as a scientific outcome unless an independently demonstrated implementation defect is later established."
+  },
+  "prohibited_post_eval_actions": [
+    "Do not refit Platt calibration using the 458 EVAL labels.",
+    "Do not select isotonic, identity, VC_SELF_EVAL, or another estimator because it performs better on the already-opened EVAL labels.",
+    "Do not relax or redefine the frozen AUROC or Brier safeguard after observing EVAL results.",
+    "Do not regenerate the 458 EVAL model outputs as a second attempt.",
+    "Do not treat the existing 458-item EVAL set as untouched confirmatory evidence for any method designed after this review.",
+    "Do not open Gate 7 or expose participant-facing calibrated confidence while Gate 6 remains halted.",
+    "Do not access or repurpose External-TEST for calibration-method selection without a separate explicit prospective amendment."
+  ],
+  "eval_reuse_policy_after_halt": {
+    "existing_eval_result_remains_valid_evidence_for_original_frozen_method": true,
+    "existing_eval_may_be_reported_in_final_manuscript": true,
+    "existing_eval_may_be_used_for_descriptive_failure_analysis": true,
+    "existing_eval_may_select_or_tune_a_revised_method": false,
+    "existing_eval_may_serve_as_confirmatory_eval_for_revised_method": false,
+    "reason": "The EVAL labels and performance are now known and have informed protocol review."
+  },
+  "external_test_state": {
+    "accessed": false,
+    "remains_sealed": true,
+    "automatic_repurposing_as_gate6_revision_eval": false
+  },
+  "gate_state": {
+    "gate6": "HALTED_PROTOCOL_REVIEW",
+    "gate6d": "HALTED_PROTOCOL_REVIEW",
+    "gate7_opened": false,
+    "participant_facing_calibrated_confidence_permitted": false
+  },
+  "revision_governance": {
+    "this_artifact_selects_a_replacement_estimator": false,
+    "this_artifact_selects_a_replacement_calibrator": false,
+    "this_artifact_changes_the_original_eval_result": false,
+    "future_revision_requires_separate_prospective_artifact": true,
+    "future_revision_must_define_method_before_new_confirmatory_evaluation": true,
+    "future_confirmatory_evaluation_must_be_fresh_and_untouched": true,
+    "old_eval_outcomes_must_not_be_used_for_parameter_fitting_or_method_selection": true
+  },
+  "next_review_questions": [
+    "Determine whether the calibration failure is primarily driven by temporal, capture, prevalence, or confidence-feature instability using development-side and descriptive already-frozen evidence only.",
+    "Determine whether a revised confidence estimator can be specified prospectively without fitting or selecting against the opened EVAL outcomes.",
+    "Identify a fresh untouched confirmatory evaluation population for any revised Gate 6 method.",
+    "Preserve External-TEST for its originally intended role unless an explicit prospective amendment justifies changing that role.",
+    "Define the Gate 6 revision PASS/HALT rule before opening any fresh confirmatory labels."
+  ],
+  "model_calls_for_this_review": 0,
+  "new_cloudflare_neurons_for_this_review": 0
+}
