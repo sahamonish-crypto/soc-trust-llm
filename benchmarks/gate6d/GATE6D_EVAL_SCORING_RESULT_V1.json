@@ -1,0 +1,4824 @@
+{
+  "artifact": "GATE6D_EVAL_SCORING_RESULT_V1",
+  "governance": {
+    "correctness_computed": true,
+    "eval_refit_performed": false,
+    "eval_reselection_performed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "scoring_result_overwrite_permitted": false,
+    "sealed_eval_ground_truth_opened": true,
+    "secondary_metrics_changed_decision": false
+  },
+  "provenance": {
+    "dev_method_freeze_sha256": "ff181467cc4768c6ce6c64c9e719f3b6006cf7b684ba5c6894b1f3f3422d49a9",
+    "eval_collection_freeze_sha256": "83d566c6a31119a6522235bfbba6e86491f2cfa5bd963d1fb4b599a4ba165054",
+    "eval_scoring_executor_sha256": "df4b586efa4fee6541fb8d2a888935f96c6274d2e94f72391c7b7961e99a86b4",
+    "sealed_eval_ground_truth_sha256": "9ffb438d26a7f0b1e9d981998c66edab1c96a1348a90db0eb5769bc674e6ed55"
+  },
+  "safeguard": {
+    "constant_metrics": {
+      "auprc_incorrect": 0.4279475982532751,
+      "auroc_correct": 0.5,
+      "brier": 0.27864517030567687,
+      "ece10": 0.18394759825327522,
+      "reliability": [
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 1,
+          "lower": 0.0,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.1
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 2,
+          "lower": 0.1,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.2
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 3,
+          "lower": 0.2,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.30000000000000004
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 4,
+          "lower": 0.30000000000000004,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.4
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 5,
+          "lower": 0.4,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.5
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 6,
+          "lower": 0.5,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.6000000000000001
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 7,
+          "lower": 0.6000000000000001,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.7000000000000001
+        },
+        {
+          "absolute_gap": 0.18394759825327522,
+          "accuracy": 0.5720524017467249,
+          "bin": 8,
+          "lower": 0.7000000000000001,
+          "mean_confidence": 0.7560000000000001,
+          "n": 458,
+          "upper": 0.8
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 9,
+          "lower": 0.8,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.9
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 10,
+          "lower": 0.9,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 1.0
+        }
+      ]
+    },
+    "decision": "HALT_PROTOCOL_REVIEW",
+    "governance": {
+      "eval_refit_performed": false,
+      "eval_reselection_performed": false,
+      "gate7_opened": false,
+      "secondary_metrics_can_change_decision": false
+    },
+    "n": 458,
+    "primary_safeguard": {
+      "auroc_correct": 0.579597678766163,
+      "auroc_pass": true,
+      "auroc_threshold_strict": 0.5,
+      "brier_constant_dev_prevalence": 0.27864517030567687,
+      "brier_delta_selected_minus_constant": 0.011468480753530963,
+      "brier_pass": false,
+      "brier_selected": 0.29011365105920783,
+      "pass_requires_both": true
+    },
+    "selected_metrics": {
+      "auprc_incorrect": 0.48428818199958923,
+      "auroc_correct": 0.579597678766163,
+      "brier": 0.29011365105920783,
+      "ece10": 0.2292641989759449,
+      "reliability": [
+        {
+          "absolute_gap": 0.544958354586488,
+          "accuracy": 0.5625,
+          "bin": 1,
+          "lower": 0.0,
+          "mean_confidence": 0.017541645413511997,
+          "n": 16,
+          "upper": 0.1
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 2,
+          "lower": 0.1,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.2
+        },
+        {
+          "absolute_gap": 0.025220292102110742,
+          "accuracy": 0.22641509433962265,
+          "bin": 3,
+          "lower": 0.2,
+          "mean_confidence": 0.2516353864417334,
+          "n": 53,
+          "upper": 0.30000000000000004
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 4,
+          "lower": 0.30000000000000004,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.4
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 5,
+          "lower": 0.4,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.5
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 6,
+          "lower": 0.5,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.6000000000000001
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 7,
+          "lower": 0.6000000000000001,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.7000000000000001
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 8,
+          "lower": 0.7000000000000001,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 0.8
+        },
+        {
+          "absolute_gap": 0.2440796760313293,
+          "accuracy": 0.6195372750642674,
+          "bin": 9,
+          "lower": 0.8,
+          "mean_confidence": 0.8636169510955967,
+          "n": 389,
+          "upper": 0.9
+        },
+        {
+          "absolute_gap": null,
+          "accuracy": null,
+          "bin": 10,
+          "lower": 0.9,
+          "mean_confidence": null,
+          "n": 0,
+          "upper": 1.0
+        }
+      ]
+    }
+  },
+  "scoring_population": {
+    "item_ids": [
+      "G6D-E-0001",
+      "G6D-E-0002",
+      "G6D-E-0003",
+      "G6D-E-0004",
+      "G6D-E-0005",
+      "G6D-E-0006",
+      "G6D-E-0007",
+      "G6D-E-0008",
+      "G6D-E-0009",
+      "G6D-E-0010",
+      "G6D-E-0011",
+      "G6D-E-0012",
+      "G6D-E-0013",
+      "G6D-E-0014",
+      "G6D-E-0015",
+      "G6D-E-0016",
+      "G6D-E-0017",
+      "G6D-E-0018",
+      "G6D-E-0019",
+      "G6D-E-0020",
+      "G6D-E-0021",
+      "G6D-E-0022",
+      "G6D-E-0023",
+      "G6D-E-0024",
+      "G6D-E-0025",
+      "G6D-E-0026",
+      "G6D-E-0027",
+      "G6D-E-0028",
+      "G6D-E-0029",
+      "G6D-E-0030",
+      "G6D-E-0031",
+      "G6D-E-0032",
+      "G6D-E-0033",
+      "G6D-E-0034",
+      "G6D-E-0035",
+      "G6D-E-0036",
+      "G6D-E-0037",
+      "G6D-E-0038",
+      "G6D-E-0039",
+      "G6D-E-0040",
+      "G6D-E-0041",
+      "G6D-E-0042",
+      "G6D-E-0043",
+      "G6D-E-0044",
+      "G6D-E-0045",
+      "G6D-E-0046",
+      "G6D-E-0047",
+      "G6D-E-0048",
+      "G6D-E-0049",
+      "G6D-E-0050",
+      "G6D-E-0051",
+      "G6D-E-0052",
+      "G6D-E-0053",
+      "G6D-E-0054",
+      "G6D-E-0055",
+      "G6D-E-0056",
+      "G6D-E-0057",
+      "G6D-E-0058",
+      "G6D-E-0059",
+      "G6D-E-0060",
+      "G6D-E-0061",
+      "G6D-E-0062",
+      "G6D-E-0063",
+      "G6D-E-0064",
+      "G6D-E-0065",
+      "G6D-E-0066",
+      "G6D-E-0067",
+      "G6D-E-0068",
+      "G6D-E-0069",
+      "G6D-E-0070",
+      "G6D-E-0071",
+      "G6D-E-0072",
+      "G6D-E-0073",
+      "G6D-E-0074",
+      "G6D-E-0075",
+      "G6D-E-0076",
+      "G6D-E-0077",
+      "G6D-E-0078",
+      "G6D-E-0079",
+      "G6D-E-0080",
+      "G6D-E-0081",
+      "G6D-E-0082",
+      "G6D-E-0083",
+      "G6D-E-0084",
+      "G6D-E-0085",
+      "G6D-E-0086",
+      "G6D-E-0087",
+      "G6D-E-0088",
+      "G6D-E-0089",
+      "G6D-E-0090",
+      "G6D-E-0091",
+      "G6D-E-0092",
+      "G6D-E-0093",
+      "G6D-E-0094",
+      "G6D-E-0095",
+      "G6D-E-0096",
+      "G6D-E-0097",
+      "G6D-E-0098",
+      "G6D-E-0099",
+      "G6D-E-0100",
+      "G6D-E-0101",
+      "G6D-E-0102",
+      "G6D-E-0103",
+      "G6D-E-0104",
+      "G6D-E-0105",
+      "G6D-E-0106",
+      "G6D-E-0107",
+      "G6D-E-0108",
+      "G6D-E-0109",
+      "G6D-E-0110",
+      "G6D-E-0111",
+      "G6D-E-0112",
+      "G6D-E-0113",
+      "G6D-E-0114",
+      "G6D-E-0115",
+      "G6D-E-0116",
+      "G6D-E-0117",
+      "G6D-E-0118",
+      "G6D-E-0119",
+      "G6D-E-0120",
+      "G6D-E-0121",
+      "G6D-E-0122",
+      "G6D-E-0123",
+      "G6D-E-0124",
+      "G6D-E-0125",
+      "G6D-E-0126",
+      "G6D-E-0127",
+      "G6D-E-0128",
+      "G6D-E-0129",
+      "G6D-E-0130",
+      "G6D-E-0131",
+      "G6D-E-0132",
+      "G6D-E-0133",
+      "G6D-E-0134",
+      "G6D-E-0135",
+      "G6D-E-0136",
+      "G6D-E-0137",
+      "G6D-E-0138",
+      "G6D-E-0139",
+      "G6D-E-0140",
+      "G6D-E-0141",
+      "G6D-E-0142",
+      "G6D-E-0143",
+      "G6D-E-0144",
+      "G6D-E-0145",
+      "G6D-E-0146",
+      "G6D-E-0147",
+      "G6D-E-0148",
+      "G6D-E-0149",
+      "G6D-E-0150",
+      "G6D-E-0151",
+      "G6D-E-0152",
+      "G6D-E-0153",
+      "G6D-E-0154",
+      "G6D-E-0155",
+      "G6D-E-0156",
+      "G6D-E-0157",
+      "G6D-E-0158",
+      "G6D-E-0159",
+      "G6D-E-0160",
+      "G6D-E-0161",
+      "G6D-E-0162",
+      "G6D-E-0163",
+      "G6D-E-0164",
+      "G6D-E-0165",
+      "G6D-E-0166",
+      "G6D-E-0167",
+      "G6D-E-0168",
+      "G6D-E-0169",
+      "G6D-E-0170",
+      "G6D-E-0171",
+      "G6D-E-0172",
+      "G6D-E-0173",
+      "G6D-E-0174",
+      "G6D-E-0175",
+      "G6D-E-0176",
+      "G6D-E-0177",
+      "G6D-E-0178",
+      "G6D-E-0179",
+      "G6D-E-0180",
+      "G6D-E-0181",
+      "G6D-E-0182",
+      "G6D-E-0183",
+      "G6D-E-0184",
+      "G6D-E-0185",
+      "G6D-E-0186",
+      "G6D-E-0187",
+      "G6D-E-0188",
+      "G6D-E-0189",
+      "G6D-E-0190",
+      "G6D-E-0191",
+      "G6D-E-0192",
+      "G6D-E-0193",
+      "G6D-E-0194",
+      "G6D-E-0195",
+      "G6D-E-0196",
+      "G6D-E-0197",
+      "G6D-E-0198",
+      "G6D-E-0199",
+      "G6D-E-0200",
+      "G6D-E-0201",
+      "G6D-E-0202",
+      "G6D-E-0203",
+      "G6D-E-0204",
+      "G6D-E-0205",
+      "G6D-E-0206",
+      "G6D-E-0207",
+      "G6D-E-0208",
+      "G6D-E-0209",
+      "G6D-E-0210",
+      "G6D-E-0211",
+      "G6D-E-0212",
+      "G6D-E-0213",
+      "G6D-E-0214",
+      "G6D-E-0215",
+      "G6D-E-0216",
+      "G6D-E-0217",
+      "G6D-E-0218",
+      "G6D-E-0219",
+      "G6D-E-0220",
+      "G6D-E-0221",
+      "G6D-E-0222",
+      "G6D-E-0223",
+      "G6D-E-0224",
+      "G6D-E-0225",
+      "G6D-E-0226",
+      "G6D-E-0227",
+      "G6D-E-0228",
+      "G6D-E-0229",
+      "G6D-E-0230",
+      "G6D-E-0231",
+      "G6D-E-0232",
+      "G6D-E-0233",
+      "G6D-E-0234",
+      "G6D-E-0235",
+      "G6D-E-0236",
+      "G6D-E-0237",
+      "G6D-E-0238",
+      "G6D-E-0239",
+      "G6D-E-0240",
+      "G6D-E-0241",
+      "G6D-E-0242",
+      "G6D-E-0243",
+      "G6D-E-0244",
+      "G6D-E-0245",
+      "G6D-E-0246",
+      "G6D-E-0247",
+      "G6D-E-0248",
+      "G6D-E-0249",
+      "G6D-E-0250",
+      "G6D-E-0251",
+      "G6D-E-0252",
+      "G6D-E-0253",
+      "G6D-E-0254",
+      "G6D-E-0255",
+      "G6D-E-0256",
+      "G6D-E-0257",
+      "G6D-E-0258",
+      "G6D-E-0259",
+      "G6D-E-0260",
+      "G6D-E-0261",
+      "G6D-E-0262",
+      "G6D-E-0263",
+      "G6D-E-0264",
+      "G6D-E-0265",
+      "G6D-E-0266",
+      "G6D-E-0267",
+      "G6D-E-0268",
+      "G6D-E-0269",
+      "G6D-E-0270",
+      "G6D-E-0271",
+      "G6D-E-0272",
+      "G6D-E-0273",
+      "G6D-E-0274",
+      "G6D-E-0275",
+      "G6D-E-0276",
+      "G6D-E-0277",
+      "G6D-E-0278",
+      "G6D-E-0279",
+      "G6D-E-0280",
+      "G6D-E-0281",
+      "G6D-E-0282",
+      "G6D-E-0283",
+      "G6D-E-0284",
+      "G6D-E-0285",
+      "G6D-E-0286",
+      "G6D-E-0287",
+      "G6D-E-0288",
+      "G6D-E-0289",
+      "G6D-E-0290",
+      "G6D-E-0291",
+      "G6D-E-0292",
+      "G6D-E-0293",
+      "G6D-E-0294",
+      "G6D-E-0295",
+      "G6D-E-0296",
+      "G6D-E-0297",
+      "G6D-E-0298",
+      "G6D-E-0299",
+      "G6D-E-0300",
+      "G6D-E-0301",
+      "G6D-E-0302",
+      "G6D-E-0303",
+      "G6D-E-0304",
+      "G6D-E-0305",
+      "G6D-E-0306",
+      "G6D-E-0307",
+      "G6D-E-0308",
+      "G6D-E-0309",
+      "G6D-E-0310",
+      "G6D-E-0311",
+      "G6D-E-0312",
+      "G6D-E-0313",
+      "G6D-E-0314",
+      "G6D-E-0315",
+      "G6D-E-0316",
+      "G6D-E-0317",
+      "G6D-E-0318",
+      "G6D-E-0319",
+      "G6D-E-0320",
+      "G6D-E-0321",
+      "G6D-E-0322",
+      "G6D-E-0323",
+      "G6D-E-0324",
+      "G6D-E-0325",
+      "G6D-E-0326",
+      "G6D-E-0327",
+      "G6D-E-0328",
+      "G6D-E-0329",
+      "G6D-E-0330",
+      "G6D-E-0331",
+      "G6D-E-0332",
+      "G6D-E-0333",
+      "G6D-E-0334",
+      "G6D-E-0335",
+      "G6D-E-0336",
+      "G6D-E-0337",
+      "G6D-E-0338",
+      "G6D-E-0339",
+      "G6D-E-0340",
+      "G6D-E-0341",
+      "G6D-E-0342",
+      "G6D-E-0343",
+      "G6D-E-0344",
+      "G6D-E-0345",
+      "G6D-E-0346",
+      "G6D-E-0347",
+      "G6D-E-0348",
+      "G6D-E-0349",
+      "G6D-E-0350",
+      "G6D-E-0351",
+      "G6D-E-0352",
+      "G6D-E-0353",
+      "G6D-E-0354",
+      "G6D-E-0355",
+      "G6D-E-0356",
+      "G6D-E-0357",
+      "G6D-E-0358",
+      "G6D-E-0359",
+      "G6D-E-0360",
+      "G6D-E-0361",
+      "G6D-E-0362",
+      "G6D-E-0363",
+      "G6D-E-0364",
+      "G6D-E-0365",
+      "G6D-E-0366",
+      "G6D-E-0367",
+      "G6D-E-0368",
+      "G6D-E-0369",
+      "G6D-E-0370",
+      "G6D-E-0371",
+      "G6D-E-0372",
+      "G6D-E-0373",
+      "G6D-E-0374",
+      "G6D-E-0375",
+      "G6D-E-0376",
+      "G6D-E-0377",
+      "G6D-E-0378",
+      "G6D-E-0379",
+      "G6D-E-0380",
+      "G6D-E-0381",
+      "G6D-E-0382",
+      "G6D-E-0383",
+      "G6D-E-0384",
+      "G6D-E-0385",
+      "G6D-E-0386",
+      "G6D-E-0387",
+      "G6D-E-0388",
+      "G6D-E-0389",
+      "G6D-E-0390",
+      "G6D-E-0391",
+      "G6D-E-0392",
+      "G6D-E-0393",
+      "G6D-E-0394",
+      "G6D-E-0395",
+      "G6D-E-0396",
+      "G6D-E-0397",
+      "G6D-E-0398",
+      "G6D-E-0399",
+      "G6D-E-0400",
+      "G6D-E-0401",
+      "G6D-E-0402",
+      "G6D-E-0403",
+      "G6D-E-0404",
+      "G6D-E-0405",
+      "G6D-E-0406",
+      "G6D-E-0407",
+      "G6D-E-0408",
+      "G6D-E-0409",
+      "G6D-E-0410",
+      "G6D-E-0411",
+      "G6D-E-0412",
+      "G6D-E-0413",
+      "G6D-E-0414",
+      "G6D-E-0415",
+      "G6D-E-0416",
+      "G6D-E-0417",
+      "G6D-E-0418",
+      "G6D-E-0419",
+      "G6D-E-0420",
+      "G6D-E-0421",
+      "G6D-E-0422",
+      "G6D-E-0423",
+      "G6D-E-0424",
+      "G6D-E-0425",
+      "G6D-E-0426",
+      "G6D-E-0427",
+      "G6D-E-0428",
+      "G6D-E-0429",
+      "G6D-E-0430",
+      "G6D-E-0431",
+      "G6D-E-0432",
+      "G6D-E-0433",
+      "G6D-E-0434",
+      "G6D-E-0435",
+      "G6D-E-0436",
+      "G6D-E-0437",
+      "G6D-E-0438",
+      "G6D-E-0439",
+      "G6D-E-0440",
+      "G6D-E-0441",
+      "G6D-E-0442",
+      "G6D-E-0443",
+      "G6D-E-0444",
+      "G6D-E-0445",
+      "G6D-E-0446",
+      "G6D-E-0447",
+      "G6D-E-0448",
+      "G6D-E-0449",
+      "G6D-E-0450",
+      "G6D-E-0451",
+      "G6D-E-0452",
+      "G6D-E-0453",
+      "G6D-E-0454",
+      "G6D-E-0455",
+      "G6D-E-0456",
+      "G6D-E-0457",
+      "G6D-E-0458"
+    ],
+    "n": 458
+  },
+  "scoring_rows": [
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0001",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0002",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0003",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0004",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0005",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0006",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0007",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0008",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0009",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0010",
+      "raw_confidence": 0.6,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0011",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0012",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0013",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0014",
+      "raw_confidence": 0.6,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0015",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0016",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0017",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0018",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0019",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0020",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0021",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0022",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0023",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0024",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0025",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0026",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0027",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0028",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0029",
+      "raw_confidence": 0.6,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0030",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0031",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0032",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0033",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0034",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0035",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0036",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0037",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0038",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0039",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0040",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0041",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0042",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0043",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0044",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0045",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0046",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0047",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0048",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0049",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0050",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0051",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0052",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0053",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0054",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0055",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0056",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0057",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0058",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0059",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0060",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0061",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0062",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0063",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0064",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0065",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0066",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0067",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0068",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0069",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0070",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0071",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0072",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0073",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0074",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0075",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0076",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0077",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0078",
+      "raw_confidence": 0.6,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0079",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0080",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0081",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0082",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0083",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0084",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0085",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0086",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0087",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0088",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0089",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0090",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0091",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0092",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0093",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0094",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0095",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0096",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0097",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0098",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0099",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0100",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0101",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0102",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0103",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0104",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0105",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0106",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0107",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0108",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0109",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0110",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0111",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0112",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0113",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0114",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0115",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0116",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0117",
+      "raw_confidence": 0.6,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0118",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0119",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0120",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0121",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0122",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0123",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0124",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0125",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0126",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0127",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0128",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0129",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0130",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0131",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0132",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0133",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0134",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0135",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0136",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0137",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0138",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0139",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0140",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0141",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0142",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0143",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0144",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0145",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0146",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0147",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0148",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0149",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0150",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0151",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0152",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0153",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0154",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0155",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0156",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0157",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0158",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0159",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0160",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0161",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0162",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0163",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0164",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0165",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0166",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0167",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0168",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0169",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0170",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0171",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0172",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0173",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0174",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0175",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0176",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0177",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0178",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0179",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0180",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0181",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0182",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0183",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0184",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0185",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0186",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0187",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0188",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0189",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0190",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0191",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0192",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0193",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0194",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0195",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0196",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0197",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0198",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0199",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0200",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0201",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0202",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0203",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0204",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0205",
+      "raw_confidence": 0.6,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0206",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0207",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0208",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0209",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0210",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0211",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0212",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0213",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0214",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0215",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0216",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0217",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0218",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0219",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0220",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0221",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0222",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0223",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0224",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0225",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0226",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0227",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0228",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0229",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0230",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0231",
+      "raw_confidence": 0.6,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0232",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0233",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0234",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0235",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0236",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0237",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0238",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0239",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0240",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0241",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0242",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0243",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0244",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0245",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0246",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0247",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0248",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0249",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0250",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0251",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0252",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0253",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0254",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0255",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0256",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0257",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0258",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0259",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0260",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0261",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0262",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0263",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0264",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0265",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0266",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0267",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0268",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0269",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0270",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0271",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0272",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0273",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0274",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0275",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0276",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0277",
+      "raw_confidence": 0.6,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0278",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0279",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0280",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0281",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0282",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0283",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0284",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0285",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0286",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0287",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0288",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0289",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0290",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0291",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0292",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0293",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0294",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0295",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0296",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0297",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0298",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0299",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0300",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0301",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0302",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0303",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0304",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0305",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0306",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0307",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0308",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0309",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0310",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0311",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0312",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0313",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0314",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0315",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0316",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0317",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0318",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0319",
+      "raw_confidence": 0.6,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0320",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0321",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0322",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0323",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0324",
+      "raw_confidence": 0.6,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0325",
+      "raw_confidence": 0.6,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0326",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0327",
+      "raw_confidence": 0.6,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0328",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0329",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0330",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0331",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0332",
+      "raw_confidence": 0.6,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0333",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0334",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0335",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0336",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0337",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0338",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0339",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0340",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0341",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0342",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0343",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0344",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0345",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0346",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0347",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0348",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0349",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0350",
+      "raw_confidence": 0.6,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0351",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0352",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0353",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0354",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0355",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0356",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0357",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0358",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0359",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0360",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0361",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0362",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0363",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0364",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0365",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0366",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0367",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0368",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0369",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0370",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0371",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0372",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0373",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0374",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0375",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0376",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0377",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0378",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0379",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0380",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0381",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0382",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0383",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0384",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0385",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0386",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0387",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0388",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0389",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0390",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0391",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0392",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0393",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0394",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0395",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0396",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0397",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0398",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0399",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0400",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0401",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0402",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0403",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0404",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0405",
+      "raw_confidence": 0.6,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0406",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0407",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0408",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0409",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0410",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0411",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0412",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0413",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0414",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0415",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0416",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "ESCALATE",
+      "item_id": "G6D-E-0417",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0418",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0419",
+      "raw_confidence": 1.0,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 1,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0420",
+      "raw_confidence": 0.8,
+      "recommendation": "DO_NOT_ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0421",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0422",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0423",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0424",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0425",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0426",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0427",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0428",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0429",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0430",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0431",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0432",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0433",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0434",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0435",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.017541645413511997,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0436",
+      "raw_confidence": 0.6,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0437",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0438",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0439",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0440",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0441",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0442",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0443",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0444",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0445",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0446",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0447",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0448",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0449",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0450",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0451",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0452",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.2516353864417333,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0453",
+      "raw_confidence": 0.8,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0454",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0455",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0456",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0457",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    },
+    {
+      "calibrated_probability": 0.8636169510955968,
+      "constant_baseline_probability": 0.756,
+      "correctness": 0,
+      "ground_truth": "DO_NOT_ESCALATE",
+      "item_id": "G6D-E-0458",
+      "raw_confidence": 1.0,
+      "recommendation": "ESCALATE"
+    }
+  ],
+  "selected_estimator": "SC5_AGREEMENT",
+  "status": "FROZEN_ONE_SHOT_EVAL_DECISION"
+}
