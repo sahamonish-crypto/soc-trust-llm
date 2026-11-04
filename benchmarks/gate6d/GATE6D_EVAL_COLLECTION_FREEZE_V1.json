@@ -1,0 +1,107 @@
+{
+  "artifact": "GATE6D_EVAL_COLLECTION_FREEZE_V1",
+  "collection_outputs": {
+    "raw_attempts": {
+      "bytes": 1348907,
+      "exists": true,
+      "path": "benchmarks/gate6d/eval_collection_real_v1/raw_attempts.jsonl",
+      "sha256": "fb43b80d2afd630aba35823b2693ac162021929e7b1aa68920bb4ea07bf113ae"
+    },
+    "sc5_terminal": {
+      "bytes": 300677,
+      "exists": true,
+      "path": "benchmarks/gate6d/eval_collection_real_v1/sc5_terminal.jsonl",
+      "sha256": "fc2ff09bcd206792f6b304930afd0d13c10dc43ac2b2a9affd2673b187c7a330"
+    },
+    "session_events": {
+      "bytes": 0,
+      "exists": false,
+      "path": "benchmarks/gate6d/eval_collection_real_v1/session_events.jsonl",
+      "sha256": null
+    },
+    "vc_terminal": {
+      "bytes": 0,
+      "exists": false,
+      "path": "benchmarks/gate6d/eval_collection_real_v1/vc_terminal.jsonl",
+      "sha256": null
+    }
+  },
+  "completeness": {
+    "items": 458,
+    "sc5_invalid": 0,
+    "sc5_terminal": 458,
+    "sc5_valid": 458,
+    "selected_estimator": "SC5_AGREEMENT",
+    "status": "COMPLETE",
+    "vc_invalid": 0,
+    "vc_terminal": 0,
+    "vc_valid": 0
+  },
+  "dev_scientific_transaction": {
+    "commit_marker": {
+      "bytes": 2744,
+      "exists": true,
+      "path": "benchmarks/gate6d/GATE6D_DEV_OOF_PREDICTIONS_FREEZE_V1.json",
+      "sha256": "1a7d91c686e5f8b7e0cc5da515d3467293d011236bee7f6ad57ae9e16cabae25"
+    },
+    "method_freeze": {
+      "bytes": 3859,
+      "exists": true,
+      "path": "benchmarks/gate6d/GATE6D_DEV_METHOD_FREEZE_V1.json",
+      "sha256": "ff181467cc4768c6ce6c64c9e719f3b6006cf7b684ba5c6894b1f3f3422d49a9"
+    }
+  },
+  "frozen_dependencies": {
+    "dev_collector_v1_2": {
+      "path": "scripts/gate6/run_gate6d_dev_uncertainty_collection_v1_2.py",
+      "sha256": "25da7632efd3fc49352652c08ce8deed8f09f00d6c16334e56e7d4de2568ac99"
+    },
+    "eval_boundary_freeze_v2": {
+      "path": "benchmarks/gate6d/GATE6D_EVAL_COLLECTION_GATE_FREEZE_V2.json",
+      "sha256": "ee715f8798b3308a654ddc7fd39ef7bac6b496ca48d5e6bc2450566fb05f96f9"
+    },
+    "eval_boundary_v2": {
+      "path": "scripts/gate6/gate6d_eval_collection_gate_v2.py",
+      "sha256": "d666300f059ee6052461982cb3c7f412e0b41c079a363bf65499a902462f05cf"
+    },
+    "eval_collection_executor_v1": {
+      "path": "scripts/gate6/gate6d_eval_collection_executor_v1.py",
+      "sha256": "ab0ac860736875dcd03c97047442d08eabe75f0942a84a94fd1d0f1bb1a81c4f"
+    },
+    "eval_safeguard_v1": {
+      "path": "benchmarks/gate6d/GATE6D_EVAL_EXECUTION_SAFEGUARD_PROTOCOL_V1.json",
+      "sha256": "48f187e146510a578fac405fc06d8b39b5159b57c1433889e276e40f380d7c0e"
+    },
+    "vc_system_prompt": {
+      "path": "benchmarks/gate6d/collector_v1_2/vc_self_eval_system_prompt.txt",
+      "sha256": "51bb3bb0912123a315dba5c34cb08bed103f2a6b51795febbe2125e31cb47f2d"
+    }
+  },
+  "governance": {
+    "all_458_attempted": true,
+    "correctness_computed": false,
+    "eval_refit_performed": false,
+    "eval_reselection_performed": false,
+    "external_test_accessed": false,
+    "gate7_opened": false,
+    "ground_truth_opened": false,
+    "semantic_invalid_regeneration": false
+  },
+  "sealed_eval": {
+    "ground_truth": {
+      "expected_sha256": "9ffb438d26a7f0b1e9d981998c66edab1c96a1348a90db0eb5769bc674e6ed55",
+      "opened_during_collection": false,
+      "path": "benchmarks/gate6d/canonical_v1/hidden/eval_ground_truth.jsonl"
+    },
+    "manifest": {
+      "path": "benchmarks/gate6d/canonical_v1/sealed_eval_manifest.csv",
+      "sha256": "084501099471ec1b5289cd99e44305e9c824bea62676f389b8d13485544636a7"
+    },
+    "model_inputs": {
+      "path": "benchmarks/gate6d/canonical_v1/sealed_eval_model_inputs.jsonl",
+      "sha256": "ba9870fcb9223fb3acc46e87a24b6f8c490171b79cc49c08fc433bd7d4ef8d9c"
+    }
+  },
+  "selected_estimator": "SC5_AGREEMENT",
+  "status": "FROZEN_EVAL_MODEL_OUTPUTS"
+}
