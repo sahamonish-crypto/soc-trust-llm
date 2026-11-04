@@ -1,0 +1,85 @@
+{
+  "analysis_unlock": {
+    "correctness_analysis_performed": false,
+    "note": "This artifact permits the separately frozen real-DEV analysis workflow to proceed; it contains no correctness or calibration results.",
+    "real_dev_metadata_gate": "SATISFIED"
+  },
+  "artifact": "GATE6D_DEV500_COLLECTION_COMPLETE_FREEZE_V1",
+  "audit_summary": {
+    "calibration_eval_accessed": false,
+    "calibration_metrics_computed": false,
+    "correctness_inspected": false,
+    "external_test_accessed": false,
+    "ground_truth_accessed": false,
+    "historical_nonselected_sc5_records": 89,
+    "historical_nonselected_vc_records": 89,
+    "missing_sc5_terminal_count": 0,
+    "missing_sc5_terminal_sample": [],
+    "missing_vc_after_valid_sc5_count": 0,
+    "missing_vc_after_valid_sc5_sample": [],
+    "model_calls": 0,
+    "sc5_invalid_reasons": {},
+    "selected_dev_complete": 500,
+    "selected_dev_remaining": 0,
+    "selected_sc5_invalid": 0,
+    "selected_sc5_terminal": 500,
+    "selected_sc5_valid": 500,
+    "selected_target": 500,
+    "selected_vc_invalid": 0,
+    "selected_vc_terminal": 500,
+    "selected_vc_valid": 500,
+    "status": "COMPLETE",
+    "vc_invalid_reasons": {}
+  },
+  "audit_tool": {
+    "path": "scripts/gate6/audit_gate6d_dev500_collection_v1.py",
+    "sha256": "8df4bf36a3b1bd0213a333f8b9b3defff9897e682862856fc35574ad33fa6123"
+  },
+  "collection_files": {
+    "raw_attempts": {
+      "bytes": 2622372,
+      "exists": true,
+      "path": "benchmarks/gate6d/dev_collection_v1/raw_attempts.jsonl",
+      "sha256": "2798dcbfaf6517dcd60d2739bb561a8b0d2d30961e98f3699994cd92bfd56dab"
+    },
+    "sc5_terminal": {
+      "bytes": 392989,
+      "exists": true,
+      "path": "benchmarks/gate6d/dev_collection_v1/sc5_terminal.jsonl",
+      "sha256": "339dd79b8053705c06f68f2e367481f7d8872bbf1db4ba2572d6fc63cd00232d"
+    },
+    "session_events": {
+      "bytes": 1377,
+      "exists": true,
+      "path": "benchmarks/gate6d/dev_collection_v1/session_events.jsonl",
+      "sha256": "fe8110d23f7398c6d24904ae81e6475fc394b271c6f268b75541fe7af9c40b0a"
+    },
+    "vc_terminal": {
+      "bytes": 347391,
+      "exists": true,
+      "path": "benchmarks/gate6d/dev_collection_v1/vc_terminal.jsonl",
+      "sha256": "32951788951cdf07b5342201250b174f292304dd56fc138fb21a0d0665e41534"
+    }
+  },
+  "collector_implementation_freeze": {
+    "path": "benchmarks/gate6d/GATE6D_DEV500_COLLECTION_IMPLEMENTATION_FREEZE_V1_2.json",
+    "sha256": "b6a8dfb8115d6a1acac4ec751ee3d4c5844e60709b60b2ceaaf24f2a6d9edcb1"
+  },
+  "frozen_utc": "2026-11-04T08:05:22.746538+00:00",
+  "safety_state": {
+    "calibration_eval_accessed": false,
+    "calibration_metrics_computed": false,
+    "correctness_inspected": false,
+    "external_test_accessed": false,
+    "ground_truth_accessed": false,
+    "model_calls": 0
+  },
+  "selected_dev_complete": 500,
+  "selected_dev_remaining": 0,
+  "selected_dev_target": 500,
+  "selected_manifest": {
+    "path": "benchmarks/gate6d/dev500_v1/dev500_selected_items.csv",
+    "sha256": "db1016850df42736c1851b66a296550f82e4509e90b33f08fff8a73bad2e0f87"
+  },
+  "status": "FROZEN_COMPLETE"
+}
